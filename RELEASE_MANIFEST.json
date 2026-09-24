@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "manifest_id": "ESCAPING-LOGIC-PUBLICATION-PACKAGE-V1",
+  "package_id": "escaping-logic-6425df7618b6c19a-v4",
+  "game_id": "GAME-LOGIC-ESCAPE-ROOM",
+  "status": "REVIEW_CANDIDATE_UNPUBLISHED",
+  "repository_owner": "mrbrackebusch-code",
+  "repository_name": "escaping-logic",
+  "repository_url": "https://github.com/mrbrackebusch-code/escaping-logic",
+  "serving_branch": "main",
+  "tutorial_path": "README.md",
+  "stable_tutorial_url": "https://arcade.makecode.com/?nocdn=1&skipgithubcache=1#tutorial:https://github.com/mrbrackebusch-code/escaping-logic/README",
+  "external_publication_performed": false,
+  "student_distribution_ready": false,
+  "guide_revision": "6425df7618b6c19a",
+  "guide_manifest_sha256": "427c5f0802c806c0d1232d77d43c454bcd77292f73a9bb8afe9784ec4b6e993f",
+  "canonical_tutorial_sha256": "7fd91519931eb5d54f6ed77ac8ce1ec13891e87ffb19c05d9569e6f034134888",
+  "public_readme_sha256": "d79bd1e64a579ed72910a35dd980b8ce0c21438512a8b9dd5d7f451e9e5d8c53",
+  "current_executable_identity": {
+    "customts_sha256": "23967426fda90d067e725fd0f700cd0b645de9d0cf0aed01823edeeeffb19a56",
+    "solution_sha256": "cfac30bb964aded51727a430443239ba9c17d56f0adbd2fa236927d5d6dc86bd",
+    "starter_sha256": "5534ebe56fa6882ad5d7848ce18a701e38513aafe9ded45cdaadeec2dab6c98a",
+    "hints": 36,
+    "source_hashes": {
+      "games/logic-escape-room/implementation/learner-states/catalog.json": "a6ee728a389b73a12e9990f3678790c49bbdaed06ba284ec6665b48484a302b6",
+      "games/logic-escape-room/implementation/supplied-world/api.ts": "d81aad81d2de89f1ffc6664d4b98e356146f45697aedaaaf674bdb33ebf5184e",
+      "games/logic-escape-room/implementation/supplied-world/art.ts": "b8f60850984c6e5f6f74c2191d163a41841496145b82af01bd25e230961f6286",
+      "games/logic-escape-room/implementation/supplied-world/engine.ts": "d1cf9e85e6fa7e0a3cc1bf7cdaa7bc87043d21c06e21705fe0ac8a30583f332a",
+      "games/logic-escape-room/implementation/solution/main.ts": "cfac30bb964aded51727a430443239ba9c17d56f0adbd2fa236927d5d6dc86bd",
+      "games/logic-escape-room/copy/tutorial.md": "4fe95b7f708467ef71f6d1a2b13358c26f42585fd3351dfce5c824038b2b9973",
+      "games/logic-escape-room/tools/build.mjs": "86e1034aae4978ff4c976ca26dc6620acadc82b706e88f4fabb04697dce75a6b"
+    }
+  },
+  "tutorial_structure": {
+    "pages": 38,
+    "orientation_pages": 1,
+    "coding_pages": 36,
+    "reflection_pages": 1,
+    "recoverable_hints": 36,
+    "blocks_resources": 36,
+    "template_resources": 1,
+    "customts_resources": 1
+  },
+  "learner_starter": {
+    "source_policy": "COMMENT_ONLY_NO_EXECUTABLE_LEARNER_CODE",
+    "main_ts": "// Logic Escape Room\\n",
+    "template_comment_only": true,
+    "supplied_world_in_customts_only": true
+  },
+  "media": {
+    "revision": "6425df7618b6c19a",
+    "total": 55,
+    "menu": 6,
+    "assembled": 13,
+    "gameplay": 36,
+    "mappings": [
+      {
+        "state_id": "01-crank",
+        "kind": "menu",
+        "canonical_path": "assets/instructions/human-review-v2/01-crank-menu.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/menu/01-crank-01-crank-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/menu/01-crank-01-crank-menu.svg",
+        "sha256": "e0445acabe6712c2f1443a7f24a8531b36fa33ddb783b200c980eda7c7b57140"
+      },
+      {
+        "state_id": "01-crank",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/01-crank-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/01-crank-01-crank-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/01-crank-01-crank-assembled.svg",
+        "sha256": "1d4c9feb6576ce1609fd645a6f76146349056705eb185c2093bf97baef72f3d7"
+      },
+      {
+        "state_id": "01-crank",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-01-crank.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/01-crank-lesson-01-crank.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/01-crank-lesson-01-crank.gif",
+        "sha256": "1a5fac3304e716f612f09589a9730c7ad7333fa1759c4856f53de4198b46df26"
+      },
+      {
+        "state_id": "02-generator",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/02-generator-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/02-generator-02-generator-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/02-generator-02-generator-assembled.svg",
+        "sha256": "ad7f0be548c70bb15f5832682227d7e154f1c0e05da4b1ad0e36f60467689831"
+      },
+      {
+        "state_id": "02-generator",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-02-generator.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/02-generator-lesson-02-generator.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/02-generator-lesson-02-generator.gif",
+        "sha256": "09ed87175b4796c8dd061c7fe613ec7137f2167f7f85b4bac9c306c99bdaf2bf"
+      },
+      {
+        "state_id": "03-case",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/03-case-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/03-case-03-case-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/03-case-03-case-assembled.svg",
+        "sha256": "fced953fb76d5ab619f13edaa4ca641a9cf7352da6800c2b2679157701320ba3"
+      },
+      {
+        "state_id": "03-case",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-03-case.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/03-case-lesson-03-case.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/03-case-lesson-03-case.gif",
+        "sha256": "04c3a120963e923bcf15f3d58763f9a06921750b80d63a235ba37f1b6f41209d"
+      },
+      {
+        "state_id": "04-fire",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/04-fire-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/04-fire-04-fire-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/04-fire-04-fire-assembled.svg",
+        "sha256": "c041d312c06a35ce4c913e5efb847072c5e642b377a408a80ed7d39f15bfba3b"
+      },
+      {
+        "state_id": "04-fire",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-04-fire.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/04-fire-lesson-04-fire.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/04-fire-lesson-04-fire.gif",
+        "sha256": "15061aab7ec079771c679d9be736607d0c213a26a9dd667b2e0b3a33ab8e97fb"
+      },
+      {
+        "state_id": "05-wall",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/05-wall-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/05-wall-05-wall-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/05-wall-05-wall-assembled.svg",
+        "sha256": "59481e5d509a0b2d4aeadbd5267de068fe027c89b0eba6df15e6867cc71506f8"
+      },
+      {
+        "state_id": "05-wall",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-05-wall.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/05-wall-lesson-05-wall.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/05-wall-lesson-05-wall.gif",
+        "sha256": "12cc27a80e37a9d31ac1d05f90f345cbc8b5c8918c0ef1e32f15037510337959"
+      },
+      {
+        "state_id": "06-footprints",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/06-footprints-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "sha256": "9a52705def3492c04c1494757462490063c140482b691e3de4984497e3a2ec95"
+      },
+      {
+        "state_id": "06-footprints",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-06-footprints.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/06-footprints-lesson-06-footprints.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/06-footprints-lesson-06-footprints.gif",
+        "sha256": "5f737f3867d90bc63aa27faf2030eeed6509ec885c0cf5b6564639f1646bb54a"
+      },
+      {
+        "state_id": "07-shadow",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/07-shadow-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "sha256": "2f8c76e6dd6e9ddba30bda904d16db3fb9d09a540a6321e8bed7b827e9dfeef4"
+      },
+      {
+        "state_id": "07-shadow",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-07-shadow.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/07-shadow-lesson-07-shadow.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/07-shadow-lesson-07-shadow.gif",
+        "sha256": "913561dda73b93ebf390b425e9f4708a163a6edb5b847e5b2f6e7973a037c431"
+      },
+      {
+        "state_id": "08-portrait1",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-08-portrait1.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/08-portrait1-lesson-08-portrait1.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/08-portrait1-lesson-08-portrait1.gif",
+        "sha256": "8e2459811ba238ad5df6e896e1ed0942b2e80b24211fea27e8d3243cf5292150"
+      },
+      {
+        "state_id": "09-portrait2",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-09-portrait2.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/09-portrait2-lesson-corrected-09-portrait2.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/09-portrait2-lesson-corrected-09-portrait2.gif",
+        "sha256": "574943c7bbdf5a5c2fb377f2614de9f9d4e0e5714b314bc3e13b0421555fd012"
+      },
+      {
+        "state_id": "10-portrait3",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-10-portrait3.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/10-portrait3-lesson-corrected-10-portrait3.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/10-portrait3-lesson-corrected-10-portrait3.gif",
+        "sha256": "251a76fe3f2ab5d7af5deeb48b0fd8ba5faa3f7ee5c926ddaa2c94862b5c67d7"
+      },
+      {
+        "state_id": "11-portrait4",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-11-portrait4.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/11-portrait4-lesson-corrected-11-portrait4.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/11-portrait4-lesson-corrected-11-portrait4.gif",
+        "sha256": "f928a302b072210e9e7757176972dff5a5523b725f71b1bef30e8d0656bdd544"
+      },
+      {
+        "state_id": "12-mural-mix",
+        "kind": "menu",
+        "canonical_path": "assets/instructions/human-review-v2/12-mural-mix-menu.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/menu/12-mural-mix-12-mural-mix-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/menu/12-mural-mix-12-mural-mix-menu.svg",
+        "sha256": "7bf9b60babfc7668a335cd3478adb008cae19866ea30636e6e61939c14b39a45"
+      },
+      {
+        "state_id": "12-mural-mix",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/12-mural-mix-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/12-mural-mix-12-mural-mix-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/12-mural-mix-12-mural-mix-assembled.svg",
+        "sha256": "de1bd0ce37fe1b0a1ba44461b68d816919f206cd48fe1ddda111f8f57b2ec7f3"
+      },
+      {
+        "state_id": "12-mural-mix",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-12-mural-mix.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/12-mural-mix-lesson-12-mural-mix.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/12-mural-mix-lesson-12-mural-mix.gif",
+        "sha256": "3ba77f91e038d4b0aaacccadf713075892412a54b3a544496c8f7f404e9b997b"
+      },
+      {
+        "state_id": "13-mural-reveal",
+        "kind": "menu",
+        "canonical_path": "assets/instructions/human-review-v2/13-mural-reveal-menu.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/menu/13-mural-reveal-13-mural-reveal-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/menu/13-mural-reveal-13-mural-reveal-menu.svg",
+        "sha256": "fd27862ed814f50dd54ae4aa3d9d222908c0730bd6e60a34aa9a6f310b92063c"
+      },
+      {
+        "state_id": "13-mural-reveal",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/13-mural-reveal-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/13-mural-reveal-13-mural-reveal-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/13-mural-reveal-13-mural-reveal-assembled.svg",
+        "sha256": "d069a12eb3cff99ef2eb56bc63930c703f5ffdc2eafea5734e062938b85bb0f0"
+      },
+      {
+        "state_id": "13-mural-reveal",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-13-mural-reveal.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/13-mural-reveal-lesson-corrected-13-mural-reveal.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/13-mural-reveal-lesson-corrected-13-mural-reveal.gif",
+        "sha256": "1d759570217eaba6385c38c8d87523c6f4ecbd46fa510e02d8a86ebbccac5441"
+      },
+      {
+        "state_id": "14-stones",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-14-stones.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/14-stones-lesson-14-stones.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/14-stones-lesson-14-stones.gif",
+        "sha256": "c38a82d27943c5630f698df8068c19346cb1a192d42635dd179467bb01983a1f"
+      },
+      {
+        "state_id": "15-telescope",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-15-telescope.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/15-telescope-lesson-15-telescope.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/15-telescope-lesson-15-telescope.gif",
+        "sha256": "0378ed85f3e133e017dac5d7b0ee20dc539b97fb3684e9fa90d88a833655c34f"
+      },
+      {
+        "state_id": "16-thermal",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/16-thermal-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/16-thermal-16-thermal-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/16-thermal-16-thermal-assembled.svg",
+        "sha256": "d4214489f2deed2a136fb51ad26c63e2907c3e48f9634f5c2b40def6f1310c35"
+      },
+      {
+        "state_id": "16-thermal",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-16-thermal.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/16-thermal-lesson-16-thermal.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/16-thermal-lesson-16-thermal.gif",
+        "sha256": "cbec57a30f9e199cd7d1e90d1b72e75800b57c66553c5707e1a8467c6924374f"
+      },
+      {
+        "state_id": "17-sample",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-17-sample.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/17-sample-lesson-17-sample.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/17-sample-lesson-17-sample.gif",
+        "sha256": "452226a86e3dfd1afe4557d7c5b4c4edbc31fd5993acd7656da3e0eed1184884"
+      },
+      {
+        "state_id": "18-titration",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-18-titration.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/18-titration-lesson-18-titration.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/18-titration-lesson-18-titration.gif",
+        "sha256": "1f16664e1ada3269387009b18e527d3388a856fa95067a122c1dcc79d2cf3cc4"
+      },
+      {
+        "state_id": "19-balance",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-19-balance.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/19-balance-lesson-19-balance.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/19-balance-lesson-19-balance.gif",
+        "sha256": "fffe5e7b502df96eb7a28d096d880403dd8c01a50dbf746b8bfd8b695d6a1244"
+      },
+      {
+        "state_id": "20-wires",
+        "kind": "menu",
+        "canonical_path": "assets/instructions/human-review-v2/20-wires-menu.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/menu/20-wires-20-wires-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/menu/20-wires-20-wires-menu.svg",
+        "sha256": "aecb9eb7044e88f0f8014e001c7bcb9efc3fffd67d79cdf8da4ea6c2e64a68e0"
+      },
+      {
+        "state_id": "20-wires",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2/20-wires-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/20-wires-20-wires-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/20-wires-20-wires-assembled.svg",
+        "sha256": "ca173d67dd78dffeaf775da8b1b06a3f0210ef0e757ddd7eef9da0d6ba5f30ff"
+      },
+      {
+        "state_id": "20-wires",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-20-wires.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/20-wires-lesson-20-wires.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/20-wires-lesson-20-wires.gif",
+        "sha256": "2cf77ecf1afea3fa36e4b9ce7ddab8395873a8aecb76e0b01eb8992279675ba6"
+      },
+      {
+        "state_id": "21-pruner",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-21-pruner.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/21-pruner-lesson-21-pruner.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/21-pruner-lesson-21-pruner.gif",
+        "sha256": "53eb364de4d35f8ccf9ddcb3f66abc1b1b91078fc6129268c86ffdf2e9783cfd"
+      },
+      {
+        "state_id": "22-vessel",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-22-vessel.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/22-vessel-lesson-22-vessel.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/22-vessel-lesson-22-vessel.gif",
+        "sha256": "cf8ce612aa16f1d115345c1ce68eff47ddd2456170202881b46065c40220efc6"
+      },
+      {
+        "state_id": "23-receiver",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-23-receiver.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/23-receiver-lesson-23-receiver.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/23-receiver-lesson-23-receiver.gif",
+        "sha256": "419e0250c6d048ab3f54fdbc3fcd46ea91766e725d9d068b538c152f106c02ad"
+      },
+      {
+        "state_id": "24-interference",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-24-interference.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/24-interference-lesson-24-interference.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/24-interference-lesson-24-interference.gif",
+        "sha256": "daf3d17bd3051a93d124ab47310444c80c8b419f2d27be295811ceb81126297a"
+      },
+      {
+        "state_id": "25-printer",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-25-printer.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/25-printer-lesson-25-printer.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/25-printer-lesson-25-printer.gif",
+        "sha256": "c7707c92b8a57d6698085104278ebe59f9b16c5a20039dea372b1c516d79c4f5"
+      },
+      {
+        "state_id": "26-tube",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-26-tube.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/26-tube-lesson-26-tube.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/26-tube-lesson-26-tube.gif",
+        "sha256": "d695852bbdc2f536b370e377955f0aef4c87c2c0121f1128cb227c0c611ca649"
+      },
+      {
+        "state_id": "27-pressure-stable",
+        "kind": "menu",
+        "canonical_path": "assets/instructions/human-review-v2/27-pressure-stable-menu.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/menu/27-pressure-stable-27-pressure-stable-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/menu/27-pressure-stable-27-pressure-stable-menu.svg",
+        "sha256": "604aeabe81b7ba92e8fec2862df55d0834fabcc65f3a6aee0fb40b809bf46f53"
+      },
+      {
+        "state_id": "27-pressure-stable",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2-repair-01/27-pressure-stable-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "sha256": "c9e567109198f2a03d752249dec02d9057041dcce3e0d55665bd7c3ab443491e"
+      },
+      {
+        "state_id": "27-pressure-stable",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-27-pressure-stable.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/27-pressure-stable-lesson-corrected-27-pressure-stable.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/27-pressure-stable-lesson-corrected-27-pressure-stable.gif",
+        "sha256": "5a4628f83667b896176e78c34723a7a8c6cecaa61dbaa6207dbfb0c742d71eec"
+      },
+      {
+        "state_id": "28-pressure-release",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-28-pressure-release.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/28-pressure-release-lesson-corrected-28-pressure-release.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/28-pressure-release-lesson-corrected-28-pressure-release.gif",
+        "sha256": "a0f806814dbe40b50807e2e9de01e7184d5324a912cb74b19f9bbbc6711fde63"
+      },
+      {
+        "state_id": "29-pitch-adjust",
+        "kind": "menu",
+        "canonical_path": "assets/instructions/human-review-v2/29-pitch-adjust-menu.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/menu/29-pitch-adjust-29-pitch-adjust-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/menu/29-pitch-adjust-29-pitch-adjust-menu.svg",
+        "sha256": "e507b358e7b4537af8ccd5f3f8960fee826aa6ffe1f5afdc0e559dadd2d085b0"
+      },
+      {
+        "state_id": "29-pitch-adjust",
+        "kind": "assembled",
+        "canonical_path": "assets/instructions/human-review-v2-repair-01/29-pitch-adjust-assembled.svg",
+        "publication_path": "assets/6425df7618b6c19a/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "sha256": "da450847672fa93859ed4b028a3cccadd324ec6ff23ad53f29e6443f548eca83"
+      },
+      {
+        "state_id": "29-pitch-adjust",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-29-pitch-adjust.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/29-pitch-adjust-lesson-29-pitch-adjust.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/29-pitch-adjust-lesson-29-pitch-adjust.gif",
+        "sha256": "a7cdd5e2c78aedcae0d7184be1e59fbb96c52a4111113f34409369d2bd4422b0"
+      },
+      {
+        "state_id": "30-pitch-feedback",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-corrected-30-pitch-feedback.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/30-pitch-feedback-lesson-corrected-30-pitch-feedback.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/30-pitch-feedback-lesson-corrected-30-pitch-feedback.gif",
+        "sha256": "7a9161dfc9586f2133fcd1a3d865bd20b121a46bd8f87988bcd9d2e9f5c88f03"
+      },
+      {
+        "state_id": "31-sensors",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-31-sensors.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/31-sensors-lesson-31-sensors.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/31-sensors-lesson-31-sensors.gif",
+        "sha256": "53e69ce3b057e3e8238fad0c1a2c0643359af2704ca5dec126e7435af09515e3"
+      },
+      {
+        "state_id": "32-shutters",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-32-shutters.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/32-shutters-lesson-32-shutters.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/32-shutters-lesson-32-shutters.gif",
+        "sha256": "f6d8b6ecedecb177bffb9ace028c475ad835a15e51fe0f71be6a68e1d5ca0466"
+      },
+      {
+        "state_id": "33-constellation",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-33-constellation.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/33-constellation-lesson-33-constellation.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/33-constellation-lesson-33-constellation.gif",
+        "sha256": "45c71af370e20e90f4b6747e7e0a3aa7d549be3dd623f2273e92a9da06ca311d"
+      },
+      {
+        "state_id": "34-rock-path",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-34-rock-path.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/34-rock-path-lesson-34-rock-path.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/34-rock-path-lesson-34-rock-path.gif",
+        "sha256": "52474a3c6428566a3ec4c25f1fd58232a24d9ffba249b151f18f94266992c02c"
+      },
+      {
+        "state_id": "35-synchronize",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-35-synchronize.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/35-synchronize-lesson-35-synchronize.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/35-synchronize-lesson-35-synchronize.gif",
+        "sha256": "610a0ad9d0131a2c735caeb541e71644d74109d4f38849ab59c02fc6ba24b293"
+      },
+      {
+        "state_id": "36-final-lever",
+        "kind": "gameplay",
+        "canonical_path": "assets/demos/lesson-36-final-lever.gif",
+        "publication_path": "assets/6425df7618b6c19a/media/gameplay/36-final-lever-lesson-36-final-lever.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/6425df7618b6c19a/media/gameplay/36-final-lever-lesson-36-final-lever.gif",
+        "sha256": "61f1158ad49e52263d492a02b18285c68d68ad56b34e3dc613686ba8e7ea150b"
+      }
+    ]
+  },
+  "notices": {
+    "makecode_arcade_csintro": "MIT notice retained in LICENSES/MakeCode-Arcade-CSIntro-MIT.txt",
+    "mobile_csp": "CC BY-NC-SA 4.0 attribution and derived-precedent notice retained in SOURCE_NOTICES.md",
+    "raw_source_corpus_included": false
+  },
+  "output_sha256": {
+    ".gitattributes": "366f1101c91ba57e54e17b01b25a30cf06c2c563bb25e6c1b97afce09de36869",
+    "assets/6425df7618b6c19a/media/assembled/01-crank-01-crank-assembled.svg": "1d4c9feb6576ce1609fd645a6f76146349056705eb185c2093bf97baef72f3d7",
+    "assets/6425df7618b6c19a/media/assembled/02-generator-02-generator-assembled.svg": "ad7f0be548c70bb15f5832682227d7e154f1c0e05da4b1ad0e36f60467689831",
+    "assets/6425df7618b6c19a/media/assembled/03-case-03-case-assembled.svg": "fced953fb76d5ab619f13edaa4ca641a9cf7352da6800c2b2679157701320ba3",
+    "assets/6425df7618b6c19a/media/assembled/04-fire-04-fire-assembled.svg": "c041d312c06a35ce4c913e5efb847072c5e642b377a408a80ed7d39f15bfba3b",
+    "assets/6425df7618b6c19a/media/assembled/05-wall-05-wall-assembled.svg": "59481e5d509a0b2d4aeadbd5267de068fe027c89b0eba6df15e6867cc71506f8",
+    "assets/6425df7618b6c19a/media/assembled/06-footprints-06-footprints-assembled.svg": "9a52705def3492c04c1494757462490063c140482b691e3de4984497e3a2ec95",
+    "assets/6425df7618b6c19a/media/assembled/07-shadow-07-shadow-assembled.svg": "2f8c76e6dd6e9ddba30bda904d16db3fb9d09a540a6321e8bed7b827e9dfeef4",
+    "assets/6425df7618b6c19a/media/assembled/12-mural-mix-12-mural-mix-assembled.svg": "de1bd0ce37fe1b0a1ba44461b68d816919f206cd48fe1ddda111f8f57b2ec7f3",
+    "assets/6425df7618b6c19a/media/assembled/13-mural-reveal-13-mural-reveal-assembled.svg": "d069a12eb3cff99ef2eb56bc63930c703f5ffdc2eafea5734e062938b85bb0f0",
+    "assets/6425df7618b6c19a/media/assembled/16-thermal-16-thermal-assembled.svg": "d4214489f2deed2a136fb51ad26c63e2907c3e48f9634f5c2b40def6f1310c35",
+    "assets/6425df7618b6c19a/media/assembled/20-wires-20-wires-assembled.svg": "ca173d67dd78dffeaf775da8b1b06a3f0210ef0e757ddd7eef9da0d6ba5f30ff",
+    "assets/6425df7618b6c19a/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg": "c9e567109198f2a03d752249dec02d9057041dcce3e0d55665bd7c3ab443491e",
+    "assets/6425df7618b6c19a/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg": "da450847672fa93859ed4b028a3cccadd324ec6ff23ad53f29e6443f548eca83",
+    "assets/6425df7618b6c19a/media/gameplay/01-crank-lesson-01-crank.gif": "1a5fac3304e716f612f09589a9730c7ad7333fa1759c4856f53de4198b46df26",
+    "assets/6425df7618b6c19a/media/gameplay/02-generator-lesson-02-generator.gif": "09ed87175b4796c8dd061c7fe613ec7137f2167f7f85b4bac9c306c99bdaf2bf",
+    "assets/6425df7618b6c19a/media/gameplay/03-case-lesson-03-case.gif": "04c3a120963e923bcf15f3d58763f9a06921750b80d63a235ba37f1b6f41209d",
+    "assets/6425df7618b6c19a/media/gameplay/04-fire-lesson-04-fire.gif": "15061aab7ec079771c679d9be736607d0c213a26a9dd667b2e0b3a33ab8e97fb",
+    "assets/6425df7618b6c19a/media/gameplay/05-wall-lesson-05-wall.gif": "12cc27a80e37a9d31ac1d05f90f345cbc8b5c8918c0ef1e32f15037510337959",
+    "assets/6425df7618b6c19a/media/gameplay/06-footprints-lesson-06-footprints.gif": "5f737f3867d90bc63aa27faf2030eeed6509ec885c0cf5b6564639f1646bb54a",
+    "assets/6425df7618b6c19a/media/gameplay/07-shadow-lesson-07-shadow.gif": "913561dda73b93ebf390b425e9f4708a163a6edb5b847e5b2f6e7973a037c431",
+    "assets/6425df7618b6c19a/media/gameplay/08-portrait1-lesson-08-portrait1.gif": "8e2459811ba238ad5df6e896e1ed0942b2e80b24211fea27e8d3243cf5292150",
+    "assets/6425df7618b6c19a/media/gameplay/09-portrait2-lesson-corrected-09-portrait2.gif": "574943c7bbdf5a5c2fb377f2614de9f9d4e0e5714b314bc3e13b0421555fd012",
+    "assets/6425df7618b6c19a/media/gameplay/10-portrait3-lesson-corrected-10-portrait3.gif": "251a76fe3f2ab5d7af5deeb48b0fd8ba5faa3f7ee5c926ddaa2c94862b5c67d7",
+    "assets/6425df7618b6c19a/media/gameplay/11-portrait4-lesson-corrected-11-portrait4.gif": "f928a302b072210e9e7757176972dff5a5523b725f71b1bef30e8d0656bdd544",
+    "assets/6425df7618b6c19a/media/gameplay/12-mural-mix-lesson-12-mural-mix.gif": "3ba77f91e038d4b0aaacccadf713075892412a54b3a544496c8f7f404e9b997b",
+    "assets/6425df7618b6c19a/media/gameplay/13-mural-reveal-lesson-corrected-13-mural-reveal.gif": "1d759570217eaba6385c38c8d87523c6f4ecbd46fa510e02d8a86ebbccac5441",
+    "assets/6425df7618b6c19a/media/gameplay/14-stones-lesson-14-stones.gif": "c38a82d27943c5630f698df8068c19346cb1a192d42635dd179467bb01983a1f",
+    "assets/6425df7618b6c19a/media/gameplay/15-telescope-lesson-15-telescope.gif": "0378ed85f3e133e017dac5d7b0ee20dc539b97fb3684e9fa90d88a833655c34f",
+    "assets/6425df7618b6c19a/media/gameplay/16-thermal-lesson-16-thermal.gif": "cbec57a30f9e199cd7d1e90d1b72e75800b57c66553c5707e1a8467c6924374f",
+    "assets/6425df7618b6c19a/media/gameplay/17-sample-lesson-17-sample.gif": "452226a86e3dfd1afe4557d7c5b4c4edbc31fd5993acd7656da3e0eed1184884",
+    "assets/6425df7618b6c19a/media/gameplay/18-titration-lesson-18-titration.gif": "1f16664e1ada3269387009b18e527d3388a856fa95067a122c1dcc79d2cf3cc4",
+    "assets/6425df7618b6c19a/media/gameplay/19-balance-lesson-19-balance.gif": "fffe5e7b502df96eb7a28d096d880403dd8c01a50dbf746b8bfd8b695d6a1244",
+    "assets/6425df7618b6c19a/media/gameplay/20-wires-lesson-20-wires.gif": "2cf77ecf1afea3fa36e4b9ce7ddab8395873a8aecb76e0b01eb8992279675ba6",
+    "assets/6425df7618b6c19a/media/gameplay/21-pruner-lesson-21-pruner.gif": "53eb364de4d35f8ccf9ddcb3f66abc1b1b91078fc6129268c86ffdf2e9783cfd",
+    "assets/6425df7618b6c19a/media/gameplay/22-vessel-lesson-22-vessel.gif": "cf8ce612aa16f1d115345c1ce68eff47ddd2456170202881b46065c40220efc6",
+    "assets/6425df7618b6c19a/media/gameplay/23-receiver-lesson-23-receiver.gif": "419e0250c6d048ab3f54fdbc3fcd46ea91766e725d9d068b538c152f106c02ad",
+    "assets/6425df7618b6c19a/media/gameplay/24-interference-lesson-24-interference.gif": "daf3d17bd3051a93d124ab47310444c80c8b419f2d27be295811ceb81126297a",
+    "assets/6425df7618b6c19a/media/gameplay/25-printer-lesson-25-printer.gif": "c7707c92b8a57d6698085104278ebe59f9b16c5a20039dea372b1c516d79c4f5",
+    "assets/6425df7618b6c19a/media/gameplay/26-tube-lesson-26-tube.gif": "d695852bbdc2f536b370e377955f0aef4c87c2c0121f1128cb227c0c611ca649",
+    "assets/6425df7618b6c19a/media/gameplay/27-pressure-stable-lesson-corrected-27-pressure-stable.gif": "5a4628f83667b896176e78c34723a7a8c6cecaa61dbaa6207dbfb0c742d71eec",
+    "assets/6425df7618b6c19a/media/gameplay/28-pressure-release-lesson-corrected-28-pressure-release.gif": "a0f806814dbe40b50807e2e9de01e7184d5324a912cb74b19f9bbbc6711fde63",
+    "assets/6425df7618b6c19a/media/gameplay/29-pitch-adjust-lesson-29-pitch-adjust.gif": "a7cdd5e2c78aedcae0d7184be1e59fbb96c52a4111113f34409369d2bd4422b0",
+    "assets/6425df7618b6c19a/media/gameplay/30-pitch-feedback-lesson-corrected-30-pitch-feedback.gif": "7a9161dfc9586f2133fcd1a3d865bd20b121a46bd8f87988bcd9d2e9f5c88f03",
+    "assets/6425df7618b6c19a/media/gameplay/31-sensors-lesson-31-sensors.gif": "53e69ce3b057e3e8238fad0c1a2c0643359af2704ca5dec126e7435af09515e3",
+    "assets/6425df7618b6c19a/media/gameplay/32-shutters-lesson-32-shutters.gif": "f6d8b6ecedecb177bffb9ace028c475ad835a15e51fe0f71be6a68e1d5ca0466",
+    "assets/6425df7618b6c19a/media/gameplay/33-constellation-lesson-33-constellation.gif": "45c71af370e20e90f4b6747e7e0a3aa7d549be3dd623f2273e92a9da06ca311d",
+    "assets/6425df7618b6c19a/media/gameplay/34-rock-path-lesson-34-rock-path.gif": "52474a3c6428566a3ec4c25f1fd58232a24d9ffba249b151f18f94266992c02c",
+    "assets/6425df7618b6c19a/media/gameplay/35-synchronize-lesson-35-synchronize.gif": "610a0ad9d0131a2c735caeb541e71644d74109d4f38849ab59c02fc6ba24b293",
+    "assets/6425df7618b6c19a/media/gameplay/36-final-lever-lesson-36-final-lever.gif": "61f1158ad49e52263d492a02b18285c68d68ad56b34e3dc613686ba8e7ea150b",
+    "assets/6425df7618b6c19a/media/menu/01-crank-01-crank-menu.svg": "e0445acabe6712c2f1443a7f24a8531b36fa33ddb783b200c980eda7c7b57140",
+    "assets/6425df7618b6c19a/media/menu/12-mural-mix-12-mural-mix-menu.svg": "7bf9b60babfc7668a335cd3478adb008cae19866ea30636e6e61939c14b39a45",
+    "assets/6425df7618b6c19a/media/menu/13-mural-reveal-13-mural-reveal-menu.svg": "fd27862ed814f50dd54ae4aa3d9d222908c0730bd6e60a34aa9a6f310b92063c",
+    "assets/6425df7618b6c19a/media/menu/20-wires-20-wires-menu.svg": "aecb9eb7044e88f0f8014e001c7bcb9efc3fffd67d79cdf8da4ea6c2e64a68e0",
+    "assets/6425df7618b6c19a/media/menu/27-pressure-stable-27-pressure-stable-menu.svg": "604aeabe81b7ba92e8fec2862df55d0834fabcc65f3a6aee0fb40b809bf46f53",
+    "assets/6425df7618b6c19a/media/menu/29-pitch-adjust-29-pitch-adjust-menu.svg": "e507b358e7b4537af8ccd5f3f8960fee826aa6ffe1f5afdc0e559dadd2d085b0",
+    "LICENSES/MakeCode-Arcade-CSIntro-MIT.txt": "c544adf8f0d43453d9fdf6c11da19605d12d89806a7870653169b8cc97f5bb53",
+    "main.ts": "5534ebe56fa6882ad5d7848ce18a701e38513aafe9ded45cdaadeec2dab6c98a",
+    "PACKAGE_STATUS.md": "ecd5acacd5869aa4283bd25d775d1d2105e12e79c1d0e51b52eb42cc68cb8039",
+    "pxt.json": "d602d8de57344ab566ea4127203190ad1856f53f53711b7e38906c097aaa3600",
+    "README.md": "d79bd1e64a579ed72910a35dd980b8ce0c21438512a8b9dd5d7f451e9e5d8c53",
+    "SOURCE_NOTICES.md": "c59c7e41e9450c71e31d19771d24c26c702b5a238a3dd2b2def328eb4e998bab"
+  },
+  "claim_boundary": "Deterministic local packaging for remote owner review. No network publication, independent learner, accessibility, classroom, or student-readiness claim."
+}

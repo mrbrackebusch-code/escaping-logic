@@ -2,11 +2,11 @@
 
 ## Project-authored material
 
-Escaping Logic's observatory fiction, TypeScript world implementation, original code-native pixel art, lesson media, and the remaining tutorial wording are this project's authored material. The package contains no imported prototype, third-party artwork, audio, or MakeCode Share payload.
+Escaping Logic's room descriptions, TypeScript world implementation, original code-native pixel art, lesson media, and the remaining tutorial wording are this project's authored material. The package contains no imported prototype, third-party artwork, audio, or MakeCode Share payload.
 
 ## MakeCode Arcade CS Intro adaptations
 
-Four short explanations of native Logic blocks are minimal adaptations of Microsoft MakeCode Arcade CS Intro material under the MIT License. They occur at the first and (step 12), not (steps 13 and 24), else if (step 16), and or (step 20) introductions. The adapted examples use this game's own observatory conditions. The source notice is retained in [LICENSES/MakeCode-Arcade-CSIntro-MIT.txt](LICENSES/MakeCode-Arcade-CSIntro-MIT.txt).
+Short explanations of native Logic blocks are minimal adaptations of Microsoft MakeCode Arcade CS Intro material under the MIT License. They introduce if/else, and, not, else if, and or through this game's own mechanism conditions. The source notice is retained in [LICENSES/MakeCode-Arcade-CSIntro-MIT.txt](LICENSES/MakeCode-Arcade-CSIntro-MIT.txt).
 
 Source locations: [if/else](https://github.com/microsoft/pxt-arcade/tree/master/docs/courses/csintro2/logic/if-else.md) and [Booleans](https://github.com/microsoft/pxt-arcade/tree/master/docs/courses/csintro2/logic/booleans.md). Microsoft and the original authors do not endorse this project.
 

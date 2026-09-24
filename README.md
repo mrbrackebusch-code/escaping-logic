@@ -4,25 +4,25 @@
 
 ## Welcome to the escape rooms
 
-These five connected escape rooms react only to rules you write. Walk with the arrow keys. Near a lit mechanism, press **A** once to focus it. While focused, **left/right** adjust its visible setting and **up/down** choose a part of a multipart apparatus. Press **A** again to operate the focused mechanism; press **B** to return to walking. In MakeCode Arcade, **Z** or **Space** is **A**, and **X** is **B**. Use the simulator's fullscreen button when testing so you can see the room clearly. A solved mechanism stays in the room, so you can return and test a changed rule locally. Progress is saved in this project across simulator restarts and code edits. Keep using this same project, and follow the next gold light instead of replaying earlier rooms.
+These five connected escape rooms react only to rules you write. The room prefix in a dropdown, from `(A)` through `(E)`, tells you where that mechanism belongs. Walk with the arrow keys. Near an available mechanism, press **A** once to operate its installed rule while the arrows keep walking. Tap **B** nearby to cycle that mechanism's physical setting; hold **B** for about half a second to cycle a multipart mechanism's part. The room selects the next part when you approach. In MakeCode Arcade, **Z** or **Space** is **A**, and **X** is **B**. Use the simulator's fullscreen button when testing so you can see the room clearly. A solved mechanism stays in the room, so you can return and test a changed rule locally. Progress is saved in this project across simulator restarts and code edits. Keep using this same project, and follow the next gold light instead of replaying earlier rooms.
 
 Each construction begins with ``||escapeLab(noclick):when [mechanism] is operated||``. The event supplies the moment; your native ``||logic(noclick):if then else||`` decides the response. The room does not supply a missing decision. A dim object is a future possibility, and the lit object is the one whose next reaction matters now.
 
 ## 1. Clear the fire channel
 
-The fixed fire spout blocks the wall route. First build ``||escapeLab(noclick):when [fire spout] is operated||`` with ``||logic(noclick):if then else||``. Test ``||escapeLab(noclick):is [WaterFlowing]||``; make `FireSteam` happen when it is true and `FireFlare` otherwise. Then focus the fire spout and press **A** again to operate it. Because water is not flowing yet, `FireFlare` makes the explorer scurry briefly and safely. You need both branches because you will return after water reaches this spout; that alternate reaction lights the sealed case reservoir next.
+The fixed fire spout blocks the wall route. First build ``||escapeLab(noclick):when [(A) fire spout] is operated||`` with ``||logic(noclick):if then else||``. Test ``||escapeLab(noclick):is [(A) WaterFlowing]||``; make `(A) FireSteam` happen when it is true and `(A) FireFlare` otherwise. Then press **A** near the fire spout to operate it. Because water is not flowing yet, `(A) FireFlare` briefly catches the explorer's coat while you keep moving. You need both branches because you will return after water reaches this spout; that alternate reaction lights the sealed case reservoir next.
 
 ### Find the native Blocks
 
-![Find the native Blocks for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/01-fire-01-fire-menu.svg)
+![Find the native Blocks for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/01-fire-01-fire-menu.svg)
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/01-fire-01-fire-assembled.svg)
+![Build this rule for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/01-fire-01-fire-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/01-fire-connected-v2-01-fire.gif)
+![What the mechanism does for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/01-fire-connected-v2-interaction-v3-01-01-fire.gif)
 
 #### ~ tutorialhint
 
@@ -35,15 +35,15 @@ escapeLab.onAttempt(EscapeBeat.Fire, function () {
 
 ## 2. Open the reservoir case
 
-The case button cannot release its fixed reservoir until power arrives. In ``||escapeLab(noclick):when [power case] is operated||``, test ``||escapeLab(noclick):is [PowerAvailable]||``. Make `CaseRetract` happen for true and `CaseRattle` happen for else, then operate the unpowered case once to see its restrained rattle. The generator handle is now the uncertain next light. Your rule is already waiting for the later return that makes the case open.
+The case button cannot release its fixed reservoir until power arrives. In ``||escapeLab(noclick):when [(A) power case] is operated||``, test ``||escapeLab(noclick):is [(A) PowerAvailable]||``. Make `(A) CaseRetract` happen for true and `(A) CaseRattle` happen for else, then operate the unpowered case once to see its restrained rattle. The generator handle is now the uncertain next light. Your rule is already waiting for the later return that makes the case open.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/02-case-02-case-assembled.svg)
+![Build this rule for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/02-case-02-case-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/02-case-connected-v2-02-case.gif)
+![What the mechanism does for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/02-case-connected-v2-interaction-v3-01-02-case.gif)
 
 #### ~ tutorialhint
 
@@ -56,15 +56,15 @@ escapeLab.onAttempt(EscapeBeat.Case, function () {
 
 ## 3. Start the generator
 
-The generator's handle turns only with a crank fitted to its rail. In ``||escapeLab(noclick):when [generator] is operated||``, test ``||escapeLab(noclick):is [CrankFitted]||``. Make `GeneratorSpin` happen when true and `GeneratorSputter` otherwise. Operate it once before the crank is fitted: the rotor stalls, then the magnet rail at the upper left becomes the next goal. This is another ordinary if/else rule whose successful branch will matter when you come back.
+The generator's handle turns only with a crank fitted to its rail. In ``||escapeLab(noclick):when [(A) generator] is operated||``, test ``||escapeLab(noclick):is [(A) CrankFitted]||``. Make `(A) GeneratorSpin` happen when true and `(A) GeneratorSputter` otherwise. Operate it once before the crank is fitted: the rotor stalls, then the magnet rail at the upper left becomes the next goal. This is another ordinary if/else rule whose successful branch will matter when you come back.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/03-generator-03-generator-assembled.svg)
+![Build this rule for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/03-generator-03-generator-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/03-generator-connected-v2-03-generator.gif)
+![What the mechanism does for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/03-generator-connected-v2-interaction-v3-01-03-generator.gif)
 
 #### ~ tutorialhint
 
@@ -77,15 +77,15 @@ escapeLab.onAttempt(EscapeBeat.Generator, function () {
 
 ## 4. Swing the mounted magnet
 
-The magnet is mounted on a rail; it is not something to collect. In ``||escapeLab(noclick):when [magnet rail] is operated||``, test ``||escapeLab(noclick):is [MagnetTouchingCrank]||``. Make `CrankPull` happen when true and `CrankTwitch` otherwise. Focus the magnet rail, use **left/right** to swing the magnet near the crank, then press **A** to operate it. Choose the near position first: the crank travels along the rail to the generator. Return to the generator, then the case, then the fire spout. Your three earlier rules now spin the generator, open the reservoir, and turn the flame to steam.
+The magnet is mounted on a rail; it is not something to collect. In ``||escapeLab(noclick):when [(A) magnet rail] is operated||``, test ``||escapeLab(noclick):is [(A) MagnetTouchingCrank]||``. Make `(A) CrankPull` happen when true and `(A) CrankTwitch` otherwise. Near the magnet rail, tap **B** until the magnet swings near the crank, then press **A** to operate it. Choose the near position first: the crank travels along the rail to the generator. Return to the generator, then the case, then the fire spout. Your three earlier rules now spin the generator, open the reservoir, and turn the flame to steam.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/04-crank-04-crank-assembled.svg)
+![Build this rule for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/04-crank-04-crank-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/04-crank-connected-v2-04-crank.gif)
+![What the mechanism does for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/04-crank-connected-v2-interaction-v3-01-04-crank.gif)
 
 #### ~ tutorialhint
 
@@ -98,19 +98,19 @@ escapeLab.onAttempt(EscapeBeat.Crank, function () {
 
 ## 5. Raise the wall holds
 
-With the fire channel clear, the wall lever recovers the fixed holds. In ``||escapeLab(noclick):when [climb wall] is operated||``, test ``||escapeLab(noclick):value of [InstalledHolds]||`` = `4`; make `WallClimb` happen when it passes and `WallFlash` otherwise. Choose `4 HOLDS`, then operate the lever after the steam clears. The holds rise into a climbable route, and the lit footprints at the exit tell you what to test next.
+With the fire channel clear, the wall lever recovers the fixed holds. In ``||escapeLab(noclick):when [(A) climb wall] is operated||``, test ``||escapeLab(noclick):value of [(A) InstalledHolds]||`` = `4`; make `(A) WallClimb` happen when it passes and `(A) WallFlash` otherwise. Choose `4 HOLDS`, then operate the lever after the steam clears. The holds rise into a climbable route, and the lit footprints at the exit tell you what to test next.
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/05-wall-05-wall-comparisons-menu.svg)
+![Find the native Blocks for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/05-wall-05-wall-comparisons-menu.svg)
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/05-wall-05-wall-assembled.svg)
+![Build this rule for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/05-wall-05-wall-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/05-wall-connected-v2-05-wall.gif)
+![What the mechanism does for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/05-wall-connected-v2-interaction-v3-01-05-wall.gif)
 
 #### ~ tutorialhint
 
@@ -123,15 +123,15 @@ escapeLab.onAttempt(EscapeBeat.Wall, function () {
 
 ## 6. Choose a safe footprint
 
-The three marked stones show `8`, `7`, and `6`; any value with `+ 3 ≤ 10` is safe. In ``||escapeLab(noclick):when [footprint stones] is operated||``, test ``||escapeLab(noclick):value of [StepValue]|| + 3 ≤ 10``. Make `FootprintKeep` for true and `FootprintDrop` for else. Choose `7` or `6` first—this is a choice puzzle, so it can work immediately. A safe footprint opens the real passage into Room 2 and lights its shadow screen.
+The three marked stones show `8`, `7`, and `6`; any value with `+ 3 ≤ 10` is safe. In ``||escapeLab(noclick):when [(A) footprint stones] is operated||``, test ``||escapeLab(noclick):value of [(A) StepValue]|| + 3 ≤ 10``. Make `(A) FootprintKeep` for true and `(A) FootprintDrop` for else. Choose `7` or `6` first—this is a choice puzzle, so it can work immediately. A safe footprint opens the real passage into Room B and lights its shadow screen.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/06-footprints-06-footprints-assembled.svg)
+![Build this rule for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/06-footprints-06-footprints-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/06-footprints-connected-v2-06-footprints.gif)
+![What the mechanism does for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/06-footprints-connected-v2-interaction-v3-01-06-footprints.gif)
 
 #### ~ tutorialhint
 
@@ -144,15 +144,15 @@ escapeLab.onAttempt(EscapeBeat.Footprints, function () {
 
 ## 7. Reveal the shadow route
 
-The shadow screen needs an illumination of `60`, but the beam is still weak. In ``||escapeLab(noclick):when [shadow screen] is operated||``, test ``||escapeLab(noclick):value of [Illumination]|| ≥ 60``. Make `ShadowReveal` when true and `ShadowHide` otherwise. Operate it once to see the dim screen remain closed; the telescope is now lit because it is the missing source of light.
+The shadow screen needs an illumination of `60`, but the beam is still weak. In ``||escapeLab(noclick):when [(B) shadow screen] is operated||``, test ``||escapeLab(noclick):value of [(B) Illumination]|| ≥ 60``. Make `(B) ShadowReveal` when true and `(B) ShadowHide` otherwise. Operate it once to see the dim screen remain closed; the telescope is now lit because it is the missing source of light.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/07-shadow-07-shadow-assembled.svg)
+![Build this rule for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/07-shadow-07-shadow-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/07-shadow-connected-v2-07-shadow.gif)
+![What the mechanism does for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/07-shadow-connected-v2-interaction-v3-01-07-shadow.gif)
 
 #### ~ tutorialhint
 
@@ -165,11 +165,11 @@ escapeLab.onAttempt(EscapeBeat.Shadow, function () {
 
 ## 8. Focus the telescope
 
-The telescope needs zoom `3`, though its lens has not yet seated. In ``||escapeLab(noclick):when [telescope] is operated||``, test ``||escapeLab(noclick):value of [Zoom]|| ≥ 3``. Make `TelescopeFocus` for true and `TelescopeBlur` otherwise. Its blurred beam points to the matching-stone socket. The stone is a physical choice you can solve on the first try.
+The telescope needs zoom `3`, though its lens has not yet seated. In ``||escapeLab(noclick):when [(B) telescope] is operated||``, test ``||escapeLab(noclick):value of [(B) Zoom]|| ≥ 3``. Make `(B) TelescopeFocus` for true and `(B) TelescopeBlur` otherwise. Its blurred beam points to the matching-stone socket. The stone is a physical choice you can solve on the first try.
 
 ### What the mechanism does
 
-![What the mechanism does for Telescope](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/08-telescope-connected-v2-08-telescope.gif)
+![What the mechanism does for Telescope](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/08-telescope-connected-v2-interaction-v3-01-08-telescope.gif)
 
 #### ~ tutorialhint
 
@@ -182,11 +182,11 @@ escapeLab.onAttempt(EscapeBeat.Telescope, function () {
 
 ## 9. Seat the matching lens stone
 
-Compare ``||escapeLab(noclick):value of [StoneColor]||`` with ``||escapeLab(noclick):value of [SocketColor]||``. In ``||escapeLab(noclick):when [stone sockets] is operated||``, make `StoneSnap` when they are equal and `StoneRepel` otherwise. Choose the matching stone: it seats as a lens, the telescope can now reach `3`, and its focused beam brings the shadow screen to `60`. Return to those two mechanisms; their existing rules reveal the first half of Room 2's exit.
+Compare ``||escapeLab(noclick):value of [(B) StoneColor]||`` with ``||escapeLab(noclick):value of [(B) SocketColor]||``. In ``||escapeLab(noclick):when [(B) stone sockets] is operated||``, make `(B) StoneSnap` when they are equal and `(B) StoneRepel` otherwise. Choose the matching stone: it seats as a lens, the telescope can now reach `3`, and its focused beam brings the shadow screen to `60`. Return to those two mechanisms; their existing rules reveal the first half of Room B's exit.
 
 ### What the mechanism does
 
-![What the mechanism does for Stones](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/09-stones-connected-v2-09-stones.gif)
+![What the mechanism does for Stones](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/09-stones-connected-v2-interaction-v3-01-09-stones.gif)
 
 #### ~ tutorialhint
 
@@ -199,19 +199,19 @@ escapeLab.onAttempt(EscapeBeat.Stones, function () {
 
 ## 10. Mix the mural lights
 
-The mural needs yellow and blue light, but its shutters have no power yet. In ``||escapeLab(noclick):when [mural colors] is operated||``, join ``||escapeLab(noclick):is [YellowOn]||`` and ``||escapeLab(noclick):is [BlueOn]||`` with ``||logic(noclick):and||``. Make `MuralBlend` when both pass and `MuralDim` otherwise. **And** needs both conditions, so its dim result points to the frozen portrait rails that will supply the light.
+The mural needs yellow and blue light, but its shutters have no power yet. In ``||escapeLab(noclick):when [(B) mural colors] is operated||``, join ``||escapeLab(noclick):is [(B) YellowOn]||`` and ``||escapeLab(noclick):is [(B) BlueOn]||`` with ``||logic(noclick):and||``. Make `(B) MuralBlend` when both pass and `(B) MuralDim` otherwise. **And** needs both conditions, so its dim result points to the frozen portrait rails that will supply the light.
 
 ### Find the native Blocks
 
-![Find the native Blocks for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/10-mural-mix-10-mural-logic-menu.svg)
+![Find the native Blocks for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/10-mural-mix-10-mural-logic-menu.svg)
 
-### One possible construction
+### Build this rule
 
-![One possible construction for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/10-mural-mix-10-mural-mix-assembled.svg)
+![Build this rule for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/10-mural-mix-10-mural-mix-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/10-mural-mix-connected-v2-10-mural-mix.gif)
+![What the mechanism does for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/10-mural-mix-connected-v2-interaction-v3-01-10-mural-mix.gif)
 
 #### ~ tutorialhint
 
@@ -224,15 +224,15 @@ escapeLab.onAttempt(EscapeBeat.MuralMix, function () {
 
 ## 11. Open the mural compartment
 
-Build the mural's second rule before its light sources are ready. In ``||escapeLab(noclick):when [mural latch] is operated||``, keep yellow **and** blue and add ``||logic(noclick):not||`` ``||escapeLab(noclick):is [RedOn]||``. Make `MuralOpen` when all three requirements pass; otherwise make `MuralSpill` happen. **Not** expresses the false case: red must be off. The first portrait plate is lit next, but its rail is frozen.
+Build the mural's second rule before its light sources are ready. In ``||escapeLab(noclick):when [(B) mural latch] is operated||``, keep yellow **and** blue and add ``||logic(noclick):not||`` ``||escapeLab(noclick):is [(B) RedOn]||``. Make `(B) MuralOpen` when all three requirements pass; otherwise make `(B) MuralSpill` happen. **Not** expresses the false case: red must be off. The first portrait plate is lit next, but its rail is frozen.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg)
+![Build this rule for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/11-mural-reveal-connected-v2-11-mural-reveal.gif)
+![What the mechanism does for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/11-mural-reveal-connected-v2-interaction-v3-01-11-mural-reveal.gif)
 
 #### ~ tutorialhint
 
@@ -245,11 +245,11 @@ escapeLab.onAttempt(EscapeBeat.MuralReveal, function () {
 
 ## 12. Move portrait one
 
-At the first footprint pressure plate, `1` means left and `2` means right. In ``||escapeLab(noclick):when [first portrait] is operated||``, test ``||escapeLab(noclick):value of [ShoeSide]|| = 1``; make `PortraitLeft` when true and `PortraitRight` otherwise. The rail cannot move while it is cold, so operate it once to see that physical limit. The warm bath is the next lit mechanism. Keep this complete stack: it will move portrait one after the bath thaws the rails.
+At the first footprint pressure plate, `1` means left and `2` means right. In ``||escapeLab(noclick):when [(B) first portrait] is operated||``, test ``||escapeLab(noclick):value of [(B) ShoeSide]|| = 1``; make `(B) PortraitLeft` when true and `(B) PortraitRight` otherwise. The rail cannot move while it is cold, so operate it once to see that physical limit. The warm bath is the next lit mechanism. Keep this complete stack: it will move portrait one after the bath thaws the rails.
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait1](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/12-portrait1-connected-v2-12-portrait1.gif)
+![What the mechanism does for Portrait1](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/12-portrait1-connected-v2-interaction-v3-01-12-portrait1.gif)
 
 #### ~ tutorialhint
 
@@ -262,19 +262,19 @@ escapeLab.onAttempt(EscapeBeat.Portrait1, function () {
 
 ## 13. Thaw the portrait rails
 
-The bath has cold, warm, and overheated responses. Use the **+** on ``||logic(noclick):if then else||`` to add ``||logic(noclick):else if||`` after a first test is false. In ``||escapeLab(noclick):when [warming bath] is operated||``, make `ThermalBlue` if `Temperature < 20`; make `ThermalRed` in an else-if when `Temperature > 40`; otherwise make `ThermalAmber`. This final else covers `20` through `40`. Choose either `20` or `40` for the warm range, then return to the first portrait: its written rule can now move that rail.
+The bath has cold, warm, and overheated responses. Use the **+** on ``||logic(noclick):if then else||`` to add ``||logic(noclick):else if||`` after a first test is false. In ``||escapeLab(noclick):when [(B) warming bath] is operated||``, make `(B) ThermalBlue` if `(B) Temperature < 20`; make `(B) ThermalRed` in an else-if when `(B) Temperature > 40`; otherwise make `(B) ThermalAmber`. This final else covers `20` through `40`. Choose either `20` or `40` for the warm range, then return to the first portrait: its written rule can now move that rail.
 
 ### Find the native Blocks
 
-![Find the native Blocks for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/13-thermal-13-thermal-elseif-menu.svg)
+![Find the native Blocks for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/13-thermal-13-thermal-elseif-menu.svg)
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/13-thermal-13-thermal-assembled.svg)
+![Build this rule for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/13-thermal-13-thermal-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/13-thermal-connected-v2-13-thermal.gif)
+![What the mechanism does for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/13-thermal-connected-v2-interaction-v3-01-13-thermal.gif)
 
 #### ~ tutorialhint
 
@@ -288,11 +288,11 @@ escapeLab.onAttempt(EscapeBeat.Thermal, function () {
 
 ## 14. Move portrait two
 
-Make a separate ``||escapeLab(noclick):when [second portrait] is operated||`` event with the same `ShoeSide = 1` test, `PortraitLeft` true action, and `PortraitRight` else action. A separate stack gives this rail its own rule. The warm bath has thawed it, so the left pressure plate can move it now.
+Make a separate ``||escapeLab(noclick):when [(B) second portrait] is operated||`` event with the same `(B) ShoeSide = 1` test, `(B) PortraitLeft` true action, and `(B) PortraitRight` else action. A separate stack gives this rail its own rule. The warm bath has thawed it, so the left pressure plate can move it now.
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait2](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/14-portrait2-connected-v2-14-portrait2.gif)
+![What the mechanism does for Portrait2](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/14-portrait2-connected-v2-interaction-v3-01-14-portrait2.gif)
 
 #### ~ tutorialhint
 
@@ -305,11 +305,11 @@ escapeLab.onAttempt(EscapeBeat.Portrait2, function () {
 
 ## 15. Move portrait three
 
-Repeat the portrait rule in a ``||escapeLab(noclick):when [third portrait] is operated||`` event: test `value of ShoeSide = 1`, make `PortraitLeft` for true, and `PortraitRight` for else. This third rail responds to the same physical clue. Use its left plate to align the portrait.
+Repeat the portrait rule in a ``||escapeLab(noclick):when [(B) third portrait] is operated||`` event: test `value of (B) ShoeSide = 1`, make `(B) PortraitLeft` for true, and `(B) PortraitRight` for else. This third rail responds to the same physical clue. Use its left plate to align the portrait.
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait3](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/15-portrait3-connected-v2-15-portrait3.gif)
+![What the mechanism does for Portrait3](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/15-portrait3-connected-v2-interaction-v3-01-15-portrait3.gif)
 
 #### ~ tutorialhint
 
@@ -322,11 +322,11 @@ escapeLab.onAttempt(EscapeBeat.Portrait3, function () {
 
 ## 16. Move portrait four
 
-Add the final matching stack in ``||escapeLab(noclick):when [fourth portrait] is operated||``. Use the same left/right condition and actions. Move the fourth portrait left. All four aligned portraits now light the mural's yellow and blue shutters; return to the mural mix and reveal to open the second exit half.
+Add the final matching stack in ``||escapeLab(noclick):when [(B) fourth portrait] is operated||``. Use the same left/right condition and actions. Move the fourth portrait left. All four aligned portraits now light the mural's yellow and blue shutters; return to the mural mix and reveal to open the second exit half.
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait4](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/16-portrait4-connected-v2-16-portrait4.gif)
+![What the mechanism does for Portrait4](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/16-portrait4-connected-v2-interaction-v3-01-16-portrait4.gif)
 
 #### ~ tutorialhint
 
@@ -339,11 +339,11 @@ escapeLab.onAttempt(EscapeBeat.Portrait4, function () {
 
 ## 17. Test the magnetic sample
 
-The sample needs a live magnet, but its coil has no allowed wire yet. In ``||escapeLab(noclick):when [magnet sample] is operated||``, join ``||escapeLab(noclick):is [Metallic]||`` and ``||escapeLab(noclick):is [MagnetOn]||`` with **and**. Make `SampleSpike` when both pass and `SampleFlat` otherwise. Its flat reaction lights the wire rack, which is a choice puzzle with an immediate usable answer.
+The sample needs a live magnet, but its coil has no allowed wire yet. In ``||escapeLab(noclick):when [(C) magnet sample] is operated||``, join ``||escapeLab(noclick):is [(C) Metallic]||`` and ``||escapeLab(noclick):is [(C) MagnetOn]||`` with **and**. Make `(C) SampleSpike` when both pass and `(C) SampleFlat` otherwise. Its flat reaction lights the wire rack, which is a choice puzzle with an immediate usable answer.
 
 ### What the mechanism does
 
-![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/17-sample-connected-v2-17-sample.gif)
+![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/17-sample-connected-v2-interaction-v3-01-17-sample.gif)
 
 #### ~ tutorialhint
 
@@ -356,19 +356,19 @@ escapeLab.onAttempt(EscapeBeat.Sample, function () {
 
 ## 18. Install an allowed wire
 
-At the coil, purple, red, and black are allowed. Join the three `value of WireColor =` comparisons with ``||logic(noclick):or||`` in ``||escapeLab(noclick):when [wire sorter] is operated||``. Make `WireInstall` when one comparison passes and `WireEject` otherwise. **Or** accepts at least one usable condition; choose an allowed wire. The energized coil turns on the magnet, so returning to the sample raises the first Room 3 exit catch.
+At the coil, purple, red, and black are allowed. Join the three `value of (C) WireColor =` comparisons with ``||logic(noclick):or||`` in ``||escapeLab(noclick):when [(C) wire sorter] is operated||``. Make `(C) WireInstall` when one comparison passes and `(C) WireEject` otherwise. **Or** accepts at least one usable condition; choose an allowed wire. The energized coil turns on the magnet, so returning to the sample raises the first Room C exit catch.
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/18-wires-18-wires-or-menu.svg)
+![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/18-wires-18-wires-or-menu.svg)
 
-### One possible construction
+### Build this rule
 
-![One possible construction for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/18-wires-18-wires-assembled.svg)
+![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/18-wires-18-wires-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/18-wires-connected-v2-18-wires.gif)
+![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/18-wires-connected-v2-interaction-v3-01-18-wires.gif)
 
 #### ~ tutorialhint
 
@@ -381,11 +381,11 @@ escapeLab.onAttempt(EscapeBeat.Wires, function () {
 
 ## 19. Reveal the heat vessel
 
-The vessel needs a freed repair lever before it can seal, so it can only leak now. In ``||escapeLab(noclick):when [heat vessel] is operated||``, first test `is VesselRepaired` **and** `is VesselHot` and make `VesselReveal`. Add an else-if for `is VesselRepaired` that makes `VesselBlank`; make `VesselLeak` in the final else. Put the specific repaired-and-hot case first. The leak lights the plant pruner that can free the lever.
+The vessel needs a freed repair lever before it can seal, so it can only leak now. In ``||escapeLab(noclick):when [(C) heat vessel] is operated||``, first test `is (C) VesselRepaired` **and** `is (C) VesselHot` and make `(C) VesselReveal`. Add an else-if for `is (C) VesselRepaired` that makes `(C) VesselBlank`; make `(C) VesselLeak` in the final else. Put the specific repaired-and-hot case first. The leak lights the plant pruner that can free the lever.
 
 ### What the mechanism does
 
-![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/19-vessel-connected-v2-19-vessel.gif)
+![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/19-vessel-connected-v2-interaction-v3-01-19-vessel.gif)
 
 #### ~ tutorialhint
 
@@ -399,11 +399,11 @@ escapeLab.onAttempt(EscapeBeat.Vessel, function () {
 
 ## 20. Free the repair lever
 
-In ``||escapeLab(noclick):when [pruning lever] is operated||``, test ``||escapeLab(noclick):value of [LeafPoints]|| > 3``. Make `LeafClip` happen for true and `LeafKeep` otherwise. Choose a four-point leaf to clear the lever; then use the repair control and heat the vessel. Return to its three-way rule: the sealed hot vessel reveals the second exit catch.
+In ``||escapeLab(noclick):when [(C) pruning lever] is operated||``, test ``||escapeLab(noclick):value of [(C) LeafPoints]|| > 3``. Make `(C) LeafClip` happen for true and `(C) LeafKeep` otherwise. Choose a four-point leaf to clear the lever; then use the repair control and heat the vessel. Return to its three-way rule: the sealed hot vessel reveals the second exit catch.
 
 ### What the mechanism does
 
-![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/20-pruner-connected-v2-20-pruner.gif)
+![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/20-pruner-connected-v2-interaction-v3-01-20-pruner.gif)
 
 #### ~ tutorialhint
 
@@ -416,11 +416,11 @@ escapeLab.onAttempt(EscapeBeat.Pruner, function () {
 
 ## 21. Test the titration target
 
-The dropper cannot provide its target amount until the balance releases it. Still build the result rule in ``||escapeLab(noclick):when [titration] is operated||``: if `Drops < 7`, make `TitrationClear`; else if `Drops ≤ 9`, make `TitrationBloom`; otherwise make `TitrationOverflow`. Its low result lights the balance. The target bloom will be your payoff after the dropper can select `7` or `9`.
+The dropper cannot provide its target amount until the balance releases it. Still build the result rule in ``||escapeLab(noclick):when [(C) titration] is operated||``: if `(C) Drops < 7`, make `(C) TitrationClear`; else if `(C) Drops ≤ 9`, make `(C) TitrationBloom`; otherwise make `(C) TitrationOverflow`. Its low result lights the balance. The target bloom will be your payoff after the dropper can select `7` or `9`.
 
 ### What the mechanism does
 
-![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/21-titration-connected-v2-21-titration.gif)
+![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/21-titration-connected-v2-interaction-v3-01-21-titration.gif)
 
 #### ~ tutorialhint
 
@@ -434,11 +434,11 @@ escapeLab.onAttempt(EscapeBeat.Titration, function () {
 
 ## 22. Balance the dropper
 
-In ``||escapeLab(noclick):when [balance scale] is operated||``, test `value of LeftWeight = value of RightWeight` and make `ScaleLevel`. Add an else-if for left greater than right that makes `ScaleLeft`; make `ScaleRight` in the final else. Choose equal weights first: the balanced scale releases the dropper. Return to titration, choose `7` or `9`, and see the bloom raise the third catch.
+In ``||escapeLab(noclick):when [(C) balance scale] is operated||``, test `value of (C) LeftWeight = value of (C) RightWeight` and make `(C) ScaleLevel`. Add an else-if for left greater than right that makes `(C) ScaleLeft`; make `(C) ScaleRight` in the final else. Choose equal weights first: the balanced scale releases the dropper. Return to titration, choose `7` or `9`, and see the bloom raise the third catch.
 
 ### What the mechanism does
 
-![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/22-balance-connected-v2-22-balance.gif)
+![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/22-balance-connected-v2-interaction-v3-01-22-balance.gif)
 
 #### ~ tutorialhint
 
@@ -452,11 +452,11 @@ escapeLab.onAttempt(EscapeBeat.Balance, function () {
 
 ## 23. Launch the pneumatic capsule
 
-The selector needs a printed strip, so the empty tube drains at first. In ``||escapeLab(noclick):when [pneumatic tube] is operated||``, join ``||escapeLab(noclick):is [RouteA]||`` and ``||escapeLab(noclick):is [RouteB]||`` with **or**. Make `TubeLaunch` for true and `TubeDrain` otherwise. The drain lights the printer, whose missing paper source is still farther back in this connected chain.
+The selector needs a printed strip, so the empty tube drains at first. In ``||escapeLab(noclick):when [(D) pneumatic tube] is operated||``, join ``||escapeLab(noclick):is [(D) RouteA]||`` and ``||escapeLab(noclick):is [(D) RouteB]||`` with **or**. Make `(D) TubeLaunch` for true and `(D) TubeDrain` otherwise. The drain lights the printer, whose missing paper source is still farther back in this connected chain.
 
 ### What the mechanism does
 
-![What the mechanism does for Tube](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/23-tube-connected-v2-23-tube.gif)
+![What the mechanism does for Tube](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/23-tube-connected-v2-interaction-v3-01-23-tube.gif)
 
 #### ~ tutorialhint
 
@@ -469,11 +469,11 @@ escapeLab.onAttempt(EscapeBeat.Tube, function () {
 
 ## 24. Feed the message printer
 
-The printer works through clear radio or a connected cable, neither of which is ready yet. In ``||escapeLab(noclick):when [message printer] is operated||``, join `is RadioClear` and `is CableConnected` with **or**. Make `PrinterFeed` when either route works and `PrinterJam` otherwise. The jam points to the noise mixer; its channels cannot all be quiet until a receiver generates a signal.
+The printer works through clear radio or a connected cable, neither of which is ready yet. In ``||escapeLab(noclick):when [(D) message printer] is operated||``, join `is (D) RadioClear` and `is (D) CableConnected` with **or**. Make `(D) PrinterFeed` when either route works and `(D) PrinterJam` otherwise. The jam points to the noise mixer; its channels cannot all be quiet until a receiver generates a signal.
 
 ### What the mechanism does
 
-![What the mechanism does for Printer](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/24-printer-connected-v2-24-printer.gif)
+![What the mechanism does for Printer](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/24-printer-connected-v2-interaction-v3-01-24-printer.gif)
 
 #### ~ tutorialhint
 
@@ -486,11 +486,11 @@ escapeLab.onAttempt(EscapeBeat.Printer, function () {
 
 ## 25. Clear the interference mixer
 
-In ``||escapeLab(noclick):when [noise mixer] is operated||``, join `not is ScratchOn`, `not is BeepOn`, and `not is HumOn` with **and**. Make `NoiseClear` when every channel is off, or `NoiseDistort` otherwise. The receiver is now lit: its pedal produces the signal that lets the mixer quiet the channels. After that, return through mixer, printer, and tube to send the capsule to the exit latch.
+In ``||escapeLab(noclick):when [(D) noise mixer] is operated||``, join `not is (D) ScratchOn`, `not is (D) BeepOn`, and `not is (D) HumOn` with **and**. Make `(D) NoiseClear` when every channel is off, or `(D) NoiseDistort` otherwise. The receiver is now lit: its pedal produces the signal that lets the mixer quiet the channels. After that, return through mixer, printer, and tube to send the capsule to the exit latch.
 
 ### What the mechanism does
 
-![What the mechanism does for Interference](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/25-interference-connected-v2-25-interference.gif)
+![What the mechanism does for Interference](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/25-interference-connected-v2-interaction-v3-01-25-interference.gif)
 
 #### ~ tutorialhint
 
@@ -503,11 +503,11 @@ escapeLab.onAttempt(EscapeBeat.Interference, function () {
 
 ## 26. Tune the pedal receiver
 
-Use a three-way ``||escapeLab(noclick):when [pedal receiver] is operated||`` rule: make `ReceiverClear` if `RPM ≥ 80`; else if `RPM ≥ 40`, make `ReceiverStatic`; otherwise make `ReceiverDead`. Choose `80 RPM`. That signal makes the mixer controls effective, so the forward chain now has a physical path all the way to the capsule.
+Use a three-way ``||escapeLab(noclick):when [(D) pedal receiver] is operated||`` rule: make `(D) ReceiverClear` if `(D) RPM ≥ 80`; else if `(D) RPM ≥ 40`, make `(D) ReceiverStatic`; otherwise make `(D) ReceiverDead`. Choose `80 RPM`. That signal makes the mixer controls effective, so the forward chain now has a physical path all the way to the capsule.
 
 ### What the mechanism does
 
-![What the mechanism does for Receiver](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/26-receiver-connected-v2-26-receiver.gif)
+![What the mechanism does for Receiver](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/26-receiver-connected-v2-interaction-v3-01-26-receiver.gif)
 
 #### ~ tutorialhint
 
@@ -521,19 +521,19 @@ escapeLab.onAttempt(EscapeBeat.Receiver, function () {
 
 ## 27. Stabilize the pressure seal
 
-Make a native ``||variables(noclick):Variables||`` variable named ``||variables(noclick):pressureReady||``: it remembers whether this local preparation succeeded. In ``||loops(noclick):on start||``, set it to ``||escapeLab(noclick):is [PressureReady]||`` so an earned seal checkpoint can return after reload. In ``||escapeLab(noclick):when [pressure stabilizer] is operated||``, test `value of pressure ≥ 48` **and** `value of pressure ≤ 50`; set `pressureReady` to `true` and make `SealStable` when true, otherwise set it to `false` and make `SealLeak`. Choose `48` or `50`; the stable seal makes the release control usable.
+Make a native ``||variables(noclick):Variables||`` variable named ``||variables(noclick):pressureReady||``: it remembers whether this local preparation succeeded. In ``||loops(noclick):on start||``, set it to ``||escapeLab(noclick):is [(D) PressureReady]||`` so an earned seal checkpoint can return after reload. In ``||escapeLab(noclick):when [(D) pressure stabilizer] is operated||``, test `value of (D) PressureTenths ≥ 48` **and** `value of (D) PressureTenths ≤ 50`; set `pressureReady` to `true` and make `(D) SealStable` when true, otherwise set it to `false` and make `(D) SealLeak`. Choose `48` or `50`; the stable seal makes the release control usable.
 
 ### Find the native Blocks
 
-![Find the native Blocks for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg)
+![Find the native Blocks for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg)
 
-### One possible construction
+### Build this rule
 
-![One possible construction for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg)
+![Build this rule for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/27-pressure-stable-connected-v2-27-pressure-stable.gif)
+![What the mechanism does for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/27-pressure-stable-connected-v2-interaction-v3-01-27-pressure-stable.gif)
 
 #### ~ tutorialhint
 
@@ -553,11 +553,11 @@ escapeLab.onAttempt(EscapeBeat.PressureStable, function () {
 
 ## 28. Release the pressure lift
 
-In ``||escapeLab(noclick):when [pressure release] is operated||``, join your `pressureReady` variable with `value of pressure = 20`. Make `SealRetract` when both pass and `SealVent` otherwise. After the whole if/else, set `pressureReady` to `false`: every release attempt consumes this preparation. Stabilize first, then choose `20`; the hydraulic lift raises and lights the pitch controls.
+In ``||escapeLab(noclick):when [(D) pressure release] is operated||``, join your `pressureReady` variable with `value of (D) PressureTenths = 20`. Make `(D) SealRetract` when both pass and `(D) SealVent` otherwise. After the whole if/else, set `pressureReady` to `false`: every release attempt consumes this preparation. Stabilize first, then choose `20`; the hydraulic lift raises and lights the pitch controls.
 
 ### What the mechanism does
 
-![What the mechanism does for PressureRelease](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/28-pressure-release-connected-v2-28-pressure-release.gif)
+![What the mechanism does for PressureRelease](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/28-pressure-release-connected-v2-interaction-v3-01-28-pressure-release.gif)
 
 #### ~ tutorialhint
 
@@ -573,15 +573,15 @@ escapeLab.onAttempt(EscapeBeat.PressureRelease, function () {
 
 ## 29. Level the exit bridge
 
-Make a native ``||variables(noclick):Variables||`` variable named ``||variables(noclick):angle||``. In ``||loops(noclick):on start||``, set it to ``||escapeLab(noclick):value of [PitchAngle]||``. In ``||escapeLab(noclick):when [pitch control] is operated||``, change `angle` by `value of PitchChange`, then pass `angle` to ``||escapeLab(noclick):set room pitch to [number]||``. The physical controls provide `+10`, `+25`, `-10`, and `-25`; your variable accumulates them. Bring the gauge to `0`, then use the feedback station.
+Make a native ``||variables(noclick):Variables||`` variable named ``||variables(noclick):angle||``. In ``||loops(noclick):on start||``, set it to ``||escapeLab(noclick):value of [(D) PitchAngle]||``. In ``||escapeLab(noclick):when [(D) pitch control] is operated||``, change `angle` by `value of (D) PitchChange`, then pass `angle` to ``||escapeLab(noclick):set room pitch to [number]||``. The physical controls provide `+10`, `+25`, `-10`, and `-25`; your variable accumulates them. Bring the gauge to `0`, then use the feedback station.
 
-### One possible construction
+### Build this rule
 
-![One possible construction for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg)
+![Build this rule for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/29-pitch-adjust-connected-v2-29-pitch-adjust.gif)
+![What the mechanism does for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/29-pitch-adjust-connected-v2-interaction-v3-01-29-pitch-adjust.gif)
 
 #### ~ tutorialhint
 
@@ -598,11 +598,11 @@ escapeLab.onAttempt(EscapeBeat.PitchAdjust, function () {
 
 ## 30. Confirm the bridge is level
 
-In ``||escapeLab(noclick):when [pitch display] is operated||``, test your `angle`. Make `PitchLevel` if `angle = 0`; else if `angle < 0`, make `PitchDown`; otherwise make `PitchUp`. Try the negative and positive responses through local control retests if you want to inspect them. Level is the forward result: the bridge settles and opens the final room.
+In ``||escapeLab(noclick):when [(D) pitch display] is operated||``, test your `angle`. Make `(D) PitchLevel` if `angle = 0`; else if `angle < 0`, make `(D) PitchDown`; otherwise make `(D) PitchUp`. Try the negative and positive responses through local control retests if you want to inspect them. Level is the forward result: the bridge settles and opens Room E.
 
 ### What the mechanism does
 
-![What the mechanism does for PitchFeedback](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/30-pitch-feedback-connected-v2-30-pitch-feedback.gif)
+![What the mechanism does for PitchFeedback](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/30-pitch-feedback-connected-v2-interaction-v3-01-30-pitch-feedback.gif)
 
 #### ~ tutorialhint
 
@@ -620,11 +620,11 @@ escapeLab.onAttempt(EscapeBeat.PitchFeedback, function () {
 
 ## 31. Open a shutter route
 
-The shutter bank needs a mapped remote sensor. Build ``||escapeLab(noclick):when [shutter bank] is operated||`` first: if `is WindowA` **or** `is WindowB`, make `ShutterOpen`; else if `is DangerousControl`, make `ShutterWarn`; otherwise make `ShutterClosed`. Its closed response points to the sensor mapper. Keep the usable-window rule first so it stays the main path.
+The shutter bank needs a mapped remote sensor. Build ``||escapeLab(noclick):when [(E) shutter bank] is operated||`` first: if `is (E) WindowA` **or** `is (E) WindowB`, make `(E) ShutterOpen`; else if `is (E) DangerousControl`, make `(E) ShutterWarn`; otherwise make `(E) ShutterClosed`. Its closed response points to the sensor mapper. Keep the usable-window rule first so it stays the main path.
 
 ### What the mechanism does
 
-![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/31-shutters-connected-v2-31-shutters.gif)
+![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/31-shutters-connected-v2-interaction-v3-01-31-shutters.gif)
 
 #### ~ tutorialhint
 
@@ -642,11 +642,11 @@ escapeLab.onAttempt(EscapeBeat.Shutters, function () {
 
 ## 32. Map the remote sensors
 
-In ``||escapeLab(noclick):when [sensor map] is operated||``, use an else-if chain on `value of SensorNumber`: `1` makes `SensorLamp1`, `2` makes `SensorLamp2`, `3` makes `SensorLamp3`, and the final else makes `SensorDark`. Choose the sensor shown by the shutter wiring. Its lamp powers a shutter route, so return to the bank to open it.
+In ``||escapeLab(noclick):when [(E) sensor map] is operated||``, use an else-if chain on `value of (E) SensorNumber`: `1` makes `(E) SensorLamp1`, `2` makes `(E) SensorLamp2`, `3` makes `(E) SensorLamp3`, and the final else makes `(E) SensorDark`. Choose the sensor shown by the shutter wiring. Its lamp powers a shutter route, so return to the bank to open it.
 
 ### What the mechanism does
 
-![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/32-sensors-connected-v2-32-sensors.gif)
+![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/32-sensors-connected-v2-interaction-v3-01-32-sensors.gif)
 
 #### ~ tutorialhint
 
@@ -665,11 +665,11 @@ escapeLab.onAttempt(EscapeBeat.Sensors, function () {
 
 ## 33. Cross the rock path
 
-The rock path is dark until the constellation lights it. Build ``||escapeLab(noclick):when [rock path] is operated||`` now from the visible clue: **keep the color, change the pattern**. Join `is SameColor` and `not is SamePattern` with **and**. Make `RockBeam` for true and `RockCollapse` otherwise. The unlit path points to the constellation controls, where a matching choice can succeed immediately.
+The rock path is dark until the constellation lights it. Build ``||escapeLab(noclick):when [(E) rock path] is operated||`` now from the visible clue: **keep the color, change the pattern**. Join `is (E) SameColor` and `not is (E) SamePattern` with **and**. Make `(E) RockBeam` for true and `(E) RockCollapse` otherwise. The unlit path points to the constellation controls, where a matching choice can succeed immediately.
 
 ### What the mechanism does
 
-![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/33-rock-path-connected-v2-33-rock-path.gif)
+![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/33-rock-path-connected-v2-interaction-v3-01-33-rock-path.gif)
 
 #### ~ tutorialhint
 
@@ -686,11 +686,11 @@ escapeLab.onAttempt(EscapeBeat.RockPath, function () {
 
 ## 34. Light the constellation
 
-In ``||escapeLab(noclick):when [constellation] is operated||``, join `is FrontMatch`, `is MiddleMatch`, and `is BackMatch` with **and**. Make `StarIgnite` only when all three pass; otherwise make `StarFizzle`. Align the three visible layers. Their flare lights the rock path; return to it and choose same color with a different pattern to cross the bridge.
+In ``||escapeLab(noclick):when [(E) constellation] is operated||``, join `is (E) FrontMatch`, `is (E) MiddleMatch`, and `is (E) BackMatch` with **and**. Make `(E) StarIgnite` only when all three pass; otherwise make `(E) StarFizzle`. Align the three visible layers. Their flare lights the rock path; return to it and choose same color with a different pattern to cross the bridge.
 
 ### What the mechanism does
 
-![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/34-constellation-connected-v2-34-constellation.gif)
+![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/34-constellation-connected-v2-interaction-v3-01-34-constellation.gif)
 
 #### ~ tutorialhint
 
@@ -707,11 +707,11 @@ escapeLab.onAttempt(EscapeBeat.Constellation, function () {
 
 ## 35. Synchronize the restored systems
 
-The synchronizer receives the power, pressure, and signal you restored in earlier rooms. In ``||escapeLab(noclick):when [synchronizer] is operated||``, join `is PowerReady`, `is PressureSystemReady`, `is SignalReady`, and `not is AlarmOn` with **and**. Make `SyncLock` when all four requirements pass and `SyncReject` otherwise. With the shutter route and rock bridge complete, the machines phase-lock and light the final lever.
+The synchronizer receives the power, pressure, and signal you restored in earlier rooms. In ``||escapeLab(noclick):when [(E) synchronizer] is operated||``, join `is (E) PowerReady`, `is (E) PressureSystemReady`, `is (E) SignalReady`, and `not is (E) AlarmOn` with **and**. Make `(E) SyncLock` when all four requirements pass and `(E) SyncReject` otherwise. With the shutter route and rock bridge complete, the machines phase-lock and light the final lever.
 
 ### What the mechanism does
 
-![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/35-synchronize-connected-v2-35-synchronize.gif)
+![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/35-synchronize-connected-v2-interaction-v3-01-35-synchronize.gif)
 
 #### ~ tutorialhint
 
@@ -728,11 +728,11 @@ escapeLab.onAttempt(EscapeBeat.Synchronize, function () {
 
 ## 36. Pull the final lever
 
-In ``||escapeLab(noclick):when [final lever] is operated||``, test `value of CoreLights = 3` **and** `not is AlarmOn`. Make `LeverPull` when it passes and `LeverReject` otherwise. At the first ending, press **B** to start the full replay. It clears room and mechanism checkpoints while retaining first-clear history; a second escape receives its distinct ending.
+In ``||escapeLab(noclick):when [(E) final lever] is operated||``, test `value of (E) CoreLights = 3` **and** `not is (E) AlarmOn`. Make `(E) LeverPull` when it passes and `(E) LeverReject` otherwise. At the first ending, press **B** to start the full replay. It clears room and mechanism checkpoints while retaining first-clear history; a second escape receives its distinct ending.
 
 ### What the mechanism does
 
-![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/36-final-lever-connected-v2-36-final-lever.gif)
+![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/36-final-lever-connected-v2-interaction-v3-01-36-final-lever.gif)
 
 #### ~ tutorialhint
 
@@ -758,119 +758,357 @@ You used native ``||logic(noclick):if then else||`` blocks for visible two-way r
 ```customts
 // The learner-facing nouns. Decisions belong in native if / else blocks.
 enum EscapeBeat {
-    //% block="magnet rail"
-    Crank,
-    //% block="generator"
-    Generator,
-    //% block="power case"
-    Case,
-    //% block="fire spout"
-    Fire,
-    //% block="climb wall"
-    Wall,
-    //% block="footprint stones"
-    Footprints,
-    //% block="shadow screen"
-    Shadow,
-    //% block="first portrait"
-    Portrait1,
-    //% block="second portrait"
-    Portrait2,
-    //% block="third portrait"
-    Portrait3,
-    //% block="fourth portrait"
-    Portrait4,
-    //% block="mural colors"
-    MuralMix,
-    //% block="mural latch"
-    MuralReveal,
-    //% block="stone sockets"
-    Stones,
-    //% block="telescope"
-    Telescope,
-    //% block="warming bath"
-    Thermal,
-    //% block="magnet sample"
-    Sample,
-    //% block="titration"
-    Titration,
-    //% block="balance scale"
-    Balance,
-    //% block="wire sorter"
-    Wires,
-    //% block="pruning lever"
-    Pruner,
-    //% block="heat vessel"
-    Vessel,
-    //% block="pedal receiver"
-    Receiver,
-    //% block="noise mixer"
-    Interference,
-    //% block="message printer"
-    Printer,
-    //% block="pneumatic tube"
-    Tube,
-    //% block="pressure stabilizer"
-    PressureStable,
-    //% block="pressure release"
-    PressureRelease,
-    //% block="pitch control"
-    PitchAdjust,
-    //% block="pitch display"
-    PitchFeedback,
-    //% block="sensor map"
-    Sensors,
-    //% block="shutter bank"
-    Shutters,
-    //% block="constellation"
-    Constellation,
-    //% block="rock path"
-    RockPath,
-    //% block="synchronizer"
-    Synchronize,
-    //% block="final lever"
-    FinalLever
+    // Room A
+    //% block="(A) climb wall"
+    Wall = 4,
+    //% block="(A) fire spout"
+    Fire = 3,
+    //% block="(A) footprint stones"
+    Footprints = 5,
+    //% block="(A) generator"
+    Generator = 1,
+    //% block="(A) magnet rail"
+    Crank = 0,
+    //% block="(A) power case"
+    Case = 2,
+    // Room B
+    //% block="(B) first portrait"
+    Portrait1 = 7,
+    //% block="(B) fourth portrait"
+    Portrait4 = 10,
+    //% block="(B) mural colors"
+    MuralMix = 11,
+    //% block="(B) mural latch"
+    MuralReveal = 12,
+    //% block="(B) second portrait"
+    Portrait2 = 8,
+    //% block="(B) shadow screen"
+    Shadow = 6,
+    //% block="(B) stone sockets"
+    Stones = 13,
+    //% block="(B) telescope"
+    Telescope = 14,
+    //% block="(B) third portrait"
+    Portrait3 = 9,
+    //% block="(B) warming bath"
+    Thermal = 15,
+    // Room C
+    //% block="(C) balance scale"
+    Balance = 18,
+    //% block="(C) heat vessel"
+    Vessel = 21,
+    //% block="(C) magnet sample"
+    Sample = 16,
+    //% block="(C) pruning lever"
+    Pruner = 20,
+    //% block="(C) titration"
+    Titration = 17,
+    //% block="(C) wire sorter"
+    Wires = 19,
+    // Room D
+    //% block="(D) message printer"
+    Printer = 24,
+    //% block="(D) noise mixer"
+    Interference = 23,
+    //% block="(D) pedal receiver"
+    Receiver = 22,
+    //% block="(D) pitch control"
+    PitchAdjust = 28,
+    //% block="(D) pitch display"
+    PitchFeedback = 29,
+    //% block="(D) pneumatic tube"
+    Tube = 25,
+    //% block="(D) pressure release"
+    PressureRelease = 27,
+    //% block="(D) pressure stabilizer"
+    PressureStable = 26,
+    // Room E
+    //% block="(E) constellation"
+    Constellation = 32,
+    //% block="(E) final lever"
+    FinalLever = 35,
+    //% block="(E) rock path"
+    RockPath = 33,
+    //% block="(E) sensor map"
+    Sensors = 30,
+    //% block="(E) shutter bank"
+    Shutters = 31,
+    //% block="(E) synchronizer"
+    Synchronize = 34
 }
 
 enum EscapeItem { LargeMagnet, HandCrank, WaterCanister }
 
 enum EscapeFact {
-    LockFree, YellowOn, BlueOn, RedOn, Metallic, MagnetOn,
-    VesselRepaired, VesselHot, ScratchOn, BeepOn, HumOn,
-    RadioClear, CableConnected, RouteA, RouteB, PressureReady,
-    WindowA, WindowB, DangerousControl, FrontMatch,
-    MiddleMatch, BackMatch, SameColor, SamePattern,
-    PowerReady, PressureSystemReady, SignalReady, AlarmOn,
-    MagnetTouchingCrank, CrankFitted, PowerAvailable, WaterFlowing
+    // Room A
+    //% block="(A) CrankFitted"
+    CrankFitted = 29,
+    //% block="(A) LockFree"
+    LockFree = 0,
+    //% block="(A) MagnetTouchingCrank"
+    MagnetTouchingCrank = 28,
+    //% block="(A) PowerAvailable"
+    PowerAvailable = 30,
+    //% block="(A) WaterFlowing"
+    WaterFlowing = 31,
+    // Room B
+    //% block="(B) BlueOn"
+    BlueOn = 2,
+    //% block="(B) RedOn"
+    RedOn = 3,
+    //% block="(B) YellowOn"
+    YellowOn = 1,
+    // Room C
+    //% block="(C) MagnetOn"
+    MagnetOn = 5,
+    //% block="(C) Metallic"
+    Metallic = 4,
+    //% block="(C) VesselHot"
+    VesselHot = 7,
+    //% block="(C) VesselRepaired"
+    VesselRepaired = 6,
+    // Room D
+    //% block="(D) BeepOn"
+    BeepOn = 9,
+    //% block="(D) CableConnected"
+    CableConnected = 12,
+    //% block="(D) HumOn"
+    HumOn = 10,
+    //% block="(D) PressureReady"
+    PressureReady = 15,
+    //% block="(D) RadioClear"
+    RadioClear = 11,
+    //% block="(D) RouteA"
+    RouteA = 13,
+    //% block="(D) RouteB"
+    RouteB = 14,
+    //% block="(D) ScratchOn"
+    ScratchOn = 8,
+    // Room E
+    //% block="(E) AlarmOn"
+    AlarmOn = 27,
+    //% block="(E) BackMatch"
+    BackMatch = 21,
+    //% block="(E) DangerousControl"
+    DangerousControl = 18,
+    //% block="(E) FrontMatch"
+    FrontMatch = 19,
+    //% block="(E) MiddleMatch"
+    MiddleMatch = 20,
+    //% block="(E) PowerReady"
+    PowerReady = 24,
+    //% block="(E) PressureSystemReady"
+    PressureSystemReady = 25,
+    //% block="(E) SameColor"
+    SameColor = 22,
+    //% block="(E) SamePattern"
+    SamePattern = 23,
+    //% block="(E) SignalReady"
+    SignalReady = 26,
+    //% block="(E) WindowA"
+    WindowA = 16,
+    //% block="(E) WindowB"
+    WindowB = 17
 }
 
 enum EscapeMeter {
-    InstalledHolds, StepValue, Illumination, ShoeSide,
-    StoneColor, SocketColor, Zoom, Temperature, Drops,
-    LeftWeight, RightWeight, WireColor, LeafPoints, RPM,
-    //% block="pressure"
-    PressureTenths, PitchChange, PitchAngle, SensorNumber,
-    CoreLights
+    // Room A
+    //% block="(A) InstalledHolds"
+    InstalledHolds = 0,
+    //% block="(A) StepValue"
+    StepValue = 1,
+    // Room B
+    //% block="(B) Illumination"
+    Illumination = 2,
+    //% block="(B) ShoeSide"
+    ShoeSide = 3,
+    //% block="(B) SocketColor"
+    SocketColor = 5,
+    //% block="(B) StoneColor"
+    StoneColor = 4,
+    //% block="(B) Temperature"
+    Temperature = 7,
+    //% block="(B) Zoom"
+    Zoom = 6,
+    // Room C
+    //% block="(C) Drops"
+    Drops = 8,
+    //% block="(C) LeafPoints"
+    LeafPoints = 12,
+    //% block="(C) LeftWeight"
+    LeftWeight = 9,
+    //% block="(C) RightWeight"
+    RightWeight = 10,
+    //% block="(C) WireColor"
+    WireColor = 11,
+    // Room D
+    //% block="(D) PitchAngle"
+    PitchAngle = 16,
+    //% block="(D) PitchChange"
+    PitchChange = 15,
+    //% block="(D) PressureTenths"
+    PressureTenths = 14,
+    //% block="(D) RPM"
+    RPM = 13,
+    // Room E
+    //% block="(E) CoreLights"
+    CoreLights = 18,
+    //% block="(E) SensorNumber"
+    SensorNumber = 17
 }
 
 enum EscapeAction {
-    CrankPull, CrankTwitch, GeneratorSpin, GeneratorSputter,
-    CaseRetract, CaseRattle, FireSteam, FireFlare,
-    WallClimb, WallFlash, FootprintKeep, FootprintDrop,
-    ShadowReveal, ShadowHide, PortraitLeft, PortraitRight,
-    MuralBlend, MuralDim, MuralOpen, MuralSpill,
-    StoneSnap, StoneRepel, TelescopeFocus, TelescopeBlur,
-    ThermalBlue, ThermalAmber, ThermalRed, SampleSpike,
-    SampleFlat, TitrationClear, TitrationBloom, TitrationOverflow,
-    ScaleLevel, ScaleLeft, ScaleRight, WireInstall, WireEject,
-    LeafClip, LeafKeep, VesselReveal, VesselBlank, VesselLeak,
-    ReceiverClear, ReceiverStatic, ReceiverDead, NoiseClear,
-    NoiseDistort, PrinterFeed, PrinterJam, TubeLaunch, TubeDrain,
-    SealStable, SealLeak, SealRetract, SealVent,
-    PitchLevel, PitchDown, PitchUp, SensorLamp1, SensorLamp2,
-    SensorLamp3, SensorDark, ShutterOpen, ShutterWarn,
-    ShutterClosed, StarIgnite, StarFizzle, RockBeam,
-    RockCollapse, SyncLock, SyncReject, LeverPull, LeverReject
+    // Room A
+    //% block="(A) CaseRattle"
+    CaseRattle = 5,
+    //% block="(A) CaseRetract"
+    CaseRetract = 4,
+    //% block="(A) CrankPull"
+    CrankPull = 0,
+    //% block="(A) CrankTwitch"
+    CrankTwitch = 1,
+    //% block="(A) FireFlare"
+    FireFlare = 7,
+    //% block="(A) FireSteam"
+    FireSteam = 6,
+    //% block="(A) FootprintDrop"
+    FootprintDrop = 11,
+    //% block="(A) FootprintKeep"
+    FootprintKeep = 10,
+    //% block="(A) GeneratorSpin"
+    GeneratorSpin = 2,
+    //% block="(A) GeneratorSputter"
+    GeneratorSputter = 3,
+    //% block="(A) WallClimb"
+    WallClimb = 8,
+    //% block="(A) WallFlash"
+    WallFlash = 9,
+    // Room B
+    //% block="(B) MuralBlend"
+    MuralBlend = 16,
+    //% block="(B) MuralDim"
+    MuralDim = 17,
+    //% block="(B) MuralOpen"
+    MuralOpen = 18,
+    //% block="(B) MuralSpill"
+    MuralSpill = 19,
+    //% block="(B) PortraitLeft"
+    PortraitLeft = 14,
+    //% block="(B) PortraitRight"
+    PortraitRight = 15,
+    //% block="(B) ShadowHide"
+    ShadowHide = 13,
+    //% block="(B) ShadowReveal"
+    ShadowReveal = 12,
+    //% block="(B) StoneRepel"
+    StoneRepel = 21,
+    //% block="(B) StoneSnap"
+    StoneSnap = 20,
+    //% block="(B) TelescopeBlur"
+    TelescopeBlur = 23,
+    //% block="(B) TelescopeFocus"
+    TelescopeFocus = 22,
+    //% block="(B) ThermalAmber"
+    ThermalAmber = 25,
+    //% block="(B) ThermalBlue"
+    ThermalBlue = 24,
+    //% block="(B) ThermalRed"
+    ThermalRed = 26,
+    // Room C
+    //% block="(C) LeafClip"
+    LeafClip = 37,
+    //% block="(C) LeafKeep"
+    LeafKeep = 38,
+    //% block="(C) SampleFlat"
+    SampleFlat = 28,
+    //% block="(C) SampleSpike"
+    SampleSpike = 27,
+    //% block="(C) ScaleLeft"
+    ScaleLeft = 33,
+    //% block="(C) ScaleLevel"
+    ScaleLevel = 32,
+    //% block="(C) ScaleRight"
+    ScaleRight = 34,
+    //% block="(C) TitrationBloom"
+    TitrationBloom = 30,
+    //% block="(C) TitrationClear"
+    TitrationClear = 29,
+    //% block="(C) TitrationOverflow"
+    TitrationOverflow = 31,
+    //% block="(C) VesselBlank"
+    VesselBlank = 40,
+    //% block="(C) VesselLeak"
+    VesselLeak = 41,
+    //% block="(C) VesselReveal"
+    VesselReveal = 39,
+    //% block="(C) WireEject"
+    WireEject = 36,
+    //% block="(C) WireInstall"
+    WireInstall = 35,
+    // Room D
+    //% block="(D) NoiseClear"
+    NoiseClear = 45,
+    //% block="(D) NoiseDistort"
+    NoiseDistort = 46,
+    //% block="(D) PitchDown"
+    PitchDown = 56,
+    //% block="(D) PitchLevel"
+    PitchLevel = 55,
+    //% block="(D) PitchUp"
+    PitchUp = 57,
+    //% block="(D) PrinterFeed"
+    PrinterFeed = 47,
+    //% block="(D) PrinterJam"
+    PrinterJam = 48,
+    //% block="(D) ReceiverClear"
+    ReceiverClear = 42,
+    //% block="(D) ReceiverDead"
+    ReceiverDead = 44,
+    //% block="(D) ReceiverStatic"
+    ReceiverStatic = 43,
+    //% block="(D) SealLeak"
+    SealLeak = 52,
+    //% block="(D) SealRetract"
+    SealRetract = 53,
+    //% block="(D) SealStable"
+    SealStable = 51,
+    //% block="(D) SealVent"
+    SealVent = 54,
+    //% block="(D) TubeDrain"
+    TubeDrain = 50,
+    //% block="(D) TubeLaunch"
+    TubeLaunch = 49,
+    // Room E
+    //% block="(E) LeverPull"
+    LeverPull = 71,
+    //% block="(E) LeverReject"
+    LeverReject = 72,
+    //% block="(E) RockBeam"
+    RockBeam = 67,
+    //% block="(E) RockCollapse"
+    RockCollapse = 68,
+    //% block="(E) SensorDark"
+    SensorDark = 61,
+    //% block="(E) SensorLamp1"
+    SensorLamp1 = 58,
+    //% block="(E) SensorLamp2"
+    SensorLamp2 = 59,
+    //% block="(E) SensorLamp3"
+    SensorLamp3 = 60,
+    //% block="(E) ShutterClosed"
+    ShutterClosed = 64,
+    //% block="(E) ShutterOpen"
+    ShutterOpen = 62,
+    //% block="(E) ShutterWarn"
+    ShutterWarn = 63,
+    //% block="(E) StarFizzle"
+    StarFizzle = 66,
+    //% block="(E) StarIgnite"
+    StarIgnite = 65,
+    //% block="(E) SyncLock"
+    SyncLock = 69,
+    //% block="(E) SyncReject"
+    SyncReject = 70
 }
 
 // The room route and coordinates are shared by the engine and world artwork.
@@ -1011,7 +1249,15 @@ namespace escapeObjects {
             else if (a == 6) p.fillRect(x - r - 4, y - 3, 9, 6, c)
             else p.fillRect(x - r - 4, y - r + 2, 7, 7, c)
         }
-        p.fillCircle(x, y, r, c); p.drawCircle(x, y, r - 4, 1); p.fillCircle(x, y, 5, 6); p.fillCircle(x, y, 2, 10)
+        p.fillCircle(x, y, r, c)
+        // The teeth are symmetric, so retain one rotating spoke to make an
+        // actual turn visible rather than only changing draw-call order.
+        let spoke = ((turn % 4) + 4) % 4
+        if (spoke == 0) p.drawLine(x, y - 5, x, y - r + 5, 15)
+        else if (spoke == 1) p.drawLine(x + 5, y, x + r - 5, y, 15)
+        else if (spoke == 2) p.drawLine(x, y + 5, x, y + r - 5, 15)
+        else p.drawLine(x - 5, y, x - r + 5, y, 15)
+        p.drawCircle(x, y, r - 4, 1); p.fillCircle(x, y, 5, 6); p.fillCircle(x, y, 2, 10)
     }
     function glass(p: Image, x: number, y: number, w: number, h: number) {
         p.fillRect(x, y, w, h, 12); p.drawRect(x, y, w, h, 9)
@@ -1052,11 +1298,14 @@ namespace escapeObjects {
     }
     function pulse(response: number, frame: number): number { return response < 0 ? 0 : Math.max(0, Math.min(7, frame)) }
 
-    export function prop(station: number, control: number, response: number, frame: number, done: boolean, part: number = 0, pitch: number = 0, portraitMask: number = 0): Image {
+    // `frame` belongs to the short response animation. `idleFrame` is a
+    // separate world clock, so a prop does not freeze when a response ends.
+    export function prop(station: number, control: number, response: number, frame: number, done: boolean, part: number = 0, pitch: number = 0, portraitMask: number = 0, idleFrame: number = 0): Image {
         let p = image.create(144, 112)
         // A completed machine stays visibly changed after its short animation.
         // A fresh learner response still takes precedence, including its else.
-        if (response < 0 && done && station != 7) {
+        let parked = response < 0 && done && station != 7
+        if (parked) {
             const parked = [EscapeAction.CrankPull, EscapeAction.GeneratorSpin, EscapeAction.CaseRetract, EscapeAction.FireSteam, EscapeAction.WallClimb, EscapeAction.FootprintKeep, EscapeAction.ShadowReveal, EscapeAction.PortraitLeft, EscapeAction.MuralBlend, EscapeAction.StoneSnap, EscapeAction.TelescopeFocus, EscapeAction.ThermalAmber, EscapeAction.SampleSpike, EscapeAction.TitrationBloom, EscapeAction.ScaleLevel, EscapeAction.WireInstall, EscapeAction.LeafClip, EscapeAction.VesselReveal, EscapeAction.ReceiverClear, EscapeAction.NoiseClear, EscapeAction.PrinterFeed, EscapeAction.TubeLaunch, EscapeAction.SealStable, EscapeAction.PitchLevel, EscapeAction.SensorLamp1, EscapeAction.ShutterOpen, EscapeAction.StarIgnite, EscapeAction.RockBeam, EscapeAction.SyncLock, EscapeAction.LeverPull]
             response = parked[station]
             if (station == 8 && part == 1) response = EscapeAction.MuralOpen
@@ -1065,10 +1314,11 @@ namespace escapeObjects {
             frame = 7
         }
         let ok = good(station, response, done), t = pulse(response, frame)
-        if (station == 0) magnetCrank(p, control, response, t, ok)
-        else if (station == 1) generator(p, control, response, t, ok)
-        else if (station == 2) reservoir(p, control, response, t, ok)
-        else if (station == 3) hearth(p, control, response, t, ok)
+        let idle = Math.abs(idleFrame) % 16
+        if (station == 0) magnetCrank(p, control, response, t, ok, idle, parked)
+        else if (station == 1) generator(p, control, response, t, ok, idle, parked)
+        else if (station == 2) reservoir(p, control, response, t, ok, idle, parked)
+        else if (station == 3) hearth(p, control, response, t, ok, idle, parked)
         else if (station == 4) climbingWall(p, control, response, t, ok)
         else if (station == 5) footprintPath(p, control, response, t, ok)
         else if (station == 6) shadowLantern(p, control, response, t, ok)
@@ -1083,7 +1333,7 @@ namespace escapeObjects {
         else if (station == 15) wires(p, control, response, t, ok)
         else if (station == 16) plant(p, control, response, t, ok)
         else if (station == 17) heatVessel(p, control, response, t, ok)
-        else if (station == 18) pedalRadio(p, control, response, t, ok)
+        else if (station == 18) pedalRadio(p, control, response, t, ok, idle, parked)
         else if (station == 19) horns(p, control, response, t, ok)
         else if (station == 20) printer(p, control, response, t, ok)
         else if (station == 21) tubes(p, control, response, t, ok)
@@ -1093,20 +1343,23 @@ namespace escapeObjects {
         else if (station == 25) shutters(p, control, response, t, ok)
         else if (station == 26) constellation(p, control, response, t, ok)
         else if (station == 27) rockPath(p, control, response, t, ok)
-        else if (station == 28) interlocks(p, control, response, t, ok)
+        else if (station == 28) interlocks(p, control, response, t, ok, idle, parked)
         else exitDoor(p, control, response, t, ok)
+        ambientDetails(p, station, control, response, ok, idle, parked)
         return p
     }
 
     // 0. A real hanging magnet can pull the iron slider across its floor rail.
-    function magnetCrank(p: Image, control: number, response: number, t: number, ok: boolean) {
+    function magnetCrank(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean) {
         shadow(p, 70, 99, 57); p.fillRect(18, 83, 100, 8, 14); p.fillRect(20, 85, 96, 3, 6); p.fillRect(19, 91, 98, 4, 1)
         for (let x = 27; x < 112; x += 17) bolt(p, x, 87)
         let slide = response < 0 ? 0 : ok ? t * 4 : (t % 2) * 3
         rounded(p, 31 + slide, 75, 28, 13, 1); p.fillRect(34 + slide, 77, 22, 7, 6); p.fillRect(38 + slide, 78, 12, 2, 9); p.fillRect(34 + slide, 84, 20, 2, 14)
         p.fillRect(65, 7, 30, 5, 14); p.fillRect(68, 11, 4, 38, 6); p.fillRect(90, 11, 4, 38, 6); p.fillRect(66, 8, 27, 2, 15)
         let mx = control == 1 ? 47 : 80
-        let my = control == 1 ? 9 : 0
+        // Only the suspended magnet sways at rest; the rail and its solved
+        // slider remain fixed so the progress cue never drifts away.
+        let my = (control == 1 ? 9 : 0) + (response < 0 && !parked ? (idle < 4 || idle >= 12 ? -1 : 1) : 0)
         if (response >= 0) mx += ok ? t * 4 : (t % 2) * 3
         p.drawLine(80, 12, mx, 55 + my, 6); p.drawLine(81, 12, mx + 1, 55 + my, 9)
         rounded(p, mx - 15, 48 + my, 10, 19, 3); rounded(p, mx + 5, 48 + my, 10, 19, 3)
@@ -1116,11 +1369,18 @@ namespace escapeObjects {
     }
 
     // 1. Copper generator: flywheel, belt, cable, and a deliberately separate socket.
-    function generator(p: Image, control: number, response: number, t: number, ok: boolean) {
+    function generator(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean) {
         shadow(p, 69, 101, 56); rounded(p, 19, 55, 70, 38, 1); rounded(p, 21, 53, 66, 37, 14); rounded(p, 25, 57, 58, 29, 2)
         p.fillRect(29, 63, 25, 18, 12); p.fillRect(32, 65, 19, 3, 15); p.fillRect(57, 61, 19, 21, 6); p.fillRect(60, 64, 14, 4, 14); bolt(p, 28, 85); bolt(p, 80, 85)
-        gear(p, 55, 48, 25, 5, response >= 0 ? t : 0); p.fillCircle(55, 48, 19, 14); p.fillCircle(55, 48, 16, ok ? 10 : 4); p.drawCircle(55, 48, 12, 15); p.fillCircle(55, 48, 7, 6); p.fillCircle(55, 48, 3, 15)
-        p.drawLine(77, 33, 106, 27 + (response >= 0 ? t : 0), 1); p.drawLine(77, 60, 106, 48 - (response >= 0 ? t : 0), 1)
+        // The flywheel turns only once the completed generator is powered.
+        let spin = parked && ok ? idle : response >= 0 ? t : 0
+        gear(p, 55, 48, 25, 5, spin); p.fillCircle(55, 48, 19, 14); p.fillCircle(55, 48, 16, ok ? 10 : 4); p.drawCircle(55, 48, 12, 15); p.fillCircle(55, 48, 7, 6); p.fillCircle(55, 48, 3, 15)
+        let marker = spin % 4
+        if (marker == 0) p.drawLine(55, 43, 55, 32, 15)
+        else if (marker == 1) p.drawLine(60, 48, 71, 48, 15)
+        else if (marker == 2) p.drawLine(55, 53, 55, 64, 15)
+        else p.drawLine(50, 48, 39, 48, 15)
+        p.drawLine(77, 33, 106, 27 + spin, 1); p.drawLine(77, 60, 106, 48 - spin, 1)
         p.fillRect(100, 20, 25, 36, 1); p.fillRect(102, 22, 21, 32, 14); p.fillRect(105, 25, 15, 26, 12); p.fillCircle(112, 37, 8, 1); p.fillCircle(112, 37, 5, ok ? 10 : 3)
         if (control == 1) { p.drawLine(112, 37, 129, 37, 5); p.drawLine(129, 37, 129, 53, 5); p.fillCircle(129, 53, 4, 4) }
         p.fillRect(127, 44, 8, 31, 6); p.fillRect(125, 72, 12, 6, 14); p.fillCircle(131, 77, 3, 9)
@@ -1128,10 +1388,14 @@ namespace escapeObjects {
     }
 
     // 2. A glass case protecting a raised water reservoir, pipes, and mounting valve.
-    function reservoir(p: Image, control: number, response: number, t: number, ok: boolean) {
+    function reservoir(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean) {
         shadow(p, 72, 101, 53); p.fillRect(14, 84, 116, 10, 1); p.fillRect(18, 82, 108, 8, 14); p.fillRect(22, 85, 100, 3, 6)
         p.fillRect(38, 31, 54, 38, 1); oval(p, 65, 31, 27, 9, 14); oval(p, 65, 32, 23, 6, 12); p.fillRect(41, 34, 48, 30, 12); oval(p, 65, 62, 24, 6, 11); p.fillRect(45, 39, 40, 20, 11)
         p.fillRect(45, 37, 6, 24, 15); p.fillRect(55, 39, 26, 3, 9); p.fillRect(84, 35, 4, 28, 8); p.fillRect(54, 65, 20, 2, 9)
+        // A small shifting glint reads as liquid without opening the case or
+        // implying that water has reached the hearth.
+        let ripple = response < 0 && !parked ? idle % 5 : 2
+        p.fillRect(57 + ripple, 53, 9, 1, 15); p.setPixel(70 - ripple, 56, 9)
         p.drawLine(65, 69, 65, 79, 14); p.drawLine(65, 79, 104, 79, 14); p.drawLine(66, 81, 104, 81, 6); p.fillCircle(106, 80, 8, 5); p.fillCircle(106, 80, 4, 1); p.drawLine(106, 80, 111, 75 + (response >= 0 && ok ? t : 0), ok ? 10 : 3)
         let open = response >= 0 && ok ? t * 4 : 0; let gx = 18 + open
         // The cover is outline-and-glint glass so its copper tank remains visible.
@@ -1140,13 +1404,14 @@ namespace escapeObjects {
     }
 
     // 3. Hearth uses stacked stone, a live flame/steam reaction, and a fixed brass spout.
-    function hearth(p: Image, control: number, response: number, t: number, ok: boolean) {
+    function hearth(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean) {
         shadow(p, 69, 101, 55); p.fillRect(14, 70, 95, 24, 1)
         for (let y = 72; y < 93; y += 7) for (let x = 19 + ((y / 7) % 2) * 7; x < 105; x += 18) { p.fillRect(x, y, 16, 6, 6); p.fillRect(x + 1, y + 1, 12, 2, 14) }
         p.fillRect(27, 38, 67, 34, 14); oval(p, 60, 38, 34, 10, 14); oval(p, 60, 39, 29, 7, 1); p.fillRect(33, 43, 55, 27, 1)
         p.drawLine(36, 66, 79, 48, 14); p.drawLine(41, 48, 83, 66, 5); p.drawLine(39, 64, 80, 46, 4)
-        let flare = response >= 0 && !ok ? 10 + t * 2 : 0; let flame = response < 0 ? 23 : ok ? 6 : 29 + flare
-        for (let i = 0; i < 3; i++) { let x = 43 + i * 12; let top = 66 - flame + (i % 2) * 7; p.fillCircle(x, 61 - flame / 3, 10, ok ? 11 : 3); p.fillRect(x - 7, top + 9, 14, 60 - top, ok ? 11 : 3); p.drawLine(x - 7, top + 12, x, top, ok ? 11 : 3); p.drawLine(x + 7, top + 12, x, top, ok ? 11 : 3); p.fillCircle(x, 61 - flame / 4, 6, ok ? 9 : 4); p.fillRect(x - 3, top + 15, 7, 48 - top, ok ? 9 : 10); p.drawLine(x - 3, top + 17, x, top + 8, ok ? 9 : 10); p.drawLine(x + 3, top + 17, x, top + 8, ok ? 9 : 10) }
+        let flare = response >= 0 && !ok ? 10 + t * 2 : 0; let flame = response < 0 && !parked ? 21 + (idle % 4) : ok ? 6 : 29 + flare
+        for (let i = 0; i < 3; i++) { let x = 43 + i * 12 + (response < 0 && !parked && (idle + i) % 5 == 0 ? 1 : 0); let top = 66 - flame + (i % 2) * 7; p.fillCircle(x, 61 - flame / 3, 10, ok ? 11 : 3); p.fillRect(x - 7, top + 9, 14, 60 - top, ok ? 11 : 3); p.drawLine(x - 7, top + 12, x, top, ok ? 11 : 3); p.drawLine(x + 7, top + 12, x, top, ok ? 11 : 3); p.fillCircle(x, 61 - flame / 4, 6, ok ? 9 : 4); p.fillRect(x - 3, top + 15, 7, 48 - top, ok ? 9 : 10); p.drawLine(x - 3, top + 17, x, top + 8, ok ? 9 : 10); p.drawLine(x + 3, top + 17, x, top + 8, ok ? 9 : 10) }
+        if (response < 0 && !parked) { p.setPixel(34 + idle % 25, 34 + (idle % 3), 10); p.fillCircle(49 + (idle * 3) % 23, 30 - idle % 7, 2, 4) }
         p.fillRect(94, 27, 10, 46, 5); p.fillRect(102, 28, 23, 9, 14); p.fillRect(122, 31, 12, 4, 10); p.fillCircle(128, 34, 4, 15)
         if (response >= 0 && ok) for (let i = 0; i < 4; i++) { p.fillCircle(45 + i * 15, 35 - ((t + i * 2) % 8), 4, 11); p.setPixel(46 + i * 15, 31 - ((t + i * 2) % 8), 9) }
     }
@@ -1286,9 +1551,10 @@ namespace escapeObjects {
         p.fillRect(20, 89, 104, 6, 1); p.fillCircle(28 + control % 3 * 12, 87, 4, 3)
     }
 
-    function pedalRadio(p: Image, control: number, response: number, t: number, ok: boolean) {
+    function pedalRadio(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean) {
         shadow(p, 71, 101, 58); p.drawLine(31, 25, 31, 83, 6); p.drawLine(31, 50, 66, 70, 6); p.drawLine(31, 52, 53, 89, 6); p.fillCircle(31, 48, 20, 14); p.drawCircle(31, 48, 15, 5)
-        for (let i = 0; i < 6; i++) p.drawLine(31, 48, 31 + Math.floor(15 * Math.cos((i + t) * Math.PI / 3)), 48 + Math.floor(15 * Math.sin((i + t) * Math.PI / 3)), 6)
+        let spin = parked && ok ? idle : t
+        for (let i = 0; i < 6; i++) p.drawLine(31, 48, 31 + Math.floor(15 * Math.cos((i + spin) * Math.PI / 3)), 48 + Math.floor(15 * Math.sin((i + spin) * Math.PI / 3)), 6)
         p.fillCircle(31, 48, 5, 10); p.drawLine(12, 77, 50, 77, 14); p.fillCircle(15, 77, 7, 6); p.fillCircle(47, 77, 7, 6)
         rounded(p, 71, 27, 52, 51, 14); p.fillRect(76, 33, 42, 26, 1); for (let i = 0; i < 7; i++) { let h = response == EscapeAction.ReceiverDead ? 1 : response == EscapeAction.ReceiverStatic ? 4 + (i % 2) * 5 : response == EscapeAction.ReceiverClear || response < 0 && ok ? 6 + ((i + t) % 4) * 4 : 2; p.fillRect(80 + i * 5, 55 - h, 3, h, response == EscapeAction.ReceiverClear || response < 0 && ok ? 7 : response == EscapeAction.ReceiverStatic ? 3 : 6) }
         p.fillCircle(112, 66, 7, control % 2 == 0 ? 10 : 3); p.drawLine(78, 28, 68, 12, 9); p.fillCircle(67, 10, 3, 10)
@@ -1364,11 +1630,42 @@ namespace escapeObjects {
         p.fillRect(6, 89, 132, 7, 1)
     }
 
-    function interlocks(p: Image, control: number, response: number, t: number, ok: boolean) {
+    function interlocks(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean) {
         shadow(p, 72, 101, 56); p.fillRect(15, 23, 114, 67, 14); p.fillRect(19, 27, 106, 59, 2)
-        for (let i = 0; i < 3; i++) { let x = 43 + i * 29; gear(p, x, 55, 17, i == control % 3 ? 10 : (i == 1 ? 13 : 5), response >= 0 ? (ok ? t + i : i * 2 + (i == control % 3 ? t : 0)) : i * 2); p.fillCircle(x, 55, 5, 6) }
+        for (let i = 0; i < 3; i++) { let x = 43 + i * 29; let turn = parked && ok ? idle + i : response >= 0 ? (ok ? t + i : i * 2 + (i == control % 3 ? t : 0)) : i * 2; gear(p, x, 55, 17, i == control % 3 ? 10 : (i == 1 ? 13 : 5), turn); p.fillCircle(x, 55, 5, 6) }
         p.drawLine(31, 30, 113, 30, 9); p.drawLine(31, 80, 113, 80, 9); bolt(p, 27, 30); bolt(p, 117, 80)
         if (response >= 0 && !ok) { p.drawLine(21, 23, 123, 87, 3); p.drawLine(123, 23, 21, 87, 3) }
+    }
+
+    // These are tiny local motions, not a translation or blink applied to a
+    // whole card. They keep later stations alive while preserving their puzzle
+    // states. A fresh response has its own larger, readable animation above.
+    function ambientDetails(p: Image, station: number, control: number, response: number, ok: boolean, idle: number, parked: boolean) {
+        if (response >= 0 && !parked) return
+        if (station == 4) p.setPixel(40 + (control % 2) * 41, 67 - (idle % 3), 15) // hold-face glint
+        else if (station == 5) p.drawLine(18 + idle * 3, 34, 25 + idle * 3, 34, 6) // gap-air ripple
+        else if (station == 6) p.setPixel(55, 30 + idle % 18, 15) // lantern glass reflection
+        else if (station == 7) p.setPixel(25 + (idle % 4) * 30, 40, 15) // portrait eye catchlight
+        else if (station == 8) p.fillCircle(34 + (idle * 9) % 71, 31 + (idle % 3) * 13, 1, 15) // drifting mural pigment
+        else if (station == 9) p.setPixel(35 + (control % 3) * 32, 40 + idle % 8, 15) // socket rim glint
+        else if (station == 10) p.setPixel(101 + idle % 5, 30, 15) // lens sweep
+        else if (station == 11) p.fillCircle(39 + (idle % 3) * 31, 66 - idle % 9, 1, 15) // bath bubble
+        else if (station == 12) p.setPixel(35 + (idle * 7) % 66, 69 - idle % 4, 10) // loose filing
+        else if (station == 13) p.fillCircle(78, 34 + idle % 12, 1, 10) // hanging drop
+        else if (station == 14) p.setPixel(34 + control % 3 * 3, 67 - idle % 3, 15) // weight edge
+        else if (station == 15) p.setPixel(109, 38 + idle % 28, 15) // terminal reflection
+        else if (station == 16) p.setPixel(55 + (idle % 4) * 8, 31 + (idle % 5) * 6, 15) // leaf edge
+        else if (station == 17 && parked && ok) p.fillCircle(61 + idle % 17, 35 - idle % 6, 1, 11) // warm vessel steam
+        else if (station == 19) p.setPixel(47 + (idle % 3) * 25, 31, 15) // horn-metal shine
+        else if (station == 20) p.setPixel(44 + idle % 29, 56, 15) // printer scanner light
+        else if (station == 21) p.setPixel(35 + idle % 55, control % 2 == 0 ? 21 : 66, 15) // tube-line glint
+        else if (station == 22) p.setPixel(43 + idle % 17, 34, 15) // gauge tick
+        else if (station == 23) p.setPixel(70 + idle % 5, 20, 15) // plumb-bob highlight
+        else if (station == 24 && parked && ok) p.setPixel(55 + idle % 43, 39 + (control % 3) * 19, 15) // lit sensor beam
+        else if (station == 25 && parked && ok) p.setPixel(30 + idle % 80, 54, 15) // light through open shutter
+        else if (station == 26) p.fillCircle(45 + (idle * 7) % 51, 34 + idle % 29, 1, 15) // star twinkle
+        else if (station == 27 && parked && ok) p.fillCircle(28 + idle % 76, 47, 1, 11) // rock-path beam sparkle
+        else if (station == 29) p.setPixel(35 + idle % 42, 30, 15) // exit-door brass gleam
     }
 
     function exitDoor(p: Image, control: number, response: number, t: number, ok: boolean) {
@@ -1471,7 +1768,7 @@ namespace escapeArt {
         }
     }
 
-    function connection(p: Image, a: number, b: number, done: boolean, frame: number) {
+    function connection(p: Image, a: number, b: number, done: boolean, idleFrame: number) {
         let ax = escapeFlow.x(a), ay = escapeFlow.y(a)
         let bx = escapeFlow.x(b), by = escapeFlow.y(b)
         let color = done ? 8 : 6
@@ -1481,7 +1778,7 @@ namespace escapeArt {
         p.drawLine(bx, ay + 35, bx, by, color)
         p.drawLine(bx + 4, ay + 35, bx + 4, by, 6)
         if (done) {
-            let t = (frame % 8) / 8
+            let t = (idleFrame % 8) / 8
             p.fillCircle(Math.round(ax + (bx - ax) * t), ay + 37, 3, 10)
         }
     }
@@ -1509,19 +1806,20 @@ namespace escapeArt {
         }
     }
 
-    export function world(room: number, solved: number[], introduced: number[], focusBeat: number, activeBeat: number, controls: number[], response: number, reactionFrame: number, pitch: number, firstClear: number): Image {
+    export function world(room: number, solved: number[], introduced: number[], focusBeat: number, activeBeat: number, controls: number[], response: number, reactionFrame: number, pitch: number, firstClear: number, reactionBeat: number, reactionControl: number, idleFrame: number): Image {
         let p = image.create(640, 480)
         floor(p, room)
         let focus = escapeFlow.stationForBeat(focusBeat)
         let active = activeBeat < 0 ? -1 : escapeFlow.stationForBeat(activeBeat)
-        for (let l = 0; l < linksA.length; l++) if (Math.idiv(linksA[l], 6) == room) connection(p, linksA[l], linksB[l], stationDone(linksA[l], solved), reactionFrame)
+        let reacting = reactionBeat < 0 || reactionFrame < 0 ? -1 : escapeFlow.stationForBeat(reactionBeat)
+        for (let l = 0; l < linksA.length; l++) if (Math.idiv(linksA[l], 6) == room) connection(p, linksA[l], linksB[l], stationDone(linksA[l], solved), idleFrame)
         door(p, room, solved)
         // Back-to-front placement keeps overlapping physical silhouettes legible.
         for (let row = 0; row < 2; row++) for (let local = 0; local < 6; local++) {
             let s = room * 6 + local
             let x = escapeFlow.x(s), y = escapeFlow.y(s)
             if ((y < 250 ? 0 : 1) != row) continue
-            let b = s == active ? activeBeat : solved[escapeFlow.lastBeats[s]] ? escapeFlow.lastBeats[s] : escapeFlow.firstBeats[s]
+            let b = s == reacting ? reactionBeat : s == active ? activeBeat : solved[escapeFlow.lastBeats[s]] ? escapeFlow.lastBeats[s] : escapeFlow.firstBeats[s]
             let done = stationDone(s, solved)
             let available = escapeFlow.available(s, solved, introduced, focusBeat)
             oval(p, x + 4, y + 43, 53, 11, 6)
@@ -1531,7 +1829,8 @@ namespace escapeArt {
                 oval(p, x, y + 46, 48, 5, 9)
             }
             let portraitMask = solved[7] + 2 * solved[8] + 4 * solved[9] + 8 * solved[10]
-            let object = escapeObjects.prop(s, visibleControl(b, controls[b] || 0, solved), s == active ? response : -1, reactionFrame, solved[b] == 1, s == 7 ? b - 7 : b - escapeFlow.firstBeats[s], pitch, portraitMask)
+            let objectControl = s == reacting ? reactionControl : controls[b] || 0
+            let object = escapeObjects.prop(s, visibleControl(b, objectControl, solved), s == reacting ? response : -1, s == reacting ? reactionFrame : -1, solved[b] == 1, s == 7 ? b - 7 : b - escapeFlow.firstBeats[s], pitch, portraitMask, idleFrame)
             if (!available) {
                 for (let py = 0; py < object.height; py++) for (let px = 0; px < object.width; px++) {
                     let c = object.getPixel(px, py)
@@ -1554,11 +1853,13 @@ namespace escapeArt {
         }
         p.fillRect(0, 0, 640, 42, 12)
         words(p, roomTitles[room], 18, 9, 15, 2)
-        words(p, "ROOM " + (room + 1) + "/5", 535, 13, 10, 1)
+        words(p, "ROOM " + ["A", "B", "C", "D", "E"][room], 535, 13, 10, 1)
         p.fillRect(0, 441, 640, 39, 12)
         if (activeBeat >= 0) {
-            words(p, escapeLab.readout(activeBeat), 14, 445, 15, 2)
-            words(p, "A OPERATE   LEFT/RIGHT ADJUST   UP/DOWN PART   B WALK", 14, 467, 10, 1)
+            let s = escapeFlow.stationForBeat(activeBeat)
+            let part = escapeFlow.lastBeats[s] > escapeFlow.firstBeats[s] ? "  PART " + (activeBeat - escapeFlow.firstBeats[s] + 1) + "/" + (escapeFlow.lastBeats[s] - escapeFlow.firstBeats[s] + 1) : ""
+            words(p, escapeLab.readout(activeBeat) + part, 14, 445, 15, 2)
+            words(p, escapeFlow.lastBeats[s] > escapeFlow.firstBeats[s] ? "ARROWS WALK   A OPERATE   TAP B SETTING   HOLD B PART" : "ARROWS WALK   A OPERATE   TAP B SETTING", 14, 467, 10, 1)
         } else {
             let target = focus < 0 ? "Walk to the open doorway" : "Next: " + shortNames[focus]
             words(p, target, 14, 445, 15, 2)
@@ -1640,14 +1941,17 @@ namespace escapeLab {
     let credible = true
     let phase = 0
     let inAttempt = false
-    let lastWorldX = 320
-    let lastWorldY = 235
     let resetArmed = false
     let explorerFacing = 0
     let reactionFrame = -1
+    let reactionBeat = -1
+    let reactionControl = 0
     let scurryFrames = 0
     let flame: Sprite = null
+    let flameFrames: Image[] = []
     let busy = false
+    let bPressedAt = -1
+    let bStation = -1
 
     const firstBeats = escapeFlow.firstBeats
     const lastBeats = escapeFlow.lastBeats
@@ -1749,25 +2053,25 @@ namespace escapeLab {
         let best = -1
         let distance = 10000
         for (let local = 0; local < 6; local++) {
+            let candidate = room * 6 + local
+            if (!escapeFlow.available(candidate, solved, introduced, escapeFlow.focusBeat(room, solved, introduced))) continue
             let dx = player.x - stationX(local)
             let dy = player.y - stationY(local)
             let d = dx * dx + dy * dy
-            if (d < distance) { distance = d; best = room * 6 + local }
+            if (d < distance) { distance = d; best = candidate }
         }
         return distance < 8500 ? best : -1
     }
 
     function enterStation(s: number) {
+        if (station == s) return
         station = s
-        beat = firstBeats[s]
-        for (let i = firstBeats[s]; i <= lastBeats[s]; i++) if (!solved[i]) { beat = i; break }
+        let itinerary = escapeFlow.focusBeat(room, solved, introduced)
+        beat = itinerary >= firstBeats[s] && itinerary <= lastBeats[s] ? itinerary : firstBeats[s]
+        if (beat == firstBeats[s]) for (let i = firstBeats[s]; i <= lastBeats[s]; i++) if (!solved[i]) { beat = i; break }
         fixture = controls[beat]
-        response = -1
         credible = true
         focused = true
-        lastWorldX = player.x
-        lastWorldY = player.y
-        controller.moveSprite(player, 0, 0)
         draw()
     }
 
@@ -1799,17 +2103,21 @@ namespace escapeLab {
     }
 
     function leaveStation() {
-        scurryFrames = 0
-        flame.setFlag(SpriteFlag.Invisible, true)
         focused = false
         station = -1
         beat = -1
         fixture = 0
-        response = -1
         credible = true
-        player.setPosition(lastWorldX, lastWorldY)
-        controller.moveSprite(player, 150, 150)
         draw()
+    }
+
+    function updateNearbyStation() {
+        if (ending > 0 || busy) return
+        let s = nearestStation()
+        if (s >= 0 && !escapeFlow.available(s, solved, introduced, escapeFlow.focusBeat(room, solved, introduced))) s = -1
+        if (s == station) return
+        if (s < 0) leaveStation()
+        else enterStation(s)
     }
 
     function cancelReset() {
@@ -2043,11 +2351,11 @@ namespace escapeLab {
     }
     function draw() {
         if (ending > 0) scene.setBackgroundImage(escapeArt.ending(firstClear, secondClear, phase))
-        else scene.setBackgroundImage(escapeArt.world(room, solved, introduced, escapeFlow.focusBeat(room, solved, introduced), focused ? beat : -1, controls, response, reactionFrame, pitch, firstClear))
+        else scene.setBackgroundImage(escapeArt.world(room, solved, introduced, escapeFlow.focusBeat(room, solved, introduced), focused ? beat : -1, controls, response, reactionFrame, pitch, firstClear, reactionBeat, reactionControl, phase))
     }
 
     function keepPlayerOnPaths() {
-        if (focused || ending > 0) return
+        if (ending > 0) return
         player.x = Math.max(40, Math.min(600, player.x))
         player.y = Math.max(76, Math.min(420, player.y))
         // The feet collide with solid bases only, leaving rails and shadows walkable.
@@ -2097,6 +2405,8 @@ namespace escapeLab {
     export function make(action: EscapeAction) {
         if (!focused || !inAttempt || !actionBelongs(beat, action)) return
         response = action
+        reactionBeat = beat
+        reactionControl = fixture
         credible = matchesInput(beat, action)
         reactionFrame = 0
         if (action == EscapeAction.FireFlare && credible) {
@@ -2112,7 +2422,7 @@ namespace escapeLab {
             if (action == EscapeAction.LeverPull) {
                 if (firstClear == 0) { firstClear = 1; ending = 1 }
                 else { secondClear = 1; ending = 2 }
-                focused = false
+                leaveStation()
                 player.setFlag(SpriteFlag.Invisible, true)
             }
         } else if (credible && action == escapeFlow.introAction(beat) && !solved[beat] && escapeFlow.focusBeat(room, solved, introduced) == beat) {
@@ -2130,6 +2440,8 @@ namespace escapeLab {
         pitch = newAngle
         if (credible) solved[28] = 1
         response = EscapeAction.PitchUp
+        reactionBeat = beat
+        reactionControl = fixture
         reactionFrame = 0
         save()
         draw()
@@ -2137,33 +2449,25 @@ namespace escapeLab {
 
     controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         if (ending > 0) return
-        if (focused) {
-            if (busy) return
-            busy = true
-            response = -1
-            reactionFrame = 0
-            draw()
-            let operatedBeat = beat
-            pause(360)
-            if (!focused || beat != operatedBeat) { busy = false; return }
-            let handler = handlers[beat]
-            if (handler) { inAttempt = true; handler(); inAttempt = false }
-            busy = false
-            draw()
-            return
-        }
+        if (busy || reactionFrame >= 0) return
         if (resetArmed) {
             cancelReset()
             return
         }
         if (player.x >= 588 && player.y >= 205 && player.y <= 275 && room < 4) {
-            if (escapeFlow.roomComplete(room, solved)) { room++; player.setPosition(52, 240); save(); draw() }
+            if (escapeFlow.roomComplete(room, solved)) { leaveStation(); room++; player.setPosition(52, 240); save(); draw() }
             else player.sayText("The exit still needs its catches", 900, false)
             return
         }
-        if (player.x <= 52 && player.y >= 205 && player.y <= 275 && room > 0) { room--; player.setPosition(588, 240); save(); draw(); return }
-        let s = nearestStation()
-        if (s >= 0 && escapeFlow.available(s, solved, introduced, escapeFlow.focusBeat(room, solved, introduced))) enterStation(s)
+        if (player.x <= 52 && player.y >= 205 && player.y <= 275 && room > 0) { leaveStation(); room--; player.setPosition(588, 240); save(); draw(); return }
+        updateNearbyStation()
+        if (!focused) return
+        busy = true
+        let operatedBeat = beat
+        let handler = handlers[operatedBeat]
+        if (handler) { inAttempt = true; handler(); inAttempt = false }
+        busy = false
+        draw()
     })
 
     controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -2173,11 +2477,31 @@ namespace escapeLab {
             control.reset()
             return
         }
-        if (focused) {
-            leaveStation()
-            save()
+        updateNearbyStation()
+        bPressedAt = control.millis()
+        bStation = station
+    })
+
+    controller.B.onEvent(ControllerButtonEvent.Released, function () {
+        if (ending > 0 || bPressedAt < 0) return
+        let held = control.millis() - bPressedAt
+        bPressedAt = -1
+        if (busy) return
+        updateNearbyStation()
+        if (bStation >= 0) {
+            if (station != bStation) return
+            if (held >= 550 && lastBeats[station] > firstBeats[station]) {
+                beat = beat >= lastBeats[station] ? firstBeats[station] : beat + 1
+                fixture = controls[beat]
+            } else if (held < 550) {
+                fixture = (fixture + 1) % fixtureCount(beat)
+                controls[beat] = fixture
+                save()
+            }
+            draw()
             return
         }
+        if (focused) return
         if (room == 0 && player.x <= 52) {
             if (resetArmed) clearThisGame()
             else {
@@ -2188,36 +2512,16 @@ namespace escapeLab {
     })
 
     controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
-        if (!focused) { cancelReset(); return }
-        fixture = (fixture + fixtureCount(beat) - 1) % fixtureCount(beat)
-        controls[beat] = fixture
-        save()
-        response = -1
-        draw()
+        cancelReset()
     })
     controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-        if (!focused) { cancelReset(); return }
-        fixture = (fixture + 1) % fixtureCount(beat)
-        controls[beat] = fixture
-        save()
-        response = -1
-        draw()
+        cancelReset()
     })
     controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-        if (!focused) { cancelReset(); return }
-        if (beat <= firstBeats[station]) return
-        beat--
-        fixture = controls[beat]
-        response = -1
-        draw()
+        cancelReset()
     })
     controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-        if (!focused) { cancelReset(); return }
-        if (beat >= lastBeats[station]) return
-        beat++
-        fixture = controls[beat]
-        response = -1
-        draw()
+        cancelReset()
     })
 
     load()
@@ -2226,28 +2530,31 @@ namespace escapeLab {
     player.setPosition(320, 235)
     controller.moveSprite(player, 150, 150)
     player.setStayInScreen(true)
-    let flameImage = image.create(10, 14)
-    flameImage.setPixel(4, 0, 4)
-    flameImage.setPixel(5, 1, 4)
-    flameImage.fillRect(3, 3, 5, 8, 4)
-    flameImage.fillRect(4, 6, 3, 7, 5)
-    flame = sprites.create(flameImage, SpriteKind.Projectile)
+    for (let i = 0; i < 3; i++) {
+        let flameImage = image.create(10, 14)
+        flameImage.setPixel(4 + (i == 1 ? -1 : 1), 0, 5)
+        flameImage.setPixel(5 - (i == 2 ? 1 : 0), 2, 4)
+        flameImage.fillRect(3, 3 + (i % 2), 5, 8, 4)
+        flameImage.fillRect(4, 6 + (i == 2 ? 1 : 0), 3, 7, 5)
+        flameFrames.push(flameImage)
+    }
+    flame = sprites.create(flameFrames[0], SpriteKind.Projectile)
     flame.setFlag(SpriteFlag.Invisible, true)
     if (ending > 0) { player.setFlag(SpriteFlag.Invisible, true); controller.moveSprite(player, 0, 0) }
     game.onUpdateInterval(120, function () {
         phase++
         if (reactionFrame >= 0) {
             reactionFrame++
-            if (reactionFrame > 16) { reactionFrame = -1; response = -1 }
+            if (reactionFrame > 12) { reactionFrame = -1; response = -1; reactionBeat = -1 }
         }
         if (scurryFrames > 0) {
-            let elapsed = 12 - scurryFrames
-            player.setPosition(lastWorldX + (elapsed < 4 ? (elapsed + 1) * 5 : elapsed < 8 ? (8 - elapsed) * 5 : 0), lastWorldY + (elapsed < 8 ? 7 : 0))
+            flame.setImage(flameFrames[phase % 3])
             flame.setPosition(player.x + 6, player.y - 24)
             scurryFrames--
-            if (scurryFrames == 0) { player.setPosition(lastWorldX, lastWorldY); flame.setFlag(SpriteFlag.Invisible, true) }
+            if (scurryFrames == 0) flame.setFlag(SpriteFlag.Invisible, true)
         }
         keepPlayerOnPaths()
+        updateNearbyStation()
         updateExplorer()
         draw()
     })

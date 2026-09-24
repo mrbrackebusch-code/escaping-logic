@@ -1,7 +1,7 @@
 {
   "name": "logic-escape-room",
   "description": "Escaping Logic: a MakeCode Arcade tutorial about conditional decisions.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "device": "*"
   },

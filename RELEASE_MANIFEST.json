@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "manifest_id": "ESCAPING-LOGIC-PUBLICATION-PACKAGE-CONNECTED-V2",
-  "release_version": "0.2.0",
-  "package_id": "escaping-logic-3821640e629f7806-v0-2-0-r3",
+  "release_version": "0.3.0",
+  "package_id": "escaping-logic-ec2a324a701e7fe8-v0-3-0",
   "game_id": "GAME-LOGIC-ESCAPE-ROOM",
   "status": "REVIEW_CANDIDATE_UNPUBLISHED",
   "repository_owner": "mrbrackebusch-code",
@@ -13,24 +13,24 @@
   "stable_tutorial_url": "https://arcade.makecode.com/?nocdn=1&skipgithubcache=1#tutorial:https://github.com/mrbrackebusch-code/escaping-logic/README",
   "external_publication_performed": false,
   "student_distribution_ready": false,
-  "guide_revision": "3821640e629f7806",
-  "guide_manifest_sha256": "7687377bdc11012aa6444f73c7d6d99f1d32db2e059faf37442e88515770f0e3",
-  "canonical_tutorial_sha256": "c40d50c73ffd99fc005fade07fbc4c98a03dcda5b929817c1234dd18ed7a6e1c",
-  "public_readme_sha256": "12b7a604834ef69e78a676e6e64e73cfbdee0d7821b62ed30daa42e3b734459d",
+  "guide_revision": "ec2a324a701e7fe8",
+  "guide_manifest_sha256": "a1ca6fcf1bb530eb24daa24dca7d2ab38a0f818d90ca4ffd90edd10505110ade",
+  "canonical_tutorial_sha256": "bf911eb2ca6d74898ec5d6bda16065f74f61598c48be92a0557a8fcaf74a8c72",
+  "public_readme_sha256": "6fc123d5bb372b1d6998d9010cae278164656dc465738712deb1c92106abd89f",
   "current_executable_identity": {
-    "customts_sha256": "8febc4c28a013e45897a0d3e5cb6382f05ba65116c65b6c59c05a3114b8558a7",
+    "customts_sha256": "d522ff96dbee76f874507a38615ae39ce9eda29b24a689935bb9ca00023f17fb",
     "solution_sha256": "fe4b7d8f6699fae0ccbd6d045e0844f2224408e3220ea744e5b32e8cc1848501",
     "starter_sha256": "5534ebe56fa6882ad5d7848ce18a701e38513aafe9ded45cdaadeec2dab6c98a",
     "hints": 36,
     "source_hashes": {
       "games/logic-escape-room/implementation/learner-states/catalog.json": "d34e3a6668bf01e6852f0ea286902be346fb54c74c9a3efee4913a49aba0951f",
-      "games/logic-escape-room/implementation/supplied-world/api.ts": "7ad1ad1f559dd5170a9788af40d4db7a4a13ca66bff05d77776a415f7793d952",
+      "games/logic-escape-room/implementation/supplied-world/api.ts": "e22714371950c046642bd99da12f327dbba2572e3c12bcedd70ce3d9d22a07f4",
       "games/logic-escape-room/implementation/supplied-world/flow.ts": "570c68c92bec2f5b2455ebce7ee15901052b6ac64e0ce22258e33484e3a4c396",
-      "games/logic-escape-room/implementation/supplied-world/objects.ts": "53e2c6b6cf3286a9cc6bdb6f2c16c05014661e8c9d384757b60d281a87b1dfdd",
-      "games/logic-escape-room/implementation/supplied-world/world.ts": "69948e0cadf23fc1f36c07ef3256ada536947c24042973a1b44da0cbf2269d1a",
-      "games/logic-escape-room/implementation/supplied-world/engine.ts": "49217548af5ff0b99006635d47311fc32556cade3adefa87c089195d67c3d57a",
+      "games/logic-escape-room/implementation/supplied-world/objects.ts": "a979831ae71e4688b2d6b1e4e08b56a1da5f610d2d7c62d47721781509856962",
+      "games/logic-escape-room/implementation/supplied-world/world.ts": "8e350fe68042255702bd4181697449e81879c0782e4d92a84d8d0fd8e493a164",
+      "games/logic-escape-room/implementation/supplied-world/engine.ts": "a475ff9a4329f48da22af865f0582a077336733def3d64dfc4147174cef0cc61",
       "games/logic-escape-room/implementation/solution/main.ts": "fe4b7d8f6699fae0ccbd6d045e0844f2224408e3220ea744e5b32e8cc1848501",
-      "games/logic-escape-room/copy/tutorial.md": "43bc9b936929c12c9dba7d4633b3415a9f1b771cabfdee0f673c21b2652a751e",
+      "games/logic-escape-room/copy/tutorial.md": "a45bd5ebbcc796e6d1b6f474fe62f6305f4e11656532265de50b39efa6e4e387",
       "games/logic-escape-room/tools/build.mjs": "661da18ba857a53bf948bb200fa7d0fdd7dfe32b1d73ef94a41867de32fdb69b"
     }
   },
@@ -51,7 +51,7 @@
     "supplied_world_in_customts_only": true
   },
   "media": {
-    "revision": "3821640e629f7806",
+    "revision": "ec2a324a701e7fe8",
     "total": 55,
     "menu": 6,
     "assembled": 13,
@@ -60,449 +60,669 @@
       {
         "state_id": "01-fire",
         "kind": "menu",
-        "canonical_path": "assets/instructions/native-connected-v2-06/01-fire-menu.svg",
-        "publication_path": "assets/3821640e629f7806/media/menu/01-fire-01-fire-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/01-fire-01-fire-menu.svg",
-        "sha256": "1f1d162283b4eedc5a3cbc439a59d66774f38843a711116269ceb09575479727"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/01-fire-menu.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/menu/01-fire-01-fire-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/01-fire-01-fire-menu.svg",
+        "sha256": "daeda017629dfa65e00baae0e68a09b40f19841225fff62705ed01d27380c149"
       },
       {
         "state_id": "01-fire",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/01-fire-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/01-fire-01-fire-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/01-fire-01-fire-assembled.svg",
-        "sha256": "4ec24c5da9640b5610a4e7165131dcef13cede42d933b9cf809936256473e841"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/01-fire-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/01-fire-01-fire-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/01-fire-01-fire-assembled.svg",
+        "sha256": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0"
       },
       {
         "state_id": "01-fire",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-01-fire.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/01-fire-connected-v2-01-fire.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/01-fire-connected-v2-01-fire.gif",
-        "sha256": "85a8299691e89183f3a48bddc9485201cce6ee97c1d12b57f1e14845f7e7fbf2"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-01-fire.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/01-fire-connected-v2-interaction-v3-01-01-fire.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/01-fire-connected-v2-interaction-v3-01-01-fire.gif",
+        "sha256": "d73712a14fa0c94aae70c566c5fb8fa9d09f38c1212034b27ec212b4b818dcd9"
       },
       {
         "state_id": "02-case",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/02-case-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/02-case-02-case-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/02-case-02-case-assembled.svg",
-        "sha256": "e638e998a062f36f314324eace053cedcaa36b76032a1d6eba88205c01ab0967"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/02-case-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/02-case-02-case-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/02-case-02-case-assembled.svg",
+        "sha256": "d689d2f1078ce79d219b14d9fd9e81487efd07e3f199a4db12006a56956d93d2"
       },
       {
         "state_id": "02-case",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-02-case.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/02-case-connected-v2-02-case.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/02-case-connected-v2-02-case.gif",
-        "sha256": "020ea4da758bae492e5d34fc66535df4ce0c8403b9a0bdf6833faa9e62be2f86"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-02-case.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/02-case-connected-v2-interaction-v3-01-02-case.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/02-case-connected-v2-interaction-v3-01-02-case.gif",
+        "sha256": "cfea971e2e3e29d1bf5d3903a7a40139a82e732899cf7c53fd097413f6c1c831"
       },
       {
         "state_id": "03-generator",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/03-generator-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/03-generator-03-generator-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/03-generator-03-generator-assembled.svg",
-        "sha256": "18584be80a80b9904b670acc0e433629bc07b0af3a75537b92df344ce7ee5ff7"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/03-generator-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/03-generator-03-generator-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/03-generator-03-generator-assembled.svg",
+        "sha256": "ce1f3b4fa61fda846a36f4545637abcf8cd27b8e94dfe9aa91a2ee8bfdd00b4d"
       },
       {
         "state_id": "03-generator",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-03-generator.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/03-generator-connected-v2-03-generator.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/03-generator-connected-v2-03-generator.gif",
-        "sha256": "7c7153266d0c1bafc500856ede5b3131f1cf2cfd2b2a6a5cdf96925e93971267"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-03-generator.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/03-generator-connected-v2-interaction-v3-01-03-generator.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/03-generator-connected-v2-interaction-v3-01-03-generator.gif",
+        "sha256": "d37c3632f00aef923062a2f65355ed4f7ed2871a17d9cbabc6bbd90d25d1a930"
       },
       {
         "state_id": "04-crank",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/04-crank-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/04-crank-04-crank-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/04-crank-04-crank-assembled.svg",
-        "sha256": "e189749bfdb999d95a6a4917fa69f837b85f22f7b7bffc1a2ee3cc9cc2c3e29f"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/04-crank-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/04-crank-04-crank-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/04-crank-04-crank-assembled.svg",
+        "sha256": "0f1acca8b753408738e33d087fe8e63382b345a6fdbb009e2690090854f737f0"
       },
       {
         "state_id": "04-crank",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-04-crank.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/04-crank-connected-v2-04-crank.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/04-crank-connected-v2-04-crank.gif",
-        "sha256": "1b874867ec4db6f6c1ce1eb6cdb26467e7dc11f8e8193fe504c28d28b9364277"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-04-crank.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/04-crank-connected-v2-interaction-v3-01-04-crank.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/04-crank-connected-v2-interaction-v3-01-04-crank.gif",
+        "sha256": "5ffe9742b0983bd18d914c443b8d7195f9cec22185f42ba7342fc435caa11b2e"
       },
       {
         "state_id": "05-wall",
         "kind": "menu",
-        "canonical_path": "assets/instructions/native-connected-v2-06/05-wall-comparisons-menu.svg",
-        "publication_path": "assets/3821640e629f7806/media/menu/05-wall-05-wall-comparisons-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/05-wall-05-wall-comparisons-menu.svg",
-        "sha256": "d830330c119f9013934070fb1730bf35d997dd05591c4070261e2eae2ae0d95c"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/05-wall-comparisons-menu.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/menu/05-wall-05-wall-comparisons-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/05-wall-05-wall-comparisons-menu.svg",
+        "sha256": "a9b4eb581bf72864bb39a995b1b876504e7e196e7bf918878611d0352bc1629d"
       },
       {
         "state_id": "05-wall",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/05-wall-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/05-wall-05-wall-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/05-wall-05-wall-assembled.svg",
-        "sha256": "4e42548125a9faecf4c5b7a167610e98e4cecc33c8891f603706e0f5d45072ab"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/05-wall-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/05-wall-05-wall-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/05-wall-05-wall-assembled.svg",
+        "sha256": "99ad38a4a0f3ea16464b45cc206cdc35b11ab77ce0401607f3afa58f0e5d9a31"
       },
       {
         "state_id": "05-wall",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-05-wall.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/05-wall-connected-v2-05-wall.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/05-wall-connected-v2-05-wall.gif",
-        "sha256": "3c4a503f19608ead263e59bd6e19692d5f9189a3dd0c8c91520319a5786e8f13"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-05-wall.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/05-wall-connected-v2-interaction-v3-01-05-wall.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/05-wall-connected-v2-interaction-v3-01-05-wall.gif",
+        "sha256": "8542de078c28fa02f37b0c2273b31fd1d962305cd825ef6acb6d3e21fa85852f"
       },
       {
         "state_id": "06-footprints",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/06-footprints-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/06-footprints-06-footprints-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/06-footprints-06-footprints-assembled.svg",
-        "sha256": "a3af4bf7f0e7f94c69d8fed6ca72f90e79e645e113635a3c3996b9e30134c144"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/06-footprints-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "sha256": "6f3c8bc8cba372b76f61accefb3bda43f94d1ad4c5db170942c3c8fcb40bd3b6"
       },
       {
         "state_id": "06-footprints",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-06-footprints.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/06-footprints-connected-v2-06-footprints.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/06-footprints-connected-v2-06-footprints.gif",
-        "sha256": "354ba243c455e55aba3fb046fe25639e9d7f5569aca1fd7b38cd438301638968"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-06-footprints.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/06-footprints-connected-v2-interaction-v3-01-06-footprints.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/06-footprints-connected-v2-interaction-v3-01-06-footprints.gif",
+        "sha256": "9b846edda859b215f636678fa8ce30573d6a8437c34be52f7e2533aa1eb120cc"
       },
       {
         "state_id": "07-shadow",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/07-shadow-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/07-shadow-07-shadow-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/07-shadow-07-shadow-assembled.svg",
-        "sha256": "89d97c8ccd4cfdb0860e51026f5400756013357ae3793e447fe80f8fa883a547"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/07-shadow-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "sha256": "397b1cf06bbf3321c4e7a5fe447d763d5300fbc05a969bf3714216a8510134e5"
       },
       {
         "state_id": "07-shadow",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-07-shadow.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/07-shadow-connected-v2-07-shadow.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/07-shadow-connected-v2-07-shadow.gif",
-        "sha256": "e989c931deb932bff984ca67bc04a408b8dbfdc35a4ff86df2bd9e96b18e8566"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-07-shadow.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/07-shadow-connected-v2-interaction-v3-01-07-shadow.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/07-shadow-connected-v2-interaction-v3-01-07-shadow.gif",
+        "sha256": "b95bb86a096936010a0f66c799d4e214fe938a81ec7a2d9041899413e218615c"
       },
       {
         "state_id": "08-telescope",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-08-telescope.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/08-telescope-connected-v2-08-telescope.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/08-telescope-connected-v2-08-telescope.gif",
-        "sha256": "cfe8f971847467de6d95a4d115b1b8bb104a4feb117829736e8ba74116ca40aa"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-08-telescope.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/08-telescope-connected-v2-interaction-v3-01-08-telescope.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/08-telescope-connected-v2-interaction-v3-01-08-telescope.gif",
+        "sha256": "560c0be9e26e2b1de830bab11682b4e893b28786bf725701a2ae0db9e8906d88"
       },
       {
         "state_id": "09-stones",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-09-stones.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/09-stones-connected-v2-09-stones.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/09-stones-connected-v2-09-stones.gif",
-        "sha256": "9f4323ea32bc9362e8ec3cd2dddddb96b86556749b0ef0d6ed80435940708b17"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-09-stones.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/09-stones-connected-v2-interaction-v3-01-09-stones.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/09-stones-connected-v2-interaction-v3-01-09-stones.gif",
+        "sha256": "cf956d0d5c3f078f18bb3d117978c36df299f28d2dc5759b684df8cbfcc76904"
       },
       {
         "state_id": "10-mural-mix",
         "kind": "menu",
-        "canonical_path": "assets/instructions/native-connected-v2-06/10-mural-logic-menu.svg",
-        "publication_path": "assets/3821640e629f7806/media/menu/10-mural-mix-10-mural-logic-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/10-mural-mix-10-mural-logic-menu.svg",
+        "canonical_path": "assets/instructions/native-interaction-v3-01/10-mural-logic-menu.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/menu/10-mural-mix-10-mural-logic-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/10-mural-mix-10-mural-logic-menu.svg",
         "sha256": "e81b2b5fb3c60e17098b9bdc31c1e78270f1b407985474face897bbab7c8e391"
       },
       {
         "state_id": "10-mural-mix",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/10-mural-mix-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
-        "sha256": "c3eb3267284f6fc3043dd9959ff7a5cbd9a9a99613e6fa1dbbc36e97ca515889"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/10-mural-mix-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
+        "sha256": "07647616b29d5a8ebe7bb50317bd5649372d1e2bce123ffc47eafde0dc9b47fc"
       },
       {
         "state_id": "10-mural-mix",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-10-mural-mix.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/10-mural-mix-connected-v2-10-mural-mix.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/10-mural-mix-connected-v2-10-mural-mix.gif",
-        "sha256": "c2a519e44a16297e2767a2a45e421649b369ee9c588f9731d13b348778904c62"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-10-mural-mix.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/10-mural-mix-connected-v2-interaction-v3-01-10-mural-mix.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/10-mural-mix-connected-v2-interaction-v3-01-10-mural-mix.gif",
+        "sha256": "0ebdb2b54ee8f55daea590432111f4e0fdabb64ebc969b0f2c8d6319aaaf2150"
       },
       {
         "state_id": "11-mural-reveal",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/11-mural-reveal-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
-        "sha256": "263b4a88ee8cacbb346f7b3376ba03a41e9eaa69c94af4b7f2c1297f6c3e0a5d"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/11-mural-reveal-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
+        "sha256": "52ca8c369978b973f6e65146a14310f6697249ecd5846fea616f51ae5d98a2cb"
       },
       {
         "state_id": "11-mural-reveal",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-11-mural-reveal.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/11-mural-reveal-connected-v2-11-mural-reveal.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/11-mural-reveal-connected-v2-11-mural-reveal.gif",
-        "sha256": "3afdb02335b92e534f88dc4d22d26c27e10a36077967a97b21372d3d887b31e4"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-11-mural-reveal.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/11-mural-reveal-connected-v2-interaction-v3-01-11-mural-reveal.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/11-mural-reveal-connected-v2-interaction-v3-01-11-mural-reveal.gif",
+        "sha256": "bbf657fedaffbba3688b3e963549a95178de07a8c634af0f5a5e95744123303c"
       },
       {
         "state_id": "12-portrait1",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-12-portrait1.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/12-portrait1-connected-v2-12-portrait1.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/12-portrait1-connected-v2-12-portrait1.gif",
-        "sha256": "527e0a49e047167cf030d08ae316ac6bccabf1e32a086d9c2920e5fc9c333cdc"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-12-portrait1.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/12-portrait1-connected-v2-interaction-v3-01-12-portrait1.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/12-portrait1-connected-v2-interaction-v3-01-12-portrait1.gif",
+        "sha256": "ff41bff67ecb79d6a9f64e7ab25736610e046fd0de61c64085f19d7e6e0f0aba"
       },
       {
         "state_id": "13-thermal",
         "kind": "menu",
-        "canonical_path": "assets/instructions/native-connected-v2-06/13-thermal-elseif-menu.svg",
-        "publication_path": "assets/3821640e629f7806/media/menu/13-thermal-13-thermal-elseif-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/13-thermal-13-thermal-elseif-menu.svg",
+        "canonical_path": "assets/instructions/native-interaction-v3-01/13-thermal-elseif-menu.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/menu/13-thermal-13-thermal-elseif-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/13-thermal-13-thermal-elseif-menu.svg",
         "sha256": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611"
       },
       {
         "state_id": "13-thermal",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/13-thermal-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/13-thermal-13-thermal-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/13-thermal-13-thermal-assembled.svg",
-        "sha256": "ed1447e4841bcd1c6cec1dee9dac6266dc3276ed24cfbd35a9a6ad8b65171265"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/13-thermal-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/13-thermal-13-thermal-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/13-thermal-13-thermal-assembled.svg",
+        "sha256": "31a93c7fd749ac0aae31d37728319dd2d98bb9026e88c6ca627d4997a80070fd"
       },
       {
         "state_id": "13-thermal",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-13-thermal.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/13-thermal-connected-v2-13-thermal.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/13-thermal-connected-v2-13-thermal.gif",
-        "sha256": "6741b047f365d33f23312ee75ddc147cc36dd36ddfd55fe7656cdc4ff9eac4b3"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-13-thermal.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/13-thermal-connected-v2-interaction-v3-01-13-thermal.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/13-thermal-connected-v2-interaction-v3-01-13-thermal.gif",
+        "sha256": "1ea7cec8535e29d587ed6b8d5f100e248dcda79e9583a04769cdcd2a177f0b91"
       },
       {
         "state_id": "14-portrait2",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-14-portrait2.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/14-portrait2-connected-v2-14-portrait2.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/14-portrait2-connected-v2-14-portrait2.gif",
-        "sha256": "c95214da88a04b5cbfaeb1d829ab6170f694df11cbf43df78219f834f4ac77b7"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-14-portrait2.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/14-portrait2-connected-v2-interaction-v3-01-14-portrait2.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/14-portrait2-connected-v2-interaction-v3-01-14-portrait2.gif",
+        "sha256": "34025d82af45ff70d1b31f4657b6875df88a8adf29122463e949b809b7238b7e"
       },
       {
         "state_id": "15-portrait3",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-15-portrait3.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/15-portrait3-connected-v2-15-portrait3.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/15-portrait3-connected-v2-15-portrait3.gif",
-        "sha256": "07ba8b0e0651ebeb13607075c96e595ebe2a9ced432acdb6d50c4ba1a69aa4ff"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-15-portrait3.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/15-portrait3-connected-v2-interaction-v3-01-15-portrait3.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/15-portrait3-connected-v2-interaction-v3-01-15-portrait3.gif",
+        "sha256": "13bf500876329ffdb7b94b7116599b88455ede65d6548c73b93ec28bc364d4cc"
       },
       {
         "state_id": "16-portrait4",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-16-portrait4.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/16-portrait4-connected-v2-16-portrait4.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/16-portrait4-connected-v2-16-portrait4.gif",
-        "sha256": "69986f0a77361f3a5dc2c4031f7a3fbdb60901d143acf648350b33d976f8973a"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-16-portrait4.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/16-portrait4-connected-v2-interaction-v3-01-16-portrait4.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/16-portrait4-connected-v2-interaction-v3-01-16-portrait4.gif",
+        "sha256": "de5d0a34f5dfbcc485f29c2d424fb613be8a39edcc71cd8783198377ec116172"
       },
       {
         "state_id": "17-sample",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-17-sample.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/17-sample-connected-v2-17-sample.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/17-sample-connected-v2-17-sample.gif",
-        "sha256": "ac1c81bb7c48c87cc0cfc1d31aed1ddbbf66dd34cd13e2a4ef12e4b65adc899b"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-17-sample.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/17-sample-connected-v2-interaction-v3-01-17-sample.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/17-sample-connected-v2-interaction-v3-01-17-sample.gif",
+        "sha256": "aeb9fea60065cee78dbe1650fd3332722e65318e5c9539fb89a64f1caa205921"
       },
       {
         "state_id": "18-wires",
         "kind": "menu",
-        "canonical_path": "assets/instructions/native-connected-v2-06/18-wires-or-menu.svg",
-        "publication_path": "assets/3821640e629f7806/media/menu/18-wires-18-wires-or-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/18-wires-18-wires-or-menu.svg",
+        "canonical_path": "assets/instructions/native-interaction-v3-01/18-wires-or-menu.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/menu/18-wires-18-wires-or-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/18-wires-18-wires-or-menu.svg",
         "sha256": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a"
       },
       {
         "state_id": "18-wires",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/18-wires-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/18-wires-18-wires-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/18-wires-18-wires-assembled.svg",
-        "sha256": "45091a2f40ddc93390d6be4363701013e463f52dff686474bbe579b01948ec0d"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/18-wires-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/18-wires-18-wires-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/18-wires-18-wires-assembled.svg",
+        "sha256": "a9833dfb1fac895a8746aa7a5a85bf07e0ccfca120790eee92bf2285a5b4e535"
       },
       {
         "state_id": "18-wires",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-18-wires.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/18-wires-connected-v2-18-wires.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/18-wires-connected-v2-18-wires.gif",
-        "sha256": "12442eeb1d141e21863789bb430fa62d5ca7dc64af81f5a9325a22369a7b953d"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-18-wires.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/18-wires-connected-v2-interaction-v3-01-18-wires.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/18-wires-connected-v2-interaction-v3-01-18-wires.gif",
+        "sha256": "dd9e1af8f1ababbbf974ce99dbb03871b4c283c5ba869f341bd974e63f5d770f"
       },
       {
         "state_id": "19-vessel",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-19-vessel.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/19-vessel-connected-v2-19-vessel.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/19-vessel-connected-v2-19-vessel.gif",
-        "sha256": "d04e4000b6f17fad24fe6257fa1d9ef18804dc9c486bf70d9abaef882ca71d4b"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-19-vessel.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/19-vessel-connected-v2-interaction-v3-01-19-vessel.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/19-vessel-connected-v2-interaction-v3-01-19-vessel.gif",
+        "sha256": "d1ca8dbc834679b2e918fb5ad741852fe00fa82b4ab6cd721acfb753f1cd106d"
       },
       {
         "state_id": "20-pruner",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-20-pruner.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/20-pruner-connected-v2-20-pruner.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/20-pruner-connected-v2-20-pruner.gif",
-        "sha256": "c2e6138e9a5aa685e97b0d65e6cbaa7c49db41ec3674c6c8d171ec17378e185b"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-20-pruner.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/20-pruner-connected-v2-interaction-v3-01-20-pruner.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/20-pruner-connected-v2-interaction-v3-01-20-pruner.gif",
+        "sha256": "aa09d8853d25fbab3de4eb52145122f06c56fd51b734a277f9cc71a6a0ab238f"
       },
       {
         "state_id": "21-titration",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-21-titration.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/21-titration-connected-v2-21-titration.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/21-titration-connected-v2-21-titration.gif",
-        "sha256": "dbe34dc3390c60a1f8c953aa2b418eabda34561449b1b0b38dad6b51cd786493"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-21-titration.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/21-titration-connected-v2-interaction-v3-01-21-titration.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/21-titration-connected-v2-interaction-v3-01-21-titration.gif",
+        "sha256": "8db58d1a6733237ce44dc86dfb96cb09079d4b26887a65c5e25f3b92ffefe82a"
       },
       {
         "state_id": "22-balance",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-22-balance.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/22-balance-connected-v2-22-balance.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/22-balance-connected-v2-22-balance.gif",
-        "sha256": "741601f5e54235362f5033e263058fed5b44b549ce8cf86b3954c4aaf91d25dd"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-22-balance.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/22-balance-connected-v2-interaction-v3-01-22-balance.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/22-balance-connected-v2-interaction-v3-01-22-balance.gif",
+        "sha256": "d7191a9eb5d382bb84c6ee32d7236ee98990973f50457abc198e4fcc558828f8"
       },
       {
         "state_id": "23-tube",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-23-tube.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/23-tube-connected-v2-23-tube.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/23-tube-connected-v2-23-tube.gif",
-        "sha256": "ac3bbd4210db485aad736fc32a93c15b982cf21ee40bd4ec2b35144ad9c573b6"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-23-tube.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/23-tube-connected-v2-interaction-v3-01-23-tube.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/23-tube-connected-v2-interaction-v3-01-23-tube.gif",
+        "sha256": "fe642d3c0b2eedc13a39be5d9718855358ebef063f85b1f7586fdcbb4ac0b423"
       },
       {
         "state_id": "24-printer",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-24-printer.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/24-printer-connected-v2-24-printer.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/24-printer-connected-v2-24-printer.gif",
-        "sha256": "e21540a59a3c687e50356d5c54ffb877b15e700d00fc0e62268d2213cb147369"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-24-printer.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/24-printer-connected-v2-interaction-v3-01-24-printer.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/24-printer-connected-v2-interaction-v3-01-24-printer.gif",
+        "sha256": "5bc170c46b6c77e99cea34025ff7579986865cdd584020f07a136fb209962bff"
       },
       {
         "state_id": "25-interference",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-25-interference.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/25-interference-connected-v2-25-interference.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/25-interference-connected-v2-25-interference.gif",
-        "sha256": "04db5823642bf1ec3802291c96fd5ac926f1c49fb75cb4f16bbd27f9f61ce2c9"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-25-interference.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/25-interference-connected-v2-interaction-v3-01-25-interference.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/25-interference-connected-v2-interaction-v3-01-25-interference.gif",
+        "sha256": "7f713567963e0dbf42f9611b5d3a5bf2ff36a1844566e3fceb857e3446040316"
       },
       {
         "state_id": "26-receiver",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-26-receiver.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/26-receiver-connected-v2-26-receiver.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/26-receiver-connected-v2-26-receiver.gif",
-        "sha256": "5060d9700126c3114f813814f91ec466ed2484b0ba4cc4159ed118f778b25217"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-26-receiver.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/26-receiver-connected-v2-interaction-v3-01-26-receiver.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/26-receiver-connected-v2-interaction-v3-01-26-receiver.gif",
+        "sha256": "c500bbeb60431da1631f804ca8025883d6de62dacd4840fd504a2a667a7d6a81"
       },
       {
         "state_id": "27-pressure-stable",
         "kind": "menu",
-        "canonical_path": "assets/instructions/native-connected-v2-06/27-pressure-and-pitch-variables-menu.svg",
-        "publication_path": "assets/3821640e629f7806/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
-        "sha256": "a9e6d32abe304b7090481658d6084c106224040b3775de1710915dfff5a7d849"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/27-pressure-and-pitch-variables-menu.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
+        "sha256": "70e009db9bbbeb99cb4bc5ddff55dbed23254392eee051369ea8f79bf452e111"
       },
       {
         "state_id": "27-pressure-stable",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/27-pressure-stable-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
-        "sha256": "915e5fbb2eb2be1c1fca8da854730c653531c06a35ead8594bc5b493635959dd"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/27-pressure-stable-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "sha256": "a4913198395f2fa4472048f412d41df80446cfea3ed54f3384307040d8697d7c"
       },
       {
         "state_id": "27-pressure-stable",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-27-pressure-stable.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/27-pressure-stable-connected-v2-27-pressure-stable.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/27-pressure-stable-connected-v2-27-pressure-stable.gif",
-        "sha256": "b07e1685343deb53c90c2d3b44b0ae6637e3e3289d746fac21255cf8ccfc32e7"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-27-pressure-stable.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/27-pressure-stable-connected-v2-interaction-v3-01-27-pressure-stable.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/27-pressure-stable-connected-v2-interaction-v3-01-27-pressure-stable.gif",
+        "sha256": "9d1d77ab4e271fc65d2e2fa668f1bb1271b2515c6d3226d8c5639b241cbce216"
       },
       {
         "state_id": "28-pressure-release",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-28-pressure-release.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/28-pressure-release-connected-v2-28-pressure-release.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/28-pressure-release-connected-v2-28-pressure-release.gif",
-        "sha256": "fb45bdfb7fa28d7850257ab4c05dd3045c69bb1c763d697f440c6a6951308e4a"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-28-pressure-release.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/28-pressure-release-connected-v2-interaction-v3-01-28-pressure-release.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/28-pressure-release-connected-v2-interaction-v3-01-28-pressure-release.gif",
+        "sha256": "9661310ae85f29960b42672cce593563fbaa169b94014b1c79ab82904cbb569c"
       },
       {
         "state_id": "29-pitch-adjust",
         "kind": "assembled",
-        "canonical_path": "assets/instructions/native-connected-v2-06/29-pitch-adjust-assembled.svg",
-        "publication_path": "assets/3821640e629f7806/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
-        "sha256": "ea7f1b09881f4f3287539417eccb5ceda3d86a7968e6bf4c4e0237581a137d61"
+        "canonical_path": "assets/instructions/native-interaction-v3-01/29-pitch-adjust-assembled.svg",
+        "publication_path": "assets/ec2a324a701e7fe8/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "sha256": "01f5c5fd4e756e7bd3b3e5dbe4653d627086ff30db719718f14bc94746e1f975"
       },
       {
         "state_id": "29-pitch-adjust",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-29-pitch-adjust.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/29-pitch-adjust-connected-v2-29-pitch-adjust.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/29-pitch-adjust-connected-v2-29-pitch-adjust.gif",
-        "sha256": "acc5b71fcb9ed2ac4fa15bc64d3c994315b82b776c4883a519e5965a32982d7c"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-29-pitch-adjust.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/29-pitch-adjust-connected-v2-interaction-v3-01-29-pitch-adjust.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/29-pitch-adjust-connected-v2-interaction-v3-01-29-pitch-adjust.gif",
+        "sha256": "215b21d5fea55f438a51f70996dcaffac36fc5e2fefb122e040fd71c8b8a34e7"
       },
       {
         "state_id": "30-pitch-feedback",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-30-pitch-feedback.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/30-pitch-feedback-connected-v2-30-pitch-feedback.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/30-pitch-feedback-connected-v2-30-pitch-feedback.gif",
-        "sha256": "c704f72c88e66df9da703a350c0cac025d765467671e8aa6c294e6495e2b4e1e"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-30-pitch-feedback.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/30-pitch-feedback-connected-v2-interaction-v3-01-30-pitch-feedback.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/30-pitch-feedback-connected-v2-interaction-v3-01-30-pitch-feedback.gif",
+        "sha256": "aaa2edf9d328a32afe8f8addc9faa0ba2956e916e54deb0f154807920ad0347c"
       },
       {
         "state_id": "31-shutters",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-31-shutters.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/31-shutters-connected-v2-31-shutters.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/31-shutters-connected-v2-31-shutters.gif",
-        "sha256": "e218b1e17fb95cc9ef85b29bfdb33624d009cb9f520aa9b0e04eeb23b5970e79"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-31-shutters.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/31-shutters-connected-v2-interaction-v3-01-31-shutters.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/31-shutters-connected-v2-interaction-v3-01-31-shutters.gif",
+        "sha256": "65f67aa2558a8db7977f9184bcf5768e8fabffee981ed829414cde62b5f51623"
       },
       {
         "state_id": "32-sensors",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-32-sensors.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/32-sensors-connected-v2-32-sensors.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/32-sensors-connected-v2-32-sensors.gif",
-        "sha256": "b3bad300910ead556f6910c1f74ee33f9472a3785e1021412996ac5eaba2f165"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-32-sensors.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/32-sensors-connected-v2-interaction-v3-01-32-sensors.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/32-sensors-connected-v2-interaction-v3-01-32-sensors.gif",
+        "sha256": "65bd4c92d3787d490336ccde4f3fc82d877dee02cea67731d8f753abffea8b3e"
       },
       {
         "state_id": "33-rock-path",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-33-rock-path.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/33-rock-path-connected-v2-33-rock-path.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/33-rock-path-connected-v2-33-rock-path.gif",
-        "sha256": "df9986b7e287b82955979cc97ab68a70371afaf20b2b3abc3fabdaf7e7da959a"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-33-rock-path.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/33-rock-path-connected-v2-interaction-v3-01-33-rock-path.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/33-rock-path-connected-v2-interaction-v3-01-33-rock-path.gif",
+        "sha256": "1ed3d127a21a7cb42f0cb20a17c6640be1c99911ac1fd8c7aca50716808fc590"
       },
       {
         "state_id": "34-constellation",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-34-constellation.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/34-constellation-connected-v2-34-constellation.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/34-constellation-connected-v2-34-constellation.gif",
-        "sha256": "8415fcdd0dd24bd4fdb341866ca178155c5d6fc026da6020d3ec548592105ef0"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-34-constellation.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/34-constellation-connected-v2-interaction-v3-01-34-constellation.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/34-constellation-connected-v2-interaction-v3-01-34-constellation.gif",
+        "sha256": "a11af7b2c562fbe79307bed671e9a24eff94cdfb2a67ef92ffc95a18da395ad6"
       },
       {
         "state_id": "35-synchronize",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-35-synchronize.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/35-synchronize-connected-v2-35-synchronize.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/35-synchronize-connected-v2-35-synchronize.gif",
-        "sha256": "822ce174168e5e7c69abec59e63310b2aee10a772fe0b7a20ada5e631958f951"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-35-synchronize.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/35-synchronize-connected-v2-interaction-v3-01-35-synchronize.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/35-synchronize-connected-v2-interaction-v3-01-35-synchronize.gif",
+        "sha256": "2af31807b376ecbc9538e17f1df8a08fb6ff2e4fd11e071835682aeb489d7092"
       },
       {
         "state_id": "36-final-lever",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-36-final-lever.gif",
-        "publication_path": "assets/3821640e629f7806/media/gameplay/36-final-lever-connected-v2-36-final-lever.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/3821640e629f7806/media/gameplay/36-final-lever-connected-v2-36-final-lever.gif",
-        "sha256": "f38bee9efefb074139a2589f4ce771f7dcd4821135e711c1ce5750f7953418ab"
+        "canonical_path": "assets/demos/connected-v2-interaction-v3-01-36-final-lever.gif",
+        "publication_path": "assets/ec2a324a701e7fe8/media/gameplay/36-final-lever-connected-v2-interaction-v3-01-36-final-lever.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/ec2a324a701e7fe8/media/gameplay/36-final-lever-connected-v2-interaction-v3-01-36-final-lever.gif",
+        "sha256": "4f95369d6df85e82e504de297061f67e8dc91da2330d7ec5346712c761e34f04"
       }
     ]
   },
   "retained_media": {
-    "package_id": "escaping-logic-6425df7618b6c19a-v4",
-    "manifest_sha256": "35d21bc2473b5baedee62dd95641c8b6742b24c1a10f6ad3543528977a7d0d0d",
+    "package_id": "escaping-logic-3821640e629f7806-v0-2-0-r3",
+    "manifest_sha256": "6939624d170261d8da8db31dac3b8b37307a3a9af4653c15b039da4f407dd84e",
     "files": [
+      {
+        "path": "assets/3821640e629f7806/media/assembled/01-fire-01-fire-assembled.svg",
+        "sha256": "4ec24c5da9640b5610a4e7165131dcef13cede42d933b9cf809936256473e841"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/02-case-02-case-assembled.svg",
+        "sha256": "e638e998a062f36f314324eace053cedcaa36b76032a1d6eba88205c01ab0967"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/03-generator-03-generator-assembled.svg",
+        "sha256": "18584be80a80b9904b670acc0e433629bc07b0af3a75537b92df344ce7ee5ff7"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/04-crank-04-crank-assembled.svg",
+        "sha256": "e189749bfdb999d95a6a4917fa69f837b85f22f7b7bffc1a2ee3cc9cc2c3e29f"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/05-wall-05-wall-assembled.svg",
+        "sha256": "4e42548125a9faecf4c5b7a167610e98e4cecc33c8891f603706e0f5d45072ab"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "sha256": "a3af4bf7f0e7f94c69d8fed6ca72f90e79e645e113635a3c3996b9e30134c144"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "sha256": "89d97c8ccd4cfdb0860e51026f5400756013357ae3793e447fe80f8fa883a547"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
+        "sha256": "c3eb3267284f6fc3043dd9959ff7a5cbd9a9a99613e6fa1dbbc36e97ca515889"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
+        "sha256": "263b4a88ee8cacbb346f7b3376ba03a41e9eaa69c94af4b7f2c1297f6c3e0a5d"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/13-thermal-13-thermal-assembled.svg",
+        "sha256": "ed1447e4841bcd1c6cec1dee9dac6266dc3276ed24cfbd35a9a6ad8b65171265"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/18-wires-18-wires-assembled.svg",
+        "sha256": "45091a2f40ddc93390d6be4363701013e463f52dff686474bbe579b01948ec0d"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "sha256": "915e5fbb2eb2be1c1fca8da854730c653531c06a35ead8594bc5b493635959dd"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "sha256": "ea7f1b09881f4f3287539417eccb5ceda3d86a7968e6bf4c4e0237581a137d61"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/01-fire-connected-v2-01-fire.gif",
+        "sha256": "85a8299691e89183f3a48bddc9485201cce6ee97c1d12b57f1e14845f7e7fbf2"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/02-case-connected-v2-02-case.gif",
+        "sha256": "020ea4da758bae492e5d34fc66535df4ce0c8403b9a0bdf6833faa9e62be2f86"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/03-generator-connected-v2-03-generator.gif",
+        "sha256": "7c7153266d0c1bafc500856ede5b3131f1cf2cfd2b2a6a5cdf96925e93971267"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/04-crank-connected-v2-04-crank.gif",
+        "sha256": "1b874867ec4db6f6c1ce1eb6cdb26467e7dc11f8e8193fe504c28d28b9364277"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/05-wall-connected-v2-05-wall.gif",
+        "sha256": "3c4a503f19608ead263e59bd6e19692d5f9189a3dd0c8c91520319a5786e8f13"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/06-footprints-connected-v2-06-footprints.gif",
+        "sha256": "354ba243c455e55aba3fb046fe25639e9d7f5569aca1fd7b38cd438301638968"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/07-shadow-connected-v2-07-shadow.gif",
+        "sha256": "e989c931deb932bff984ca67bc04a408b8dbfdc35a4ff86df2bd9e96b18e8566"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/08-telescope-connected-v2-08-telescope.gif",
+        "sha256": "cfe8f971847467de6d95a4d115b1b8bb104a4feb117829736e8ba74116ca40aa"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/09-stones-connected-v2-09-stones.gif",
+        "sha256": "9f4323ea32bc9362e8ec3cd2dddddb96b86556749b0ef0d6ed80435940708b17"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/10-mural-mix-connected-v2-10-mural-mix.gif",
+        "sha256": "c2a519e44a16297e2767a2a45e421649b369ee9c588f9731d13b348778904c62"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/11-mural-reveal-connected-v2-11-mural-reveal.gif",
+        "sha256": "3afdb02335b92e534f88dc4d22d26c27e10a36077967a97b21372d3d887b31e4"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/12-portrait1-connected-v2-12-portrait1.gif",
+        "sha256": "527e0a49e047167cf030d08ae316ac6bccabf1e32a086d9c2920e5fc9c333cdc"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/13-thermal-connected-v2-13-thermal.gif",
+        "sha256": "6741b047f365d33f23312ee75ddc147cc36dd36ddfd55fe7656cdc4ff9eac4b3"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/14-portrait2-connected-v2-14-portrait2.gif",
+        "sha256": "c95214da88a04b5cbfaeb1d829ab6170f694df11cbf43df78219f834f4ac77b7"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/15-portrait3-connected-v2-15-portrait3.gif",
+        "sha256": "07ba8b0e0651ebeb13607075c96e595ebe2a9ced432acdb6d50c4ba1a69aa4ff"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/16-portrait4-connected-v2-16-portrait4.gif",
+        "sha256": "69986f0a77361f3a5dc2c4031f7a3fbdb60901d143acf648350b33d976f8973a"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/17-sample-connected-v2-17-sample.gif",
+        "sha256": "ac1c81bb7c48c87cc0cfc1d31aed1ddbbf66dd34cd13e2a4ef12e4b65adc899b"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/18-wires-connected-v2-18-wires.gif",
+        "sha256": "12442eeb1d141e21863789bb430fa62d5ca7dc64af81f5a9325a22369a7b953d"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/19-vessel-connected-v2-19-vessel.gif",
+        "sha256": "d04e4000b6f17fad24fe6257fa1d9ef18804dc9c486bf70d9abaef882ca71d4b"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/20-pruner-connected-v2-20-pruner.gif",
+        "sha256": "c2e6138e9a5aa685e97b0d65e6cbaa7c49db41ec3674c6c8d171ec17378e185b"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/21-titration-connected-v2-21-titration.gif",
+        "sha256": "dbe34dc3390c60a1f8c953aa2b418eabda34561449b1b0b38dad6b51cd786493"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/22-balance-connected-v2-22-balance.gif",
+        "sha256": "741601f5e54235362f5033e263058fed5b44b549ce8cf86b3954c4aaf91d25dd"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/23-tube-connected-v2-23-tube.gif",
+        "sha256": "ac3bbd4210db485aad736fc32a93c15b982cf21ee40bd4ec2b35144ad9c573b6"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/24-printer-connected-v2-24-printer.gif",
+        "sha256": "e21540a59a3c687e50356d5c54ffb877b15e700d00fc0e62268d2213cb147369"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/25-interference-connected-v2-25-interference.gif",
+        "sha256": "04db5823642bf1ec3802291c96fd5ac926f1c49fb75cb4f16bbd27f9f61ce2c9"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/26-receiver-connected-v2-26-receiver.gif",
+        "sha256": "5060d9700126c3114f813814f91ec466ed2484b0ba4cc4159ed118f778b25217"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/27-pressure-stable-connected-v2-27-pressure-stable.gif",
+        "sha256": "b07e1685343deb53c90c2d3b44b0ae6637e3e3289d746fac21255cf8ccfc32e7"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/28-pressure-release-connected-v2-28-pressure-release.gif",
+        "sha256": "fb45bdfb7fa28d7850257ab4c05dd3045c69bb1c763d697f440c6a6951308e4a"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/29-pitch-adjust-connected-v2-29-pitch-adjust.gif",
+        "sha256": "acc5b71fcb9ed2ac4fa15bc64d3c994315b82b776c4883a519e5965a32982d7c"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/30-pitch-feedback-connected-v2-30-pitch-feedback.gif",
+        "sha256": "c704f72c88e66df9da703a350c0cac025d765467671e8aa6c294e6495e2b4e1e"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/31-shutters-connected-v2-31-shutters.gif",
+        "sha256": "e218b1e17fb95cc9ef85b29bfdb33624d009cb9f520aa9b0e04eeb23b5970e79"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/32-sensors-connected-v2-32-sensors.gif",
+        "sha256": "b3bad300910ead556f6910c1f74ee33f9472a3785e1021412996ac5eaba2f165"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/33-rock-path-connected-v2-33-rock-path.gif",
+        "sha256": "df9986b7e287b82955979cc97ab68a70371afaf20b2b3abc3fabdaf7e7da959a"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/34-constellation-connected-v2-34-constellation.gif",
+        "sha256": "8415fcdd0dd24bd4fdb341866ca178155c5d6fc026da6020d3ec548592105ef0"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/35-synchronize-connected-v2-35-synchronize.gif",
+        "sha256": "822ce174168e5e7c69abec59e63310b2aee10a772fe0b7a20ada5e631958f951"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/gameplay/36-final-lever-connected-v2-36-final-lever.gif",
+        "sha256": "f38bee9efefb074139a2589f4ce771f7dcd4821135e711c1ce5750f7953418ab"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/menu/01-fire-01-fire-menu.svg",
+        "sha256": "1f1d162283b4eedc5a3cbc439a59d66774f38843a711116269ceb09575479727"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/menu/05-wall-05-wall-comparisons-menu.svg",
+        "sha256": "d830330c119f9013934070fb1730bf35d997dd05591c4070261e2eae2ae0d95c"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/menu/10-mural-mix-10-mural-logic-menu.svg",
+        "sha256": "e81b2b5fb3c60e17098b9bdc31c1e78270f1b407985474face897bbab7c8e391"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/menu/13-thermal-13-thermal-elseif-menu.svg",
+        "sha256": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/menu/18-wires-18-wires-or-menu.svg",
+        "sha256": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a"
+      },
+      {
+        "path": "assets/3821640e629f7806/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
+        "sha256": "a9e6d32abe304b7090481658d6084c106224040b3775de1710915dfff5a7d849"
+      },
       {
         "path": "assets/6425df7618b6c19a/media/assembled/01-crank-01-crank-assembled.svg",
         "sha256": "1d4c9feb6576ce1609fd645a6f76146349056705eb185c2093bf97baef72f3d7"
@@ -842,11 +1062,66 @@
     "assets/6425df7618b6c19a/media/menu/20-wires-20-wires-menu.svg": "aecb9eb7044e88f0f8014e001c7bcb9efc3fffd67d79cdf8da4ea6c2e64a68e0",
     "assets/6425df7618b6c19a/media/menu/27-pressure-stable-27-pressure-stable-menu.svg": "604aeabe81b7ba92e8fec2862df55d0834fabcc65f3a6aee0fb40b809bf46f53",
     "assets/6425df7618b6c19a/media/menu/29-pitch-adjust-29-pitch-adjust-menu.svg": "e507b358e7b4537af8ccd5f3f8960fee826aa6ffe1f5afdc0e559dadd2d085b0",
+    "assets/ec2a324a701e7fe8/media/assembled/01-fire-01-fire-assembled.svg": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0",
+    "assets/ec2a324a701e7fe8/media/assembled/02-case-02-case-assembled.svg": "d689d2f1078ce79d219b14d9fd9e81487efd07e3f199a4db12006a56956d93d2",
+    "assets/ec2a324a701e7fe8/media/assembled/03-generator-03-generator-assembled.svg": "ce1f3b4fa61fda846a36f4545637abcf8cd27b8e94dfe9aa91a2ee8bfdd00b4d",
+    "assets/ec2a324a701e7fe8/media/assembled/04-crank-04-crank-assembled.svg": "0f1acca8b753408738e33d087fe8e63382b345a6fdbb009e2690090854f737f0",
+    "assets/ec2a324a701e7fe8/media/assembled/05-wall-05-wall-assembled.svg": "99ad38a4a0f3ea16464b45cc206cdc35b11ab77ce0401607f3afa58f0e5d9a31",
+    "assets/ec2a324a701e7fe8/media/assembled/06-footprints-06-footprints-assembled.svg": "6f3c8bc8cba372b76f61accefb3bda43f94d1ad4c5db170942c3c8fcb40bd3b6",
+    "assets/ec2a324a701e7fe8/media/assembled/07-shadow-07-shadow-assembled.svg": "397b1cf06bbf3321c4e7a5fe447d763d5300fbc05a969bf3714216a8510134e5",
+    "assets/ec2a324a701e7fe8/media/assembled/10-mural-mix-10-mural-mix-assembled.svg": "07647616b29d5a8ebe7bb50317bd5649372d1e2bce123ffc47eafde0dc9b47fc",
+    "assets/ec2a324a701e7fe8/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg": "52ca8c369978b973f6e65146a14310f6697249ecd5846fea616f51ae5d98a2cb",
+    "assets/ec2a324a701e7fe8/media/assembled/13-thermal-13-thermal-assembled.svg": "31a93c7fd749ac0aae31d37728319dd2d98bb9026e88c6ca627d4997a80070fd",
+    "assets/ec2a324a701e7fe8/media/assembled/18-wires-18-wires-assembled.svg": "a9833dfb1fac895a8746aa7a5a85bf07e0ccfca120790eee92bf2285a5b4e535",
+    "assets/ec2a324a701e7fe8/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg": "a4913198395f2fa4472048f412d41df80446cfea3ed54f3384307040d8697d7c",
+    "assets/ec2a324a701e7fe8/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg": "01f5c5fd4e756e7bd3b3e5dbe4653d627086ff30db719718f14bc94746e1f975",
+    "assets/ec2a324a701e7fe8/media/gameplay/01-fire-connected-v2-interaction-v3-01-01-fire.gif": "d73712a14fa0c94aae70c566c5fb8fa9d09f38c1212034b27ec212b4b818dcd9",
+    "assets/ec2a324a701e7fe8/media/gameplay/02-case-connected-v2-interaction-v3-01-02-case.gif": "cfea971e2e3e29d1bf5d3903a7a40139a82e732899cf7c53fd097413f6c1c831",
+    "assets/ec2a324a701e7fe8/media/gameplay/03-generator-connected-v2-interaction-v3-01-03-generator.gif": "d37c3632f00aef923062a2f65355ed4f7ed2871a17d9cbabc6bbd90d25d1a930",
+    "assets/ec2a324a701e7fe8/media/gameplay/04-crank-connected-v2-interaction-v3-01-04-crank.gif": "5ffe9742b0983bd18d914c443b8d7195f9cec22185f42ba7342fc435caa11b2e",
+    "assets/ec2a324a701e7fe8/media/gameplay/05-wall-connected-v2-interaction-v3-01-05-wall.gif": "8542de078c28fa02f37b0c2273b31fd1d962305cd825ef6acb6d3e21fa85852f",
+    "assets/ec2a324a701e7fe8/media/gameplay/06-footprints-connected-v2-interaction-v3-01-06-footprints.gif": "9b846edda859b215f636678fa8ce30573d6a8437c34be52f7e2533aa1eb120cc",
+    "assets/ec2a324a701e7fe8/media/gameplay/07-shadow-connected-v2-interaction-v3-01-07-shadow.gif": "b95bb86a096936010a0f66c799d4e214fe938a81ec7a2d9041899413e218615c",
+    "assets/ec2a324a701e7fe8/media/gameplay/08-telescope-connected-v2-interaction-v3-01-08-telescope.gif": "560c0be9e26e2b1de830bab11682b4e893b28786bf725701a2ae0db9e8906d88",
+    "assets/ec2a324a701e7fe8/media/gameplay/09-stones-connected-v2-interaction-v3-01-09-stones.gif": "cf956d0d5c3f078f18bb3d117978c36df299f28d2dc5759b684df8cbfcc76904",
+    "assets/ec2a324a701e7fe8/media/gameplay/10-mural-mix-connected-v2-interaction-v3-01-10-mural-mix.gif": "0ebdb2b54ee8f55daea590432111f4e0fdabb64ebc969b0f2c8d6319aaaf2150",
+    "assets/ec2a324a701e7fe8/media/gameplay/11-mural-reveal-connected-v2-interaction-v3-01-11-mural-reveal.gif": "bbf657fedaffbba3688b3e963549a95178de07a8c634af0f5a5e95744123303c",
+    "assets/ec2a324a701e7fe8/media/gameplay/12-portrait1-connected-v2-interaction-v3-01-12-portrait1.gif": "ff41bff67ecb79d6a9f64e7ab25736610e046fd0de61c64085f19d7e6e0f0aba",
+    "assets/ec2a324a701e7fe8/media/gameplay/13-thermal-connected-v2-interaction-v3-01-13-thermal.gif": "1ea7cec8535e29d587ed6b8d5f100e248dcda79e9583a04769cdcd2a177f0b91",
+    "assets/ec2a324a701e7fe8/media/gameplay/14-portrait2-connected-v2-interaction-v3-01-14-portrait2.gif": "34025d82af45ff70d1b31f4657b6875df88a8adf29122463e949b809b7238b7e",
+    "assets/ec2a324a701e7fe8/media/gameplay/15-portrait3-connected-v2-interaction-v3-01-15-portrait3.gif": "13bf500876329ffdb7b94b7116599b88455ede65d6548c73b93ec28bc364d4cc",
+    "assets/ec2a324a701e7fe8/media/gameplay/16-portrait4-connected-v2-interaction-v3-01-16-portrait4.gif": "de5d0a34f5dfbcc485f29c2d424fb613be8a39edcc71cd8783198377ec116172",
+    "assets/ec2a324a701e7fe8/media/gameplay/17-sample-connected-v2-interaction-v3-01-17-sample.gif": "aeb9fea60065cee78dbe1650fd3332722e65318e5c9539fb89a64f1caa205921",
+    "assets/ec2a324a701e7fe8/media/gameplay/18-wires-connected-v2-interaction-v3-01-18-wires.gif": "dd9e1af8f1ababbbf974ce99dbb03871b4c283c5ba869f341bd974e63f5d770f",
+    "assets/ec2a324a701e7fe8/media/gameplay/19-vessel-connected-v2-interaction-v3-01-19-vessel.gif": "d1ca8dbc834679b2e918fb5ad741852fe00fa82b4ab6cd721acfb753f1cd106d",
+    "assets/ec2a324a701e7fe8/media/gameplay/20-pruner-connected-v2-interaction-v3-01-20-pruner.gif": "aa09d8853d25fbab3de4eb52145122f06c56fd51b734a277f9cc71a6a0ab238f",
+    "assets/ec2a324a701e7fe8/media/gameplay/21-titration-connected-v2-interaction-v3-01-21-titration.gif": "8db58d1a6733237ce44dc86dfb96cb09079d4b26887a65c5e25f3b92ffefe82a",
+    "assets/ec2a324a701e7fe8/media/gameplay/22-balance-connected-v2-interaction-v3-01-22-balance.gif": "d7191a9eb5d382bb84c6ee32d7236ee98990973f50457abc198e4fcc558828f8",
+    "assets/ec2a324a701e7fe8/media/gameplay/23-tube-connected-v2-interaction-v3-01-23-tube.gif": "fe642d3c0b2eedc13a39be5d9718855358ebef063f85b1f7586fdcbb4ac0b423",
+    "assets/ec2a324a701e7fe8/media/gameplay/24-printer-connected-v2-interaction-v3-01-24-printer.gif": "5bc170c46b6c77e99cea34025ff7579986865cdd584020f07a136fb209962bff",
+    "assets/ec2a324a701e7fe8/media/gameplay/25-interference-connected-v2-interaction-v3-01-25-interference.gif": "7f713567963e0dbf42f9611b5d3a5bf2ff36a1844566e3fceb857e3446040316",
+    "assets/ec2a324a701e7fe8/media/gameplay/26-receiver-connected-v2-interaction-v3-01-26-receiver.gif": "c500bbeb60431da1631f804ca8025883d6de62dacd4840fd504a2a667a7d6a81",
+    "assets/ec2a324a701e7fe8/media/gameplay/27-pressure-stable-connected-v2-interaction-v3-01-27-pressure-stable.gif": "9d1d77ab4e271fc65d2e2fa668f1bb1271b2515c6d3226d8c5639b241cbce216",
+    "assets/ec2a324a701e7fe8/media/gameplay/28-pressure-release-connected-v2-interaction-v3-01-28-pressure-release.gif": "9661310ae85f29960b42672cce593563fbaa169b94014b1c79ab82904cbb569c",
+    "assets/ec2a324a701e7fe8/media/gameplay/29-pitch-adjust-connected-v2-interaction-v3-01-29-pitch-adjust.gif": "215b21d5fea55f438a51f70996dcaffac36fc5e2fefb122e040fd71c8b8a34e7",
+    "assets/ec2a324a701e7fe8/media/gameplay/30-pitch-feedback-connected-v2-interaction-v3-01-30-pitch-feedback.gif": "aaa2edf9d328a32afe8f8addc9faa0ba2956e916e54deb0f154807920ad0347c",
+    "assets/ec2a324a701e7fe8/media/gameplay/31-shutters-connected-v2-interaction-v3-01-31-shutters.gif": "65f67aa2558a8db7977f9184bcf5768e8fabffee981ed829414cde62b5f51623",
+    "assets/ec2a324a701e7fe8/media/gameplay/32-sensors-connected-v2-interaction-v3-01-32-sensors.gif": "65bd4c92d3787d490336ccde4f3fc82d877dee02cea67731d8f753abffea8b3e",
+    "assets/ec2a324a701e7fe8/media/gameplay/33-rock-path-connected-v2-interaction-v3-01-33-rock-path.gif": "1ed3d127a21a7cb42f0cb20a17c6640be1c99911ac1fd8c7aca50716808fc590",
+    "assets/ec2a324a701e7fe8/media/gameplay/34-constellation-connected-v2-interaction-v3-01-34-constellation.gif": "a11af7b2c562fbe79307bed671e9a24eff94cdfb2a67ef92ffc95a18da395ad6",
+    "assets/ec2a324a701e7fe8/media/gameplay/35-synchronize-connected-v2-interaction-v3-01-35-synchronize.gif": "2af31807b376ecbc9538e17f1df8a08fb6ff2e4fd11e071835682aeb489d7092",
+    "assets/ec2a324a701e7fe8/media/gameplay/36-final-lever-connected-v2-interaction-v3-01-36-final-lever.gif": "4f95369d6df85e82e504de297061f67e8dc91da2330d7ec5346712c761e34f04",
+    "assets/ec2a324a701e7fe8/media/menu/01-fire-01-fire-menu.svg": "daeda017629dfa65e00baae0e68a09b40f19841225fff62705ed01d27380c149",
+    "assets/ec2a324a701e7fe8/media/menu/05-wall-05-wall-comparisons-menu.svg": "a9b4eb581bf72864bb39a995b1b876504e7e196e7bf918878611d0352bc1629d",
+    "assets/ec2a324a701e7fe8/media/menu/10-mural-mix-10-mural-logic-menu.svg": "e81b2b5fb3c60e17098b9bdc31c1e78270f1b407985474face897bbab7c8e391",
+    "assets/ec2a324a701e7fe8/media/menu/13-thermal-13-thermal-elseif-menu.svg": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611",
+    "assets/ec2a324a701e7fe8/media/menu/18-wires-18-wires-or-menu.svg": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a",
+    "assets/ec2a324a701e7fe8/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg": "70e009db9bbbeb99cb4bc5ddff55dbed23254392eee051369ea8f79bf452e111",
     "LICENSES/MakeCode-Arcade-CSIntro-MIT.txt": "c544adf8f0d43453d9fdf6c11da19605d12d89806a7870653169b8cc97f5bb53",
     "main.ts": "5534ebe56fa6882ad5d7848ce18a701e38513aafe9ded45cdaadeec2dab6c98a",
     "PACKAGE_STATUS.md": "ecd5acacd5869aa4283bd25d775d1d2105e12e79c1d0e51b52eb42cc68cb8039",
-    "pxt.json": "41ad330b9ff2b54ccaedac3f24ed7360bb7b9aa0d18850561ad3c07196bdff89",
-    "README.md": "12b7a604834ef69e78a676e6e64e73cfbdee0d7821b62ed30daa42e3b734459d",
+    "pxt.json": "c93221e97f8bfed1315199a710aa6e14ea304602ae882616f50cc3b5ae8e7749",
+    "README.md": "6fc123d5bb372b1d6998d9010cae278164656dc465738712deb1c92106abd89f",
     "SOURCE_NOTICES.md": "274bead6ba38b870d494b894e6a40320b3c1f02c9cd24f26452f631f46618054"
   },
   "claim_boundary": "Deterministic local packaging for remote owner review. No network publication, independent learner, accessibility, classroom, or student-readiness claim."

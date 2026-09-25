@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "manifest_id": "ESCAPING-LOGIC-PUBLICATION-PACKAGE-CONNECTED-V2",
-  "release_version": "0.4.0",
-  "package_id": "escaping-logic-7430b796beb67377-v0-4-0",
+  "release_version": "0.4.1",
+  "package_id": "escaping-logic-b619965e9107a198-v0-4-1",
   "game_id": "GAME-LOGIC-ESCAPE-ROOM",
   "status": "REVIEW_CANDIDATE_UNPUBLISHED",
   "repository_owner": "mrbrackebusch-code",
@@ -13,12 +13,12 @@
   "stable_tutorial_url": "https://arcade.makecode.com/?nocdn=1&skipgithubcache=1#tutorial:https://github.com/mrbrackebusch-code/escaping-logic/README",
   "external_publication_performed": false,
   "student_distribution_ready": false,
-  "guide_revision": "7430b796beb67377",
-  "guide_manifest_sha256": "d8d38706028e7d0ad2ef1b68b612499f03bf6a6928f12d34ede7c2f526f71327",
-  "canonical_tutorial_sha256": "10c8d18908034bbb606d41dc51ea8856a8f91ab87785e0ab439a924d2bd71386",
-  "public_readme_sha256": "2dedc1d094a2925fa249827753e95917c70e988b5e67a3275de2d360faa8b16b",
+  "guide_revision": "b619965e9107a198",
+  "guide_manifest_sha256": "8891557eb2f47b57bb7074806b254e18a549f2c6c5d0913d1a83cbc90b3e65c5",
+  "canonical_tutorial_sha256": "d563f4add077053b9fc1c292386e197280f14e33e876f0d7d789d77db39a8ab9",
+  "public_readme_sha256": "2ffdf6fcfa179375fa1b651c6f3fd8ea6e908a35dd3b7b868b0023966efc7603",
   "current_executable_identity": {
-    "customts_sha256": "36aed53b8bee041c7f02342dbd54003204dccabf8cdf7af551ce9dc3a7585a19",
+    "customts_sha256": "f35f831e0b2c90503f376bd2a84e3662c30d545af190d941fe65ca340fda565f",
     "solution_sha256": "fe4b7d8f6699fae0ccbd6d045e0844f2224408e3220ea744e5b32e8cc1848501",
     "starter_sha256": "5534ebe56fa6882ad5d7848ce18a701e38513aafe9ded45cdaadeec2dab6c98a",
     "hints": 36,
@@ -26,10 +26,10 @@
       "games/logic-escape-room/implementation/learner-states/catalog.json": "d34e3a6668bf01e6852f0ea286902be346fb54c74c9a3efee4913a49aba0951f",
       "games/logic-escape-room/implementation/supplied-world/api.ts": "e22714371950c046642bd99da12f327dbba2572e3c12bcedd70ce3d9d22a07f4",
       "games/logic-escape-room/implementation/supplied-world/flow.ts": "570c68c92bec2f5b2455ebce7ee15901052b6ac64e0ce22258e33484e3a4c396",
-      "games/logic-escape-room/implementation/supplied-world/floor.ts": "5243be77aa146837cd5766371dcdf426d399ecbcc553952473eff88f29e86f06",
+      "games/logic-escape-room/implementation/supplied-world/floor.ts": "7c8039af1c891c4802cbff25c50f33e3af7e01ab582ac6baa2877d75304252cd",
       "games/logic-escape-room/implementation/supplied-world/cargo.ts": "0d6a48f6dc1964e6db3cea14eeb80fcec84ee332d29ba19f5c1cc06a9c986e98",
       "games/logic-escape-room/implementation/supplied-world/objects.ts": "b99cebc7ae2d20f741269d7fe8d7ab2f25a0e65b40fc55063226fea357c4d979",
-      "games/logic-escape-room/implementation/supplied-world/world.ts": "3552d8671ddca6fa98d1d91af6bc0cf49e2fdb7ac56213213c64869d3a57368e",
+      "games/logic-escape-room/implementation/supplied-world/world.ts": "96f64784215a775dd7c83797fd2fd6dfbaae3338cdc16c3ee0b0ff13ed14737f",
       "games/logic-escape-room/implementation/supplied-world/engine.ts": "51f845652da9e9201a763096fcc327afaef590510defd3ab1fd36765909810ed",
       "games/logic-escape-room/implementation/solution/main.ts": "fe4b7d8f6699fae0ccbd6d045e0844f2224408e3220ea744e5b32e8cc1848501",
       "games/logic-escape-room/copy/tutorial.md": "4eb07eae993b578f6ee299107a640ac23893b1bff74c2758c9421c5f76a9fb6f",
@@ -53,7 +53,7 @@
     "supplied_world_in_customts_only": true
   },
   "media": {
-    "revision": "7430b796beb67377",
+    "revision": "b619965e9107a198",
     "total": 55,
     "menu": 6,
     "assembled": 13,
@@ -63,447 +63,447 @@
         "state_id": "01-fire",
         "kind": "menu",
         "canonical_path": "assets/instructions/native-interaction-v3-01/01-fire-menu.svg",
-        "publication_path": "assets/7430b796beb67377/media/menu/01-fire-01-fire-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/01-fire-01-fire-menu.svg",
+        "publication_path": "assets/b619965e9107a198/media/menu/01-fire-01-fire-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/01-fire-01-fire-menu.svg",
         "sha256": "daeda017629dfa65e00baae0e68a09b40f19841225fff62705ed01d27380c149"
       },
       {
         "state_id": "01-fire",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/01-fire-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/01-fire-01-fire-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/01-fire-01-fire-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/01-fire-01-fire-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/01-fire-01-fire-assembled.svg",
         "sha256": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0"
       },
       {
         "state_id": "01-fire",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-01-fire.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/01-fire-connected-v2-physical-v4-01-01-fire.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/01-fire-connected-v2-physical-v4-01-01-fire.gif",
-        "sha256": "45fdab96f53422c0bf6ac352413ab4f234daf18c217a037078bf1c2abb5c596f"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-01-fire.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/01-fire-connected-v2-physical-floor-v5-01-01-fire.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/01-fire-connected-v2-physical-floor-v5-01-01-fire.gif",
+        "sha256": "b7e47b6f2195338f726de2d4afa7f7605369f3fb2d29801afd3f9acad031fd08"
       },
       {
         "state_id": "02-case",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/02-case-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/02-case-02-case-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/02-case-02-case-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/02-case-02-case-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/02-case-02-case-assembled.svg",
         "sha256": "d689d2f1078ce79d219b14d9fd9e81487efd07e3f199a4db12006a56956d93d2"
       },
       {
         "state_id": "02-case",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-02-case.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/02-case-connected-v2-physical-v4-01-02-case.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/02-case-connected-v2-physical-v4-01-02-case.gif",
-        "sha256": "22542c4db96d7a04c0fa4440135ec3c4e6742cc6f30b192536d097dffbb6db3a"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-02-case.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/02-case-connected-v2-physical-floor-v5-01-02-case.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/02-case-connected-v2-physical-floor-v5-01-02-case.gif",
+        "sha256": "3b6a01380215dea30454e288dd5c347bb990068734e3a2f58852ab9e083e8ee1"
       },
       {
         "state_id": "03-generator",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/03-generator-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/03-generator-03-generator-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/03-generator-03-generator-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/03-generator-03-generator-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/03-generator-03-generator-assembled.svg",
         "sha256": "ce1f3b4fa61fda846a36f4545637abcf8cd27b8e94dfe9aa91a2ee8bfdd00b4d"
       },
       {
         "state_id": "03-generator",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-03-generator.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/03-generator-connected-v2-physical-v4-01-03-generator.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/03-generator-connected-v2-physical-v4-01-03-generator.gif",
-        "sha256": "a99453b4d38e2346aa520d9a00d85d0dc3dbb394ef344f5e8c345e01ab7fa5ff"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-03-generator.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/03-generator-connected-v2-physical-floor-v5-01-03-generator.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/03-generator-connected-v2-physical-floor-v5-01-03-generator.gif",
+        "sha256": "6ea2e2cd5bbc508a84e7ea22d68b22ed79ea1795e487cca8d48e77a2896b1a80"
       },
       {
         "state_id": "04-crank",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/04-crank-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/04-crank-04-crank-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/04-crank-04-crank-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/04-crank-04-crank-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/04-crank-04-crank-assembled.svg",
         "sha256": "0f1acca8b753408738e33d087fe8e63382b345a6fdbb009e2690090854f737f0"
       },
       {
         "state_id": "04-crank",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-04-crank.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/04-crank-connected-v2-physical-v4-01-04-crank.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/04-crank-connected-v2-physical-v4-01-04-crank.gif",
-        "sha256": "779fab568154652ee2f49264bd31bb1687fc69190d83bff7b73606706ff8ccb2"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-04-crank.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/04-crank-connected-v2-physical-floor-v5-01-04-crank.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/04-crank-connected-v2-physical-floor-v5-01-04-crank.gif",
+        "sha256": "4246a4bec4dc72fa91ed7ce340f780e660bab77906a9a9e8ad8815f55a7fa27c"
       },
       {
         "state_id": "05-wall",
         "kind": "menu",
         "canonical_path": "assets/instructions/native-interaction-v3-01/05-wall-comparisons-menu.svg",
-        "publication_path": "assets/7430b796beb67377/media/menu/05-wall-05-wall-comparisons-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/05-wall-05-wall-comparisons-menu.svg",
+        "publication_path": "assets/b619965e9107a198/media/menu/05-wall-05-wall-comparisons-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/05-wall-05-wall-comparisons-menu.svg",
         "sha256": "a9b4eb581bf72864bb39a995b1b876504e7e196e7bf918878611d0352bc1629d"
       },
       {
         "state_id": "05-wall",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/05-wall-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/05-wall-05-wall-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/05-wall-05-wall-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/05-wall-05-wall-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/05-wall-05-wall-assembled.svg",
         "sha256": "99ad38a4a0f3ea16464b45cc206cdc35b11ab77ce0401607f3afa58f0e5d9a31"
       },
       {
         "state_id": "05-wall",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-05-wall.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/05-wall-connected-v2-physical-v4-01-05-wall.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/05-wall-connected-v2-physical-v4-01-05-wall.gif",
-        "sha256": "1dcc515749a8051a6a3ffd10de58da8ccae9a47ec29029ce6b6c1a8cd3278576"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-05-wall.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/05-wall-connected-v2-physical-floor-v5-01-05-wall.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/05-wall-connected-v2-physical-floor-v5-01-05-wall.gif",
+        "sha256": "d77548cbe6b49ac1f097c18661696b3fd119e07c8ba02da3418dba8e81b36c87"
       },
       {
         "state_id": "06-footprints",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/06-footprints-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/06-footprints-06-footprints-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/06-footprints-06-footprints-assembled.svg",
         "sha256": "6f3c8bc8cba372b76f61accefb3bda43f94d1ad4c5db170942c3c8fcb40bd3b6"
       },
       {
         "state_id": "06-footprints",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-06-footprints.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/06-footprints-connected-v2-physical-v4-01-06-footprints.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/06-footprints-connected-v2-physical-v4-01-06-footprints.gif",
-        "sha256": "a900f9ed87106d6b17118f57b9e9d78e4cb2af06bc6d04f8a30739ab49b1c72b"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-06-footprints.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/06-footprints-connected-v2-physical-floor-v5-01-06-footprints.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/06-footprints-connected-v2-physical-floor-v5-01-06-footprints.gif",
+        "sha256": "29323dd2da15e6cd06df2fe6385f56583cf91cad73da109c947949a1c1dbc92f"
       },
       {
         "state_id": "07-shadow",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/07-shadow-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/07-shadow-07-shadow-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/07-shadow-07-shadow-assembled.svg",
         "sha256": "397b1cf06bbf3321c4e7a5fe447d763d5300fbc05a969bf3714216a8510134e5"
       },
       {
         "state_id": "07-shadow",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-07-shadow.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/07-shadow-connected-v2-physical-v4-01-07-shadow.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/07-shadow-connected-v2-physical-v4-01-07-shadow.gif",
-        "sha256": "a4412645313e0e97479e76416cc39aa9d4d422d4375a4691324b26cae3ce1eac"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-07-shadow.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/07-shadow-connected-v2-physical-floor-v5-01-07-shadow.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/07-shadow-connected-v2-physical-floor-v5-01-07-shadow.gif",
+        "sha256": "c118c2bb4beec67dc5f1057774f733ec0c868f9538836d0c176fab85cf986786"
       },
       {
         "state_id": "08-telescope",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-08-telescope.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/08-telescope-connected-v2-physical-v4-01-08-telescope.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/08-telescope-connected-v2-physical-v4-01-08-telescope.gif",
-        "sha256": "ed4d0055df7b2722afb52b620f5b1115d15dd08ea583b61e69cebdb5c42bf9ed"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-08-telescope.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/08-telescope-connected-v2-physical-floor-v5-01-08-telescope.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/08-telescope-connected-v2-physical-floor-v5-01-08-telescope.gif",
+        "sha256": "3069465d8d571b2e228d0331ceee96551fe44c333fa6dff4e3c5e9a729a6321a"
       },
       {
         "state_id": "09-stones",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-09-stones.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/09-stones-connected-v2-physical-v4-01-09-stones.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/09-stones-connected-v2-physical-v4-01-09-stones.gif",
-        "sha256": "656ee2423cf7957ca648e19fca4efb460cbf886aa0785a135d3e38c8cb0d6810"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-09-stones.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/09-stones-connected-v2-physical-floor-v5-01-09-stones.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/09-stones-connected-v2-physical-floor-v5-01-09-stones.gif",
+        "sha256": "39167fb7c14d1ac8f209d2fa5760daaae07fefbc9af16f83f1c4d59edd6b2b76"
       },
       {
         "state_id": "10-mural-mix",
         "kind": "menu",
         "canonical_path": "assets/instructions/native-interaction-v3-01/10-mural-logic-menu.svg",
-        "publication_path": "assets/7430b796beb67377/media/menu/10-mural-mix-10-mural-logic-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/10-mural-mix-10-mural-logic-menu.svg",
+        "publication_path": "assets/b619965e9107a198/media/menu/10-mural-mix-10-mural-logic-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/10-mural-mix-10-mural-logic-menu.svg",
         "sha256": "e81b2b5fb3c60e17098b9bdc31c1e78270f1b407985474face897bbab7c8e391"
       },
       {
         "state_id": "10-mural-mix",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/10-mural-mix-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
         "sha256": "07647616b29d5a8ebe7bb50317bd5649372d1e2bce123ffc47eafde0dc9b47fc"
       },
       {
         "state_id": "10-mural-mix",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-10-mural-mix.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/10-mural-mix-connected-v2-physical-v4-01-10-mural-mix.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/10-mural-mix-connected-v2-physical-v4-01-10-mural-mix.gif",
-        "sha256": "206a9345ece8d449c6049fad374b0fe397f178e8e1bf5e28b80079943fa1f395"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-10-mural-mix.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/10-mural-mix-connected-v2-physical-floor-v5-01-10-mural-mix.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/10-mural-mix-connected-v2-physical-floor-v5-01-10-mural-mix.gif",
+        "sha256": "657e5469384655fd410c12b792bed03d2afddf6e5665cc16884cf6976b9b8191"
       },
       {
         "state_id": "11-mural-reveal",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/11-mural-reveal-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
         "sha256": "52ca8c369978b973f6e65146a14310f6697249ecd5846fea616f51ae5d98a2cb"
       },
       {
         "state_id": "11-mural-reveal",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-11-mural-reveal.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/11-mural-reveal-connected-v2-physical-v4-01-11-mural-reveal.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/11-mural-reveal-connected-v2-physical-v4-01-11-mural-reveal.gif",
-        "sha256": "3202e85ff00254be4f7b30e85e9a813bc25ab54d65595991bada255f96308f25"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-11-mural-reveal.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/11-mural-reveal-connected-v2-physical-floor-v5-01-11-mural-reveal.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/11-mural-reveal-connected-v2-physical-floor-v5-01-11-mural-reveal.gif",
+        "sha256": "7387dfeff43b8e324216f284951ddd7ec88822b1b2ee1beafa7cd1a6eb794169"
       },
       {
         "state_id": "12-portrait1",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-12-portrait1.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/12-portrait1-connected-v2-physical-v4-01-12-portrait1.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/12-portrait1-connected-v2-physical-v4-01-12-portrait1.gif",
-        "sha256": "5d86081320511931969935f31b69de64fd56f697afcc1853f66f05f2f17e3c34"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-12-portrait1.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/12-portrait1-connected-v2-physical-floor-v5-01-12-portrait1.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/12-portrait1-connected-v2-physical-floor-v5-01-12-portrait1.gif",
+        "sha256": "f7e5e32cf6c44c4bbb19e1b7d1efd659ed5f9b4cb3677cba09ed2ac47467735c"
       },
       {
         "state_id": "13-thermal",
         "kind": "menu",
         "canonical_path": "assets/instructions/native-interaction-v3-01/13-thermal-elseif-menu.svg",
-        "publication_path": "assets/7430b796beb67377/media/menu/13-thermal-13-thermal-elseif-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/13-thermal-13-thermal-elseif-menu.svg",
+        "publication_path": "assets/b619965e9107a198/media/menu/13-thermal-13-thermal-elseif-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/13-thermal-13-thermal-elseif-menu.svg",
         "sha256": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611"
       },
       {
         "state_id": "13-thermal",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/13-thermal-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/13-thermal-13-thermal-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/13-thermal-13-thermal-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/13-thermal-13-thermal-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/13-thermal-13-thermal-assembled.svg",
         "sha256": "31a93c7fd749ac0aae31d37728319dd2d98bb9026e88c6ca627d4997a80070fd"
       },
       {
         "state_id": "13-thermal",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-13-thermal.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/13-thermal-connected-v2-physical-v4-01-13-thermal.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/13-thermal-connected-v2-physical-v4-01-13-thermal.gif",
-        "sha256": "503fe638e4bab652ce8dd9b126289725424068939d2f27f201782a7f89f885cc"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-13-thermal.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/13-thermal-connected-v2-physical-floor-v5-01-13-thermal.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/13-thermal-connected-v2-physical-floor-v5-01-13-thermal.gif",
+        "sha256": "1b446019691318b8aea17dbe6336b2db51a3c637f4d229eae48824228c4f608d"
       },
       {
         "state_id": "14-portrait2",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-14-portrait2.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/14-portrait2-connected-v2-physical-v4-01-14-portrait2.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/14-portrait2-connected-v2-physical-v4-01-14-portrait2.gif",
-        "sha256": "659fe1288fd60cdac88d169f228feb7cd66683bfd8a82e84336883b79ca6778a"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-14-portrait2.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/14-portrait2-connected-v2-physical-floor-v5-01-14-portrait2.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/14-portrait2-connected-v2-physical-floor-v5-01-14-portrait2.gif",
+        "sha256": "c96069a40d2fc0727f5b9caf977db7d006a309ac7eb407e0f37c1ec3b975b619"
       },
       {
         "state_id": "15-portrait3",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-15-portrait3.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/15-portrait3-connected-v2-physical-v4-01-15-portrait3.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/15-portrait3-connected-v2-physical-v4-01-15-portrait3.gif",
-        "sha256": "4d1205472d86198d207ea078b5abe6142c89b1d5ddb3a643f5e58b5869811a37"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-15-portrait3.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/15-portrait3-connected-v2-physical-floor-v5-01-15-portrait3.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/15-portrait3-connected-v2-physical-floor-v5-01-15-portrait3.gif",
+        "sha256": "9bbd2f4a9e0a41d97eb4c03c13967f54e97e2d5952e2dca3ed75da95034e234f"
       },
       {
         "state_id": "16-portrait4",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-16-portrait4.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/16-portrait4-connected-v2-physical-v4-01-16-portrait4.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/16-portrait4-connected-v2-physical-v4-01-16-portrait4.gif",
-        "sha256": "2b48979fe2e00ec9e07ee6a5b2c41535e783423ea4edff7d290fbbbafd4e2e87"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-16-portrait4.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/16-portrait4-connected-v2-physical-floor-v5-01-16-portrait4.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/16-portrait4-connected-v2-physical-floor-v5-01-16-portrait4.gif",
+        "sha256": "25f0dd053da1a24c8bde3f1920a964a295f0086bcea50b6e92f4145b4c05fcd3"
       },
       {
         "state_id": "17-sample",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-17-sample.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/17-sample-connected-v2-physical-v4-01-17-sample.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/17-sample-connected-v2-physical-v4-01-17-sample.gif",
-        "sha256": "ccd84082112a90cd35ef09cca13d6dca44e9044367c492fac2bad5e7033e30d0"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-17-sample.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/17-sample-connected-v2-physical-floor-v5-01-17-sample.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/17-sample-connected-v2-physical-floor-v5-01-17-sample.gif",
+        "sha256": "eae574c7a4e3551a150bfaa9f089ff02bb135897ca19114252db490bead22713"
       },
       {
         "state_id": "18-wires",
         "kind": "menu",
         "canonical_path": "assets/instructions/native-interaction-v3-01/18-wires-or-menu.svg",
-        "publication_path": "assets/7430b796beb67377/media/menu/18-wires-18-wires-or-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/18-wires-18-wires-or-menu.svg",
+        "publication_path": "assets/b619965e9107a198/media/menu/18-wires-18-wires-or-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/18-wires-18-wires-or-menu.svg",
         "sha256": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a"
       },
       {
         "state_id": "18-wires",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/18-wires-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/18-wires-18-wires-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/18-wires-18-wires-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/18-wires-18-wires-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/18-wires-18-wires-assembled.svg",
         "sha256": "a9833dfb1fac895a8746aa7a5a85bf07e0ccfca120790eee92bf2285a5b4e535"
       },
       {
         "state_id": "18-wires",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-18-wires.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/18-wires-connected-v2-physical-v4-01-18-wires.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/18-wires-connected-v2-physical-v4-01-18-wires.gif",
-        "sha256": "ccf1e6b06b8f1b42c3c023bd0fdc498f7b0593a2cd81b56ea972ce08aa80e266"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-18-wires.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/18-wires-connected-v2-physical-floor-v5-01-18-wires.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/18-wires-connected-v2-physical-floor-v5-01-18-wires.gif",
+        "sha256": "7c1477a787479bbb1ed7f4f333d672114b885e7ab1e3cd33891b31b36262a1aa"
       },
       {
         "state_id": "19-vessel",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-19-vessel.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/19-vessel-connected-v2-physical-v4-01-19-vessel.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/19-vessel-connected-v2-physical-v4-01-19-vessel.gif",
-        "sha256": "acf3d43a0e35832c303b337b3cc65953fa374386bfa2250f29684ca1b78d693c"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-19-vessel.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/19-vessel-connected-v2-physical-floor-v5-01-19-vessel.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/19-vessel-connected-v2-physical-floor-v5-01-19-vessel.gif",
+        "sha256": "39b00dcecfd8486e8f866272607496924eb833c2621328b42cc92ad58b55eace"
       },
       {
         "state_id": "20-pruner",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-20-pruner.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/20-pruner-connected-v2-physical-v4-01-20-pruner.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/20-pruner-connected-v2-physical-v4-01-20-pruner.gif",
-        "sha256": "289b9959232cc789bb28fd9b8b2736857fecac1cb03eae801ccb4cc18c25345a"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-20-pruner.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/20-pruner-connected-v2-physical-floor-v5-01-20-pruner.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/20-pruner-connected-v2-physical-floor-v5-01-20-pruner.gif",
+        "sha256": "a0a38fd787a20eca5bbf1b58c6f84f29097a51a44f11b7459ca40b7d16e5a914"
       },
       {
         "state_id": "21-titration",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-21-titration.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/21-titration-connected-v2-physical-v4-01-21-titration.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/21-titration-connected-v2-physical-v4-01-21-titration.gif",
-        "sha256": "31c9dcfe26da6063404efc10ec84b79937a01c5e203d98db0128567dac7c37f3"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-21-titration.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/21-titration-connected-v2-physical-floor-v5-01-21-titration.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/21-titration-connected-v2-physical-floor-v5-01-21-titration.gif",
+        "sha256": "cf09f96b477b3eb670bd70f980c7eb69952c99c850a52f305dfbe737044b16be"
       },
       {
         "state_id": "22-balance",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-22-balance.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/22-balance-connected-v2-physical-v4-01-22-balance.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/22-balance-connected-v2-physical-v4-01-22-balance.gif",
-        "sha256": "9f9a6947c7ab6c035bc048737d4b8ef1ad531e6d97b3900c9d1de9a252696988"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-22-balance.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/22-balance-connected-v2-physical-floor-v5-01-22-balance.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/22-balance-connected-v2-physical-floor-v5-01-22-balance.gif",
+        "sha256": "8a251b7a3db90b6782f88598d656faef8ba5cafb8c8aca1fd41c612b1ba35542"
       },
       {
         "state_id": "23-tube",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-23-tube.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/23-tube-connected-v2-physical-v4-01-23-tube.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/23-tube-connected-v2-physical-v4-01-23-tube.gif",
-        "sha256": "262574f0f60a71a7e5f86b22d4ea4b5c3e3a8760930d945ec45718ee496b1d6d"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-23-tube.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/23-tube-connected-v2-physical-floor-v5-01-23-tube.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/23-tube-connected-v2-physical-floor-v5-01-23-tube.gif",
+        "sha256": "c2c03d9655a13dfc24117a3d6eb1cc7fc53af04c2c62d0c43e04f40733a6c34f"
       },
       {
         "state_id": "24-printer",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-24-printer.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/24-printer-connected-v2-physical-v4-01-24-printer.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/24-printer-connected-v2-physical-v4-01-24-printer.gif",
-        "sha256": "2aae21db9d8338df71d890e8d4d33c21c7e6792d286fe3c1de794a81507e9fd7"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-24-printer.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/24-printer-connected-v2-physical-floor-v5-01-24-printer.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/24-printer-connected-v2-physical-floor-v5-01-24-printer.gif",
+        "sha256": "98370d04e80c3ed4b7ba623a5da38022342d7a60ce0ddfa4fc8c9aa63d75fd7b"
       },
       {
         "state_id": "25-interference",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-25-interference.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/25-interference-connected-v2-physical-v4-01-25-interference.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/25-interference-connected-v2-physical-v4-01-25-interference.gif",
-        "sha256": "3acd8933511f8926a69197e8e8ef0831d0cd434a6817ea72ae0e29802c5e95a4"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-25-interference.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/25-interference-connected-v2-physical-floor-v5-01-25-interference.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/25-interference-connected-v2-physical-floor-v5-01-25-interference.gif",
+        "sha256": "64f05641971b3e1f74eda4668119aa7d950d884b4d94247c416bd1688db6f7d2"
       },
       {
         "state_id": "26-receiver",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-26-receiver.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/26-receiver-connected-v2-physical-v4-01-26-receiver.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/26-receiver-connected-v2-physical-v4-01-26-receiver.gif",
-        "sha256": "debae1eebcc3a11ac74cbec0d4b619a29f2d6037d1857c4852268cf167e34f80"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-26-receiver.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/26-receiver-connected-v2-physical-floor-v5-01-26-receiver.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/26-receiver-connected-v2-physical-floor-v5-01-26-receiver.gif",
+        "sha256": "263872d478a4d59ed5d5a1e4e82f411e37eff6b46fec980fc6cc140013b85c05"
       },
       {
         "state_id": "27-pressure-stable",
         "kind": "menu",
         "canonical_path": "assets/instructions/native-interaction-v3-01/27-pressure-and-pitch-variables-menu.svg",
-        "publication_path": "assets/7430b796beb67377/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
+        "publication_path": "assets/b619965e9107a198/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
         "sha256": "70e009db9bbbeb99cb4bc5ddff55dbed23254392eee051369ea8f79bf452e111"
       },
       {
         "state_id": "27-pressure-stable",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/27-pressure-stable-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
         "sha256": "a4913198395f2fa4472048f412d41df80446cfea3ed54f3384307040d8697d7c"
       },
       {
         "state_id": "27-pressure-stable",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-27-pressure-stable.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/27-pressure-stable-connected-v2-physical-v4-01-27-pressure-stable.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/27-pressure-stable-connected-v2-physical-v4-01-27-pressure-stable.gif",
-        "sha256": "897da890b13f4d645db53ccff8493a54cc25ad5fbe84fafefd794de3947cae52"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-27-pressure-stable.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/27-pressure-stable-connected-v2-physical-floor-v5-01-27-pressure-stable.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/27-pressure-stable-connected-v2-physical-floor-v5-01-27-pressure-stable.gif",
+        "sha256": "39ee56f78bb5a740059325a247f5e2119106fa4ad2e24b6a770e6c41815f3bcc"
       },
       {
         "state_id": "28-pressure-release",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-28-pressure-release.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/28-pressure-release-connected-v2-physical-v4-01-28-pressure-release.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/28-pressure-release-connected-v2-physical-v4-01-28-pressure-release.gif",
-        "sha256": "16e042b041b9c8546153ad732261ed9ed4e24fc54bc6d72f3d1b4ddd9ffbc9c2"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-28-pressure-release.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/28-pressure-release-connected-v2-physical-floor-v5-01-28-pressure-release.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/28-pressure-release-connected-v2-physical-floor-v5-01-28-pressure-release.gif",
+        "sha256": "43507c510b89313d4ae2948c983a41687d0145ac59ffa4fc7d2341a0249bbf36"
       },
       {
         "state_id": "29-pitch-adjust",
         "kind": "assembled",
         "canonical_path": "assets/instructions/native-interaction-v3-01/29-pitch-adjust-assembled.svg",
-        "publication_path": "assets/7430b796beb67377/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "publication_path": "assets/b619965e9107a198/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
         "sha256": "01f5c5fd4e756e7bd3b3e5dbe4653d627086ff30db719718f14bc94746e1f975"
       },
       {
         "state_id": "29-pitch-adjust",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-29-pitch-adjust.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/29-pitch-adjust-connected-v2-physical-v4-01-29-pitch-adjust.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/29-pitch-adjust-connected-v2-physical-v4-01-29-pitch-adjust.gif",
-        "sha256": "bcfe3afb9956afb50e170605cc8a223a9ef83ac696203c7163877253ef8be58f"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-29-pitch-adjust.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/29-pitch-adjust-connected-v2-physical-floor-v5-01-29-pitch-adjust.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/29-pitch-adjust-connected-v2-physical-floor-v5-01-29-pitch-adjust.gif",
+        "sha256": "fc70b99f2e0fe6d15247f758f8ac8f41687a0c2da0b159518dc176994ddbbf9a"
       },
       {
         "state_id": "30-pitch-feedback",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-30-pitch-feedback.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/30-pitch-feedback-connected-v2-physical-v4-01-30-pitch-feedback.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/30-pitch-feedback-connected-v2-physical-v4-01-30-pitch-feedback.gif",
-        "sha256": "0f6932609f19f76c6bd2f4db325f740e75503181d558c2179e7d2cb3c033aaca"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-30-pitch-feedback.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/30-pitch-feedback-connected-v2-physical-floor-v5-01-30-pitch-feedback.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/30-pitch-feedback-connected-v2-physical-floor-v5-01-30-pitch-feedback.gif",
+        "sha256": "24771a0b2516dd37752033f38d1df248a02a13620047299693c76d46dc0f32ae"
       },
       {
         "state_id": "31-shutters",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-31-shutters.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/31-shutters-connected-v2-physical-v4-01-31-shutters.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/31-shutters-connected-v2-physical-v4-01-31-shutters.gif",
-        "sha256": "a5efbf234137ba1a5782c75f1bae17b474481520fa6d5e299b7478e7febe812d"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-31-shutters.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/31-shutters-connected-v2-physical-floor-v5-01-31-shutters.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/31-shutters-connected-v2-physical-floor-v5-01-31-shutters.gif",
+        "sha256": "d2fc554f499fd8707f554c150b0d8a2da996a3abf9f056ddb3a8e39fe44d12a7"
       },
       {
         "state_id": "32-sensors",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-32-sensors.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/32-sensors-connected-v2-physical-v4-01-32-sensors.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/32-sensors-connected-v2-physical-v4-01-32-sensors.gif",
-        "sha256": "e3897d27fce8b05ab8806d1db917bc87fdcb4dea099eecdbe28ea86d90c4d5eb"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-32-sensors.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/32-sensors-connected-v2-physical-floor-v5-01-32-sensors.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/32-sensors-connected-v2-physical-floor-v5-01-32-sensors.gif",
+        "sha256": "a5c567c42dfc845394d6ea42c4a632bae867013234284ffabcf01c464269d5fd"
       },
       {
         "state_id": "33-rock-path",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-33-rock-path.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/33-rock-path-connected-v2-physical-v4-01-33-rock-path.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/33-rock-path-connected-v2-physical-v4-01-33-rock-path.gif",
-        "sha256": "ffc9e0fdd5791f6daf84d1f9c38ded3e47ecb1915828560700e9827f1864d2a2"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-33-rock-path.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/33-rock-path-connected-v2-physical-floor-v5-01-33-rock-path.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/33-rock-path-connected-v2-physical-floor-v5-01-33-rock-path.gif",
+        "sha256": "18c08e539936f9c2fe8901104221616c2fa5a142d67f71b794d5bf5af3bf648c"
       },
       {
         "state_id": "34-constellation",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-34-constellation.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/34-constellation-connected-v2-physical-v4-01-34-constellation.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/34-constellation-connected-v2-physical-v4-01-34-constellation.gif",
-        "sha256": "96c57cea260a1267b6154a738034d4fc0ae551a23d5abebb28caf5e455d2360f"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-34-constellation.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/34-constellation-connected-v2-physical-floor-v5-01-34-constellation.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/34-constellation-connected-v2-physical-floor-v5-01-34-constellation.gif",
+        "sha256": "25b298ba82d2d89591e3492cfcaa2175deb52cddd6240ec9ea7c24273b8ace1e"
       },
       {
         "state_id": "35-synchronize",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-35-synchronize.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/35-synchronize-connected-v2-physical-v4-01-35-synchronize.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/35-synchronize-connected-v2-physical-v4-01-35-synchronize.gif",
-        "sha256": "cb3d819d072da7d3e4d14b107eb485a747c127b1153f1f8c86ef8bf8632d4299"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-35-synchronize.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/35-synchronize-connected-v2-physical-floor-v5-01-35-synchronize.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/35-synchronize-connected-v2-physical-floor-v5-01-35-synchronize.gif",
+        "sha256": "9456cf16f7a64d960f6e15e808af59d093e96ab8cc06b0299aa0e19283347d95"
       },
       {
         "state_id": "36-final-lever",
         "kind": "gameplay",
-        "canonical_path": "assets/demos/connected-v2-physical-v4-01-36-final-lever.gif",
-        "publication_path": "assets/7430b796beb67377/media/gameplay/36-final-lever-connected-v2-physical-v4-01-36-final-lever.gif",
-        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/36-final-lever-connected-v2-physical-v4-01-36-final-lever.gif",
-        "sha256": "f197bafd69e35061e41c22c98dd7049f35129d4c065a4f24c900ec405a616645"
+        "canonical_path": "assets/demos/connected-v2-physical-floor-v5-01-36-final-lever.gif",
+        "publication_path": "assets/b619965e9107a198/media/gameplay/36-final-lever-connected-v2-physical-floor-v5-01-36-final-lever.gif",
+        "url": "https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/36-final-lever-connected-v2-physical-floor-v5-01-36-final-lever.gif",
+        "sha256": "942c95c78dea62bc4ff73b529759007d50b4802566bf06023717162d32b59ddd"
       }
     ]
   },
   "retained_media": {
-    "package_id": "escaping-logic-ec2a324a701e7fe8-v0-3-0",
-    "manifest_sha256": "03213ad5bb2aa1a2da8c17ee2b0662253e6bc8f856054369eecd160d5a2d6157",
+    "package_id": "escaping-logic-7430b796beb67377-v0-4-0",
+    "manifest_sha256": "c815649da08de0f2b70456cf72b44ba7bf9c0b5365dfd4e2f7d03e4c69ebc7e3",
     "files": [
       {
         "path": "assets/3821640e629f7806/media/assembled/01-fire-01-fire-assembled.svg",
@@ -946,6 +946,226 @@
         "sha256": "e507b358e7b4537af8ccd5f3f8960fee826aa6ffe1f5afdc0e559dadd2d085b0"
       },
       {
+        "path": "assets/7430b796beb67377/media/assembled/01-fire-01-fire-assembled.svg",
+        "sha256": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/02-case-02-case-assembled.svg",
+        "sha256": "d689d2f1078ce79d219b14d9fd9e81487efd07e3f199a4db12006a56956d93d2"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/03-generator-03-generator-assembled.svg",
+        "sha256": "ce1f3b4fa61fda846a36f4545637abcf8cd27b8e94dfe9aa91a2ee8bfdd00b4d"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/04-crank-04-crank-assembled.svg",
+        "sha256": "0f1acca8b753408738e33d087fe8e63382b345a6fdbb009e2690090854f737f0"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/05-wall-05-wall-assembled.svg",
+        "sha256": "99ad38a4a0f3ea16464b45cc206cdc35b11ab77ce0401607f3afa58f0e5d9a31"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/06-footprints-06-footprints-assembled.svg",
+        "sha256": "6f3c8bc8cba372b76f61accefb3bda43f94d1ad4c5db170942c3c8fcb40bd3b6"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/07-shadow-07-shadow-assembled.svg",
+        "sha256": "397b1cf06bbf3321c4e7a5fe447d763d5300fbc05a969bf3714216a8510134e5"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/10-mural-mix-10-mural-mix-assembled.svg",
+        "sha256": "07647616b29d5a8ebe7bb50317bd5649372d1e2bce123ffc47eafde0dc9b47fc"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg",
+        "sha256": "52ca8c369978b973f6e65146a14310f6697249ecd5846fea616f51ae5d98a2cb"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/13-thermal-13-thermal-assembled.svg",
+        "sha256": "31a93c7fd749ac0aae31d37728319dd2d98bb9026e88c6ca627d4997a80070fd"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/18-wires-18-wires-assembled.svg",
+        "sha256": "a9833dfb1fac895a8746aa7a5a85bf07e0ccfca120790eee92bf2285a5b4e535"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg",
+        "sha256": "a4913198395f2fa4472048f412d41df80446cfea3ed54f3384307040d8697d7c"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg",
+        "sha256": "01f5c5fd4e756e7bd3b3e5dbe4653d627086ff30db719718f14bc94746e1f975"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/01-fire-connected-v2-physical-v4-01-01-fire.gif",
+        "sha256": "45fdab96f53422c0bf6ac352413ab4f234daf18c217a037078bf1c2abb5c596f"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/02-case-connected-v2-physical-v4-01-02-case.gif",
+        "sha256": "22542c4db96d7a04c0fa4440135ec3c4e6742cc6f30b192536d097dffbb6db3a"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/03-generator-connected-v2-physical-v4-01-03-generator.gif",
+        "sha256": "a99453b4d38e2346aa520d9a00d85d0dc3dbb394ef344f5e8c345e01ab7fa5ff"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/04-crank-connected-v2-physical-v4-01-04-crank.gif",
+        "sha256": "779fab568154652ee2f49264bd31bb1687fc69190d83bff7b73606706ff8ccb2"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/05-wall-connected-v2-physical-v4-01-05-wall.gif",
+        "sha256": "1dcc515749a8051a6a3ffd10de58da8ccae9a47ec29029ce6b6c1a8cd3278576"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/06-footprints-connected-v2-physical-v4-01-06-footprints.gif",
+        "sha256": "a900f9ed87106d6b17118f57b9e9d78e4cb2af06bc6d04f8a30739ab49b1c72b"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/07-shadow-connected-v2-physical-v4-01-07-shadow.gif",
+        "sha256": "a4412645313e0e97479e76416cc39aa9d4d422d4375a4691324b26cae3ce1eac"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/08-telescope-connected-v2-physical-v4-01-08-telescope.gif",
+        "sha256": "ed4d0055df7b2722afb52b620f5b1115d15dd08ea583b61e69cebdb5c42bf9ed"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/09-stones-connected-v2-physical-v4-01-09-stones.gif",
+        "sha256": "656ee2423cf7957ca648e19fca4efb460cbf886aa0785a135d3e38c8cb0d6810"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/10-mural-mix-connected-v2-physical-v4-01-10-mural-mix.gif",
+        "sha256": "206a9345ece8d449c6049fad374b0fe397f178e8e1bf5e28b80079943fa1f395"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/11-mural-reveal-connected-v2-physical-v4-01-11-mural-reveal.gif",
+        "sha256": "3202e85ff00254be4f7b30e85e9a813bc25ab54d65595991bada255f96308f25"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/12-portrait1-connected-v2-physical-v4-01-12-portrait1.gif",
+        "sha256": "5d86081320511931969935f31b69de64fd56f697afcc1853f66f05f2f17e3c34"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/13-thermal-connected-v2-physical-v4-01-13-thermal.gif",
+        "sha256": "503fe638e4bab652ce8dd9b126289725424068939d2f27f201782a7f89f885cc"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/14-portrait2-connected-v2-physical-v4-01-14-portrait2.gif",
+        "sha256": "659fe1288fd60cdac88d169f228feb7cd66683bfd8a82e84336883b79ca6778a"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/15-portrait3-connected-v2-physical-v4-01-15-portrait3.gif",
+        "sha256": "4d1205472d86198d207ea078b5abe6142c89b1d5ddb3a643f5e58b5869811a37"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/16-portrait4-connected-v2-physical-v4-01-16-portrait4.gif",
+        "sha256": "2b48979fe2e00ec9e07ee6a5b2c41535e783423ea4edff7d290fbbbafd4e2e87"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/17-sample-connected-v2-physical-v4-01-17-sample.gif",
+        "sha256": "ccd84082112a90cd35ef09cca13d6dca44e9044367c492fac2bad5e7033e30d0"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/18-wires-connected-v2-physical-v4-01-18-wires.gif",
+        "sha256": "ccf1e6b06b8f1b42c3c023bd0fdc498f7b0593a2cd81b56ea972ce08aa80e266"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/19-vessel-connected-v2-physical-v4-01-19-vessel.gif",
+        "sha256": "acf3d43a0e35832c303b337b3cc65953fa374386bfa2250f29684ca1b78d693c"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/20-pruner-connected-v2-physical-v4-01-20-pruner.gif",
+        "sha256": "289b9959232cc789bb28fd9b8b2736857fecac1cb03eae801ccb4cc18c25345a"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/21-titration-connected-v2-physical-v4-01-21-titration.gif",
+        "sha256": "31c9dcfe26da6063404efc10ec84b79937a01c5e203d98db0128567dac7c37f3"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/22-balance-connected-v2-physical-v4-01-22-balance.gif",
+        "sha256": "9f9a6947c7ab6c035bc048737d4b8ef1ad531e6d97b3900c9d1de9a252696988"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/23-tube-connected-v2-physical-v4-01-23-tube.gif",
+        "sha256": "262574f0f60a71a7e5f86b22d4ea4b5c3e3a8760930d945ec45718ee496b1d6d"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/24-printer-connected-v2-physical-v4-01-24-printer.gif",
+        "sha256": "2aae21db9d8338df71d890e8d4d33c21c7e6792d286fe3c1de794a81507e9fd7"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/25-interference-connected-v2-physical-v4-01-25-interference.gif",
+        "sha256": "3acd8933511f8926a69197e8e8ef0831d0cd434a6817ea72ae0e29802c5e95a4"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/26-receiver-connected-v2-physical-v4-01-26-receiver.gif",
+        "sha256": "debae1eebcc3a11ac74cbec0d4b619a29f2d6037d1857c4852268cf167e34f80"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/27-pressure-stable-connected-v2-physical-v4-01-27-pressure-stable.gif",
+        "sha256": "897da890b13f4d645db53ccff8493a54cc25ad5fbe84fafefd794de3947cae52"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/28-pressure-release-connected-v2-physical-v4-01-28-pressure-release.gif",
+        "sha256": "16e042b041b9c8546153ad732261ed9ed4e24fc54bc6d72f3d1b4ddd9ffbc9c2"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/29-pitch-adjust-connected-v2-physical-v4-01-29-pitch-adjust.gif",
+        "sha256": "bcfe3afb9956afb50e170605cc8a223a9ef83ac696203c7163877253ef8be58f"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/30-pitch-feedback-connected-v2-physical-v4-01-30-pitch-feedback.gif",
+        "sha256": "0f6932609f19f76c6bd2f4db325f740e75503181d558c2179e7d2cb3c033aaca"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/31-shutters-connected-v2-physical-v4-01-31-shutters.gif",
+        "sha256": "a5efbf234137ba1a5782c75f1bae17b474481520fa6d5e299b7478e7febe812d"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/32-sensors-connected-v2-physical-v4-01-32-sensors.gif",
+        "sha256": "e3897d27fce8b05ab8806d1db917bc87fdcb4dea099eecdbe28ea86d90c4d5eb"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/33-rock-path-connected-v2-physical-v4-01-33-rock-path.gif",
+        "sha256": "ffc9e0fdd5791f6daf84d1f9c38ded3e47ecb1915828560700e9827f1864d2a2"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/34-constellation-connected-v2-physical-v4-01-34-constellation.gif",
+        "sha256": "96c57cea260a1267b6154a738034d4fc0ae551a23d5abebb28caf5e455d2360f"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/35-synchronize-connected-v2-physical-v4-01-35-synchronize.gif",
+        "sha256": "cb3d819d072da7d3e4d14b107eb485a747c127b1153f1f8c86ef8bf8632d4299"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/gameplay/36-final-lever-connected-v2-physical-v4-01-36-final-lever.gif",
+        "sha256": "f197bafd69e35061e41c22c98dd7049f35129d4c065a4f24c900ec405a616645"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/menu/01-fire-01-fire-menu.svg",
+        "sha256": "daeda017629dfa65e00baae0e68a09b40f19841225fff62705ed01d27380c149"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/menu/05-wall-05-wall-comparisons-menu.svg",
+        "sha256": "a9b4eb581bf72864bb39a995b1b876504e7e196e7bf918878611d0352bc1629d"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/menu/10-mural-mix-10-mural-logic-menu.svg",
+        "sha256": "e81b2b5fb3c60e17098b9bdc31c1e78270f1b407985474face897bbab7c8e391"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/menu/13-thermal-13-thermal-elseif-menu.svg",
+        "sha256": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/menu/18-wires-18-wires-or-menu.svg",
+        "sha256": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a"
+      },
+      {
+        "path": "assets/7430b796beb67377/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg",
+        "sha256": "70e009db9bbbeb99cb4bc5ddff55dbed23254392eee051369ea8f79bf452e111"
+      },
+      {
         "path": "assets/ec2a324a701e7fe8/media/assembled/01-fire-01-fire-assembled.svg",
         "sha256": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0"
       },
@@ -1339,6 +1559,61 @@
     "assets/7430b796beb67377/media/menu/13-thermal-13-thermal-elseif-menu.svg": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611",
     "assets/7430b796beb67377/media/menu/18-wires-18-wires-or-menu.svg": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a",
     "assets/7430b796beb67377/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg": "70e009db9bbbeb99cb4bc5ddff55dbed23254392eee051369ea8f79bf452e111",
+    "assets/b619965e9107a198/media/assembled/01-fire-01-fire-assembled.svg": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0",
+    "assets/b619965e9107a198/media/assembled/02-case-02-case-assembled.svg": "d689d2f1078ce79d219b14d9fd9e81487efd07e3f199a4db12006a56956d93d2",
+    "assets/b619965e9107a198/media/assembled/03-generator-03-generator-assembled.svg": "ce1f3b4fa61fda846a36f4545637abcf8cd27b8e94dfe9aa91a2ee8bfdd00b4d",
+    "assets/b619965e9107a198/media/assembled/04-crank-04-crank-assembled.svg": "0f1acca8b753408738e33d087fe8e63382b345a6fdbb009e2690090854f737f0",
+    "assets/b619965e9107a198/media/assembled/05-wall-05-wall-assembled.svg": "99ad38a4a0f3ea16464b45cc206cdc35b11ab77ce0401607f3afa58f0e5d9a31",
+    "assets/b619965e9107a198/media/assembled/06-footprints-06-footprints-assembled.svg": "6f3c8bc8cba372b76f61accefb3bda43f94d1ad4c5db170942c3c8fcb40bd3b6",
+    "assets/b619965e9107a198/media/assembled/07-shadow-07-shadow-assembled.svg": "397b1cf06bbf3321c4e7a5fe447d763d5300fbc05a969bf3714216a8510134e5",
+    "assets/b619965e9107a198/media/assembled/10-mural-mix-10-mural-mix-assembled.svg": "07647616b29d5a8ebe7bb50317bd5649372d1e2bce123ffc47eafde0dc9b47fc",
+    "assets/b619965e9107a198/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg": "52ca8c369978b973f6e65146a14310f6697249ecd5846fea616f51ae5d98a2cb",
+    "assets/b619965e9107a198/media/assembled/13-thermal-13-thermal-assembled.svg": "31a93c7fd749ac0aae31d37728319dd2d98bb9026e88c6ca627d4997a80070fd",
+    "assets/b619965e9107a198/media/assembled/18-wires-18-wires-assembled.svg": "a9833dfb1fac895a8746aa7a5a85bf07e0ccfca120790eee92bf2285a5b4e535",
+    "assets/b619965e9107a198/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg": "a4913198395f2fa4472048f412d41df80446cfea3ed54f3384307040d8697d7c",
+    "assets/b619965e9107a198/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg": "01f5c5fd4e756e7bd3b3e5dbe4653d627086ff30db719718f14bc94746e1f975",
+    "assets/b619965e9107a198/media/gameplay/01-fire-connected-v2-physical-floor-v5-01-01-fire.gif": "b7e47b6f2195338f726de2d4afa7f7605369f3fb2d29801afd3f9acad031fd08",
+    "assets/b619965e9107a198/media/gameplay/02-case-connected-v2-physical-floor-v5-01-02-case.gif": "3b6a01380215dea30454e288dd5c347bb990068734e3a2f58852ab9e083e8ee1",
+    "assets/b619965e9107a198/media/gameplay/03-generator-connected-v2-physical-floor-v5-01-03-generator.gif": "6ea2e2cd5bbc508a84e7ea22d68b22ed79ea1795e487cca8d48e77a2896b1a80",
+    "assets/b619965e9107a198/media/gameplay/04-crank-connected-v2-physical-floor-v5-01-04-crank.gif": "4246a4bec4dc72fa91ed7ce340f780e660bab77906a9a9e8ad8815f55a7fa27c",
+    "assets/b619965e9107a198/media/gameplay/05-wall-connected-v2-physical-floor-v5-01-05-wall.gif": "d77548cbe6b49ac1f097c18661696b3fd119e07c8ba02da3418dba8e81b36c87",
+    "assets/b619965e9107a198/media/gameplay/06-footprints-connected-v2-physical-floor-v5-01-06-footprints.gif": "29323dd2da15e6cd06df2fe6385f56583cf91cad73da109c947949a1c1dbc92f",
+    "assets/b619965e9107a198/media/gameplay/07-shadow-connected-v2-physical-floor-v5-01-07-shadow.gif": "c118c2bb4beec67dc5f1057774f733ec0c868f9538836d0c176fab85cf986786",
+    "assets/b619965e9107a198/media/gameplay/08-telescope-connected-v2-physical-floor-v5-01-08-telescope.gif": "3069465d8d571b2e228d0331ceee96551fe44c333fa6dff4e3c5e9a729a6321a",
+    "assets/b619965e9107a198/media/gameplay/09-stones-connected-v2-physical-floor-v5-01-09-stones.gif": "39167fb7c14d1ac8f209d2fa5760daaae07fefbc9af16f83f1c4d59edd6b2b76",
+    "assets/b619965e9107a198/media/gameplay/10-mural-mix-connected-v2-physical-floor-v5-01-10-mural-mix.gif": "657e5469384655fd410c12b792bed03d2afddf6e5665cc16884cf6976b9b8191",
+    "assets/b619965e9107a198/media/gameplay/11-mural-reveal-connected-v2-physical-floor-v5-01-11-mural-reveal.gif": "7387dfeff43b8e324216f284951ddd7ec88822b1b2ee1beafa7cd1a6eb794169",
+    "assets/b619965e9107a198/media/gameplay/12-portrait1-connected-v2-physical-floor-v5-01-12-portrait1.gif": "f7e5e32cf6c44c4bbb19e1b7d1efd659ed5f9b4cb3677cba09ed2ac47467735c",
+    "assets/b619965e9107a198/media/gameplay/13-thermal-connected-v2-physical-floor-v5-01-13-thermal.gif": "1b446019691318b8aea17dbe6336b2db51a3c637f4d229eae48824228c4f608d",
+    "assets/b619965e9107a198/media/gameplay/14-portrait2-connected-v2-physical-floor-v5-01-14-portrait2.gif": "c96069a40d2fc0727f5b9caf977db7d006a309ac7eb407e0f37c1ec3b975b619",
+    "assets/b619965e9107a198/media/gameplay/15-portrait3-connected-v2-physical-floor-v5-01-15-portrait3.gif": "9bbd2f4a9e0a41d97eb4c03c13967f54e97e2d5952e2dca3ed75da95034e234f",
+    "assets/b619965e9107a198/media/gameplay/16-portrait4-connected-v2-physical-floor-v5-01-16-portrait4.gif": "25f0dd053da1a24c8bde3f1920a964a295f0086bcea50b6e92f4145b4c05fcd3",
+    "assets/b619965e9107a198/media/gameplay/17-sample-connected-v2-physical-floor-v5-01-17-sample.gif": "eae574c7a4e3551a150bfaa9f089ff02bb135897ca19114252db490bead22713",
+    "assets/b619965e9107a198/media/gameplay/18-wires-connected-v2-physical-floor-v5-01-18-wires.gif": "7c1477a787479bbb1ed7f4f333d672114b885e7ab1e3cd33891b31b36262a1aa",
+    "assets/b619965e9107a198/media/gameplay/19-vessel-connected-v2-physical-floor-v5-01-19-vessel.gif": "39b00dcecfd8486e8f866272607496924eb833c2621328b42cc92ad58b55eace",
+    "assets/b619965e9107a198/media/gameplay/20-pruner-connected-v2-physical-floor-v5-01-20-pruner.gif": "a0a38fd787a20eca5bbf1b58c6f84f29097a51a44f11b7459ca40b7d16e5a914",
+    "assets/b619965e9107a198/media/gameplay/21-titration-connected-v2-physical-floor-v5-01-21-titration.gif": "cf09f96b477b3eb670bd70f980c7eb69952c99c850a52f305dfbe737044b16be",
+    "assets/b619965e9107a198/media/gameplay/22-balance-connected-v2-physical-floor-v5-01-22-balance.gif": "8a251b7a3db90b6782f88598d656faef8ba5cafb8c8aca1fd41c612b1ba35542",
+    "assets/b619965e9107a198/media/gameplay/23-tube-connected-v2-physical-floor-v5-01-23-tube.gif": "c2c03d9655a13dfc24117a3d6eb1cc7fc53af04c2c62d0c43e04f40733a6c34f",
+    "assets/b619965e9107a198/media/gameplay/24-printer-connected-v2-physical-floor-v5-01-24-printer.gif": "98370d04e80c3ed4b7ba623a5da38022342d7a60ce0ddfa4fc8c9aa63d75fd7b",
+    "assets/b619965e9107a198/media/gameplay/25-interference-connected-v2-physical-floor-v5-01-25-interference.gif": "64f05641971b3e1f74eda4668119aa7d950d884b4d94247c416bd1688db6f7d2",
+    "assets/b619965e9107a198/media/gameplay/26-receiver-connected-v2-physical-floor-v5-01-26-receiver.gif": "263872d478a4d59ed5d5a1e4e82f411e37eff6b46fec980fc6cc140013b85c05",
+    "assets/b619965e9107a198/media/gameplay/27-pressure-stable-connected-v2-physical-floor-v5-01-27-pressure-stable.gif": "39ee56f78bb5a740059325a247f5e2119106fa4ad2e24b6a770e6c41815f3bcc",
+    "assets/b619965e9107a198/media/gameplay/28-pressure-release-connected-v2-physical-floor-v5-01-28-pressure-release.gif": "43507c510b89313d4ae2948c983a41687d0145ac59ffa4fc7d2341a0249bbf36",
+    "assets/b619965e9107a198/media/gameplay/29-pitch-adjust-connected-v2-physical-floor-v5-01-29-pitch-adjust.gif": "fc70b99f2e0fe6d15247f758f8ac8f41687a0c2da0b159518dc176994ddbbf9a",
+    "assets/b619965e9107a198/media/gameplay/30-pitch-feedback-connected-v2-physical-floor-v5-01-30-pitch-feedback.gif": "24771a0b2516dd37752033f38d1df248a02a13620047299693c76d46dc0f32ae",
+    "assets/b619965e9107a198/media/gameplay/31-shutters-connected-v2-physical-floor-v5-01-31-shutters.gif": "d2fc554f499fd8707f554c150b0d8a2da996a3abf9f056ddb3a8e39fe44d12a7",
+    "assets/b619965e9107a198/media/gameplay/32-sensors-connected-v2-physical-floor-v5-01-32-sensors.gif": "a5c567c42dfc845394d6ea42c4a632bae867013234284ffabcf01c464269d5fd",
+    "assets/b619965e9107a198/media/gameplay/33-rock-path-connected-v2-physical-floor-v5-01-33-rock-path.gif": "18c08e539936f9c2fe8901104221616c2fa5a142d67f71b794d5bf5af3bf648c",
+    "assets/b619965e9107a198/media/gameplay/34-constellation-connected-v2-physical-floor-v5-01-34-constellation.gif": "25b298ba82d2d89591e3492cfcaa2175deb52cddd6240ec9ea7c24273b8ace1e",
+    "assets/b619965e9107a198/media/gameplay/35-synchronize-connected-v2-physical-floor-v5-01-35-synchronize.gif": "9456cf16f7a64d960f6e15e808af59d093e96ab8cc06b0299aa0e19283347d95",
+    "assets/b619965e9107a198/media/gameplay/36-final-lever-connected-v2-physical-floor-v5-01-36-final-lever.gif": "942c95c78dea62bc4ff73b529759007d50b4802566bf06023717162d32b59ddd",
+    "assets/b619965e9107a198/media/menu/01-fire-01-fire-menu.svg": "daeda017629dfa65e00baae0e68a09b40f19841225fff62705ed01d27380c149",
+    "assets/b619965e9107a198/media/menu/05-wall-05-wall-comparisons-menu.svg": "a9b4eb581bf72864bb39a995b1b876504e7e196e7bf918878611d0352bc1629d",
+    "assets/b619965e9107a198/media/menu/10-mural-mix-10-mural-logic-menu.svg": "e81b2b5fb3c60e17098b9bdc31c1e78270f1b407985474face897bbab7c8e391",
+    "assets/b619965e9107a198/media/menu/13-thermal-13-thermal-elseif-menu.svg": "574be626819f946f32331f31ef4969e9203b7290d91d6794968dfa485a1a2611",
+    "assets/b619965e9107a198/media/menu/18-wires-18-wires-or-menu.svg": "57f9ce8aa0e538b74a79e6e7baa8bdb6fe21242f82820df2c8efad5b9cb96b9a",
+    "assets/b619965e9107a198/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg": "70e009db9bbbeb99cb4bc5ddff55dbed23254392eee051369ea8f79bf452e111",
     "assets/ec2a324a701e7fe8/media/assembled/01-fire-01-fire-assembled.svg": "e6676dedd7ab06b5db94dc4e4478bee8332e241b80e7d1ea29e3cbf8fd5e7fa0",
     "assets/ec2a324a701e7fe8/media/assembled/02-case-02-case-assembled.svg": "d689d2f1078ce79d219b14d9fd9e81487efd07e3f199a4db12006a56956d93d2",
     "assets/ec2a324a701e7fe8/media/assembled/03-generator-03-generator-assembled.svg": "ce1f3b4fa61fda846a36f4545637abcf8cd27b8e94dfe9aa91a2ee8bfdd00b4d",
@@ -1397,8 +1672,8 @@
     "LICENSES/MakeCode-Arcade-CSIntro-MIT.txt": "c544adf8f0d43453d9fdf6c11da19605d12d89806a7870653169b8cc97f5bb53",
     "main.ts": "5534ebe56fa6882ad5d7848ce18a701e38513aafe9ded45cdaadeec2dab6c98a",
     "PACKAGE_STATUS.md": "ecd5acacd5869aa4283bd25d775d1d2105e12e79c1d0e51b52eb42cc68cb8039",
-    "pxt.json": "7bbe70c9254437168d28545737a1c870f5d21f731081b29115bfe904cb5f335e",
-    "README.md": "2dedc1d094a2925fa249827753e95917c70e988b5e67a3275de2d360faa8b16b",
+    "pxt.json": "920a1e3c94c2850ed6fd249d901353c5bcc9deb5305d3f52793415f64a973891",
+    "README.md": "2ffdf6fcfa179375fa1b651c6f3fd8ea6e908a35dd3b7b868b0023966efc7603",
     "SOURCE_NOTICES.md": "274bead6ba38b870d494b894e6a40320b3c1f02c9cd24f26452f631f46618054"
   },
   "claim_boundary": "Deterministic local packaging for remote owner review. No network publication, independent learner, accessibility, classroom, or student-readiness claim."

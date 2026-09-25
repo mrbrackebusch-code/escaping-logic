@@ -14,15 +14,15 @@ The fixed fire spout blocks the wall route. First build ``||escapeLab(noclick):w
 
 ### Find the native Blocks
 
-![Find the native Blocks for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/01-fire-01-fire-menu.svg)
+![Find the native Blocks for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/01-fire-01-fire-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/01-fire-01-fire-assembled.svg)
+![Build this rule for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/01-fire-01-fire-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/01-fire-connected-v2-physical-v4-01-01-fire.gif)
+![What the mechanism does for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/01-fire-connected-v2-physical-floor-v5-01-01-fire.gif)
 
 #### ~ tutorialhint
 
@@ -39,11 +39,11 @@ The case button cannot release its fixed reservoir until power arrives. In ``||e
 
 ### Build this rule
 
-![Build this rule for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/02-case-02-case-assembled.svg)
+![Build this rule for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/02-case-02-case-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/02-case-connected-v2-physical-v4-01-02-case.gif)
+![What the mechanism does for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/02-case-connected-v2-physical-floor-v5-01-02-case.gif)
 
 #### ~ tutorialhint
 
@@ -60,11 +60,11 @@ The generator's handle turns only with a crank fitted to its rail. In ``||escape
 
 ### Build this rule
 
-![Build this rule for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/03-generator-03-generator-assembled.svg)
+![Build this rule for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/03-generator-03-generator-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/03-generator-connected-v2-physical-v4-01-03-generator.gif)
+![What the mechanism does for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/03-generator-connected-v2-physical-floor-v5-01-03-generator.gif)
 
 #### ~ tutorialhint
 
@@ -81,11 +81,11 @@ The magnet is mounted on a rail; it is not something to collect. In ``||escapeLa
 
 ### Build this rule
 
-![Build this rule for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/04-crank-04-crank-assembled.svg)
+![Build this rule for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/04-crank-04-crank-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/04-crank-connected-v2-physical-v4-01-04-crank.gif)
+![What the mechanism does for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/04-crank-connected-v2-physical-floor-v5-01-04-crank.gif)
 
 #### ~ tutorialhint
 
@@ -102,15 +102,15 @@ With the fire channel clear, the wall lever recovers the fixed holds. In ``||esc
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/05-wall-05-wall-comparisons-menu.svg)
+![Find the native Blocks for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/05-wall-05-wall-comparisons-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/05-wall-05-wall-assembled.svg)
+![Build this rule for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/05-wall-05-wall-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/05-wall-connected-v2-physical-v4-01-05-wall.gif)
+![What the mechanism does for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/05-wall-connected-v2-physical-floor-v5-01-05-wall.gif)
 
 #### ~ tutorialhint
 
@@ -127,11 +127,11 @@ The three marked stones show `8`, `7`, and `6`; any value with `+ 3 ≤ 10` is s
 
 ### Build this rule
 
-![Build this rule for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/06-footprints-06-footprints-assembled.svg)
+![Build this rule for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/06-footprints-06-footprints-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/06-footprints-connected-v2-physical-v4-01-06-footprints.gif)
+![What the mechanism does for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/06-footprints-connected-v2-physical-floor-v5-01-06-footprints.gif)
 
 #### ~ tutorialhint
 
@@ -148,11 +148,11 @@ The shadow screen needs an illumination of `60`, but the beam is still weak. In 
 
 ### Build this rule
 
-![Build this rule for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/07-shadow-07-shadow-assembled.svg)
+![Build this rule for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/07-shadow-07-shadow-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/07-shadow-connected-v2-physical-v4-01-07-shadow.gif)
+![What the mechanism does for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/07-shadow-connected-v2-physical-floor-v5-01-07-shadow.gif)
 
 #### ~ tutorialhint
 
@@ -169,7 +169,7 @@ The telescope needs zoom `3`, though its lens has not yet seated. In ``||escapeL
 
 ### What the mechanism does
 
-![What the mechanism does for Telescope](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/08-telescope-connected-v2-physical-v4-01-08-telescope.gif)
+![What the mechanism does for Telescope](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/08-telescope-connected-v2-physical-floor-v5-01-08-telescope.gif)
 
 #### ~ tutorialhint
 
@@ -186,7 +186,7 @@ Compare ``||escapeLab(noclick):value of [(B) StoneColor]||`` with ``||escapeLab(
 
 ### What the mechanism does
 
-![What the mechanism does for Stones](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/09-stones-connected-v2-physical-v4-01-09-stones.gif)
+![What the mechanism does for Stones](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/09-stones-connected-v2-physical-floor-v5-01-09-stones.gif)
 
 #### ~ tutorialhint
 
@@ -203,15 +203,15 @@ The mural needs yellow and blue light, but its color-filter slot is empty. In ``
 
 ### Find the native Blocks
 
-![Find the native Blocks for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/10-mural-mix-10-mural-logic-menu.svg)
+![Find the native Blocks for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/10-mural-mix-10-mural-logic-menu.svg)
 
 ### Build this rule
 
-![Build this rule for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/10-mural-mix-10-mural-mix-assembled.svg)
+![Build this rule for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/10-mural-mix-10-mural-mix-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/10-mural-mix-connected-v2-physical-v4-01-10-mural-mix.gif)
+![What the mechanism does for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/10-mural-mix-connected-v2-physical-floor-v5-01-10-mural-mix.gif)
 
 #### ~ tutorialhint
 
@@ -228,11 +228,11 @@ Build the mural's second rule before its light sources are ready. In ``||escapeL
 
 ### Build this rule
 
-![Build this rule for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg)
+![Build this rule for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/11-mural-reveal-connected-v2-physical-v4-01-11-mural-reveal.gif)
+![What the mechanism does for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/11-mural-reveal-connected-v2-physical-floor-v5-01-11-mural-reveal.gif)
 
 #### ~ tutorialhint
 
@@ -249,7 +249,7 @@ At the first footprint pressure plate, `1` means left and `2` means right. In ``
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait1](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/12-portrait1-connected-v2-physical-v4-01-12-portrait1.gif)
+![What the mechanism does for Portrait1](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/12-portrait1-connected-v2-physical-floor-v5-01-12-portrait1.gif)
 
 #### ~ tutorialhint
 
@@ -266,15 +266,15 @@ The bath has cold, warm, and overheated responses. Use the **+** on ``||logic(no
 
 ### Find the native Blocks
 
-![Find the native Blocks for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/13-thermal-13-thermal-elseif-menu.svg)
+![Find the native Blocks for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/13-thermal-13-thermal-elseif-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/13-thermal-13-thermal-assembled.svg)
+![Build this rule for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/13-thermal-13-thermal-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/13-thermal-connected-v2-physical-v4-01-13-thermal.gif)
+![What the mechanism does for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/13-thermal-connected-v2-physical-floor-v5-01-13-thermal.gif)
 
 #### ~ tutorialhint
 
@@ -292,7 +292,7 @@ Make a separate ``||escapeLab(noclick):when [(B) second portrait] is operated||`
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait2](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/14-portrait2-connected-v2-physical-v4-01-14-portrait2.gif)
+![What the mechanism does for Portrait2](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/14-portrait2-connected-v2-physical-floor-v5-01-14-portrait2.gif)
 
 #### ~ tutorialhint
 
@@ -309,7 +309,7 @@ Repeat the portrait rule in a ``||escapeLab(noclick):when [(B) third portrait] i
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait3](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/15-portrait3-connected-v2-physical-v4-01-15-portrait3.gif)
+![What the mechanism does for Portrait3](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/15-portrait3-connected-v2-physical-floor-v5-01-15-portrait3.gif)
 
 #### ~ tutorialhint
 
@@ -326,7 +326,7 @@ Add the final matching stack in ``||escapeLab(noclick):when [(B) fourth portrait
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait4](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/16-portrait4-connected-v2-physical-v4-01-16-portrait4.gif)
+![What the mechanism does for Portrait4](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/16-portrait4-connected-v2-physical-floor-v5-01-16-portrait4.gif)
 
 #### ~ tutorialhint
 
@@ -343,7 +343,7 @@ The sample needs a live magnet, but its coil has no allowed wire yet. In ``||esc
 
 ### What the mechanism does
 
-![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/17-sample-connected-v2-physical-v4-01-17-sample.gif)
+![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/17-sample-connected-v2-physical-floor-v5-01-17-sample.gif)
 
 #### ~ tutorialhint
 
@@ -360,15 +360,15 @@ At the coil, purple, red, and black are allowed. Join the three `value of (C) Wi
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/18-wires-18-wires-or-menu.svg)
+![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/18-wires-18-wires-or-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/18-wires-18-wires-assembled.svg)
+![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/18-wires-18-wires-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/18-wires-connected-v2-physical-v4-01-18-wires.gif)
+![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/18-wires-connected-v2-physical-floor-v5-01-18-wires.gif)
 
 #### ~ tutorialhint
 
@@ -385,7 +385,7 @@ The vessel needs a repair patch before it can seal, so it can only leak now. In 
 
 ### What the mechanism does
 
-![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/19-vessel-connected-v2-physical-v4-01-19-vessel.gif)
+![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/19-vessel-connected-v2-physical-floor-v5-01-19-vessel.gif)
 
 #### ~ tutorialhint
 
@@ -403,7 +403,7 @@ In ``||escapeLab(noclick):when [(C) pruning lever] is operated||``, test ``||esc
 
 ### What the mechanism does
 
-![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/20-pruner-connected-v2-physical-v4-01-20-pruner.gif)
+![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/20-pruner-connected-v2-physical-floor-v5-01-20-pruner.gif)
 
 #### ~ tutorialhint
 
@@ -420,7 +420,7 @@ The dropper cannot provide its target amount until the balance releases it. Stil
 
 ### What the mechanism does
 
-![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/21-titration-connected-v2-physical-v4-01-21-titration.gif)
+![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/21-titration-connected-v2-physical-floor-v5-01-21-titration.gif)
 
 #### ~ tutorialhint
 
@@ -438,7 +438,7 @@ In ``||escapeLab(noclick):when [(C) balance scale] is operated||``, test `value 
 
 ### What the mechanism does
 
-![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/22-balance-connected-v2-physical-v4-01-22-balance.gif)
+![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/22-balance-connected-v2-physical-floor-v5-01-22-balance.gif)
 
 #### ~ tutorialhint
 
@@ -456,7 +456,7 @@ The selector needs a message strip, so the empty tube drains at first. In ``||es
 
 ### What the mechanism does
 
-![What the mechanism does for Tube](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/23-tube-connected-v2-physical-v4-01-23-tube.gif)
+![What the mechanism does for Tube](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/23-tube-connected-v2-physical-floor-v5-01-23-tube.gif)
 
 #### ~ tutorialhint
 
@@ -473,7 +473,7 @@ The printer works through clear radio or a connected cable, neither of which is 
 
 ### What the mechanism does
 
-![What the mechanism does for Printer](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/24-printer-connected-v2-physical-v4-01-24-printer.gif)
+![What the mechanism does for Printer](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/24-printer-connected-v2-physical-floor-v5-01-24-printer.gif)
 
 #### ~ tutorialhint
 
@@ -490,7 +490,7 @@ In ``||escapeLab(noclick):when [(D) noise mixer] is operated||``, join `not is (
 
 ### What the mechanism does
 
-![What the mechanism does for Interference](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/25-interference-connected-v2-physical-v4-01-25-interference.gif)
+![What the mechanism does for Interference](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/25-interference-connected-v2-physical-floor-v5-01-25-interference.gif)
 
 #### ~ tutorialhint
 
@@ -507,7 +507,7 @@ Use a three-way ``||escapeLab(noclick):when [(D) pedal receiver] is operated||``
 
 ### What the mechanism does
 
-![What the mechanism does for Receiver](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/26-receiver-connected-v2-physical-v4-01-26-receiver.gif)
+![What the mechanism does for Receiver](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/26-receiver-connected-v2-physical-floor-v5-01-26-receiver.gif)
 
 #### ~ tutorialhint
 
@@ -525,15 +525,15 @@ Make a native ``||variables(noclick):Variables||`` variable named ``||variables(
 
 ### Find the native Blocks
 
-![Find the native Blocks for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg)
+![Find the native Blocks for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg)
 
 ### Build this rule
 
-![Build this rule for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg)
+![Build this rule for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/27-pressure-stable-connected-v2-physical-v4-01-27-pressure-stable.gif)
+![What the mechanism does for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/27-pressure-stable-connected-v2-physical-floor-v5-01-27-pressure-stable.gif)
 
 #### ~ tutorialhint
 
@@ -557,7 +557,7 @@ In ``||escapeLab(noclick):when [(D) pressure release] is operated||``, join your
 
 ### What the mechanism does
 
-![What the mechanism does for PressureRelease](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/28-pressure-release-connected-v2-physical-v4-01-28-pressure-release.gif)
+![What the mechanism does for PressureRelease](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/28-pressure-release-connected-v2-physical-floor-v5-01-28-pressure-release.gif)
 
 #### ~ tutorialhint
 
@@ -577,11 +577,11 @@ Make a native ``||variables(noclick):Variables||`` variable named ``||variables(
 
 ### Build this rule
 
-![Build this rule for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg)
+![Build this rule for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/29-pitch-adjust-connected-v2-physical-v4-01-29-pitch-adjust.gif)
+![What the mechanism does for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/29-pitch-adjust-connected-v2-physical-floor-v5-01-29-pitch-adjust.gif)
 
 #### ~ tutorialhint
 
@@ -602,7 +602,7 @@ In ``||escapeLab(noclick):when [(D) pitch display] is operated||``, test your `a
 
 ### What the mechanism does
 
-![What the mechanism does for PitchFeedback](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/30-pitch-feedback-connected-v2-physical-v4-01-30-pitch-feedback.gif)
+![What the mechanism does for PitchFeedback](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/30-pitch-feedback-connected-v2-physical-floor-v5-01-30-pitch-feedback.gif)
 
 #### ~ tutorialhint
 
@@ -624,7 +624,7 @@ The shutter bank needs a sensor card. Build ``||escapeLab(noclick):when [(E) shu
 
 ### What the mechanism does
 
-![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/31-shutters-connected-v2-physical-v4-01-31-shutters.gif)
+![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/31-shutters-connected-v2-physical-floor-v5-01-31-shutters.gif)
 
 #### ~ tutorialhint
 
@@ -646,7 +646,7 @@ In ``||escapeLab(noclick):when [(E) sensor map] is operated||``, use an else-if 
 
 ### What the mechanism does
 
-![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/32-sensors-connected-v2-physical-v4-01-32-sensors.gif)
+![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/32-sensors-connected-v2-physical-floor-v5-01-32-sensors.gif)
 
 #### ~ tutorialhint
 
@@ -669,7 +669,7 @@ The rock path is dark until it has a pattern plate. Build ``||escapeLab(noclick)
 
 ### What the mechanism does
 
-![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/33-rock-path-connected-v2-physical-v4-01-33-rock-path.gif)
+![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/33-rock-path-connected-v2-physical-floor-v5-01-33-rock-path.gif)
 
 #### ~ tutorialhint
 
@@ -690,7 +690,7 @@ In ``||escapeLab(noclick):when [(E) constellation] is operated||``, join `is (E)
 
 ### What the mechanism does
 
-![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/34-constellation-connected-v2-physical-v4-01-34-constellation.gif)
+![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/34-constellation-connected-v2-physical-floor-v5-01-34-constellation.gif)
 
 #### ~ tutorialhint
 
@@ -711,7 +711,7 @@ The synchronizer receives the power, pressure, and signal you restored in earlie
 
 ### What the mechanism does
 
-![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/35-synchronize-connected-v2-physical-v4-01-35-synchronize.gif)
+![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/35-synchronize-connected-v2-physical-floor-v5-01-35-synchronize.gif)
 
 #### ~ tutorialhint
 
@@ -732,7 +732,7 @@ In ``||escapeLab(noclick):when [(E) final lever] is operated||``, test `value of
 
 ### What the mechanism does
 
-![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/7430b796beb67377/media/gameplay/36-final-lever-connected-v2-physical-v4-01-36-final-lever.gif)
+![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/b619965e9107a198/media/gameplay/36-final-lever-connected-v2-physical-floor-v5-01-36-final-lever.gif)
 
 #### ~ tutorialhint
 
@@ -1233,6 +1233,192 @@ namespace escapeFloor {
     const doorTop = 14
     const doorBottom = 15
 
+    // Surface-bank keys. Rows 0–4 retain the original room floor; only the
+    // feet-level rows 5–7 receive shaped paving and a walk-facing apron.
+    // This avoids drawing a debug-like rectangle around collision geometry.
+    const quietA = 0
+    const quietB = 1
+    const back = 2
+    const bodyA = 3
+    const bodyB = 4
+    const sideLeft = 5
+    const sideRight = 6
+    const front = 7
+    const frontJoint = 8
+    const backLeft = 9
+    const backRight = 10
+    const frontLeft = 11
+    const frontRight = 12
+    const hearth = 13
+    const soot = 14
+    const hearthEdge = 15
+
+    // One shared tile-index layout is stamped beneath every apparatus. It is
+    // art only: baseWall remains the sole collision authority.
+    const surfaceLayout = [
+        quietA, quietB, quietA, quietB, quietA, quietB, quietA,
+        quietB, quietA, quietB, quietA, quietB, quietA, quietB,
+        quietA, quietB, quietA, quietB, quietA, quietB, quietA,
+        backLeft, back, bodyA, back, bodyB, back, backRight,
+        sideLeft, bodyA, bodyB, bodyA, bodyB, bodyA, sideRight,
+        sideLeft, bodyB, bodyA, bodyB, bodyA, bodyB, sideRight,
+        sideLeft, bodyA, bodyB, bodyA, bodyB, bodyA, sideRight,
+        frontLeft, front, frontJoint, front, frontJoint, front, frontRight
+    ]
+
+    // Kept as a bank rather than freehand art so a native tilemap can consume
+    // these exact images later if its layer no longer obscures the props.
+    let surfaceBanks: Image[][] = []
+
+    function materialBase(room: number): number {
+        // warm stone, cool gallery ceramic, garden wood/stone, relay metal,
+        // and slate all keep the rooms distinct without adding new assets.
+        if (room == 0) return 5
+        if (room == 1) return 11
+        if (room == 2) return 6
+        if (room == 3) return 8
+        return 2
+    }
+
+    function materialShade(room: number): number {
+        if (room == 0) return 2
+        if (room == 1) return 12
+        if (room == 2) return 5
+        if (room == 3) return 1
+        return 1
+    }
+
+    function materialGrout(room: number): number {
+        if (room == 0) return 4
+        if (room == 1) return 6
+        if (room == 2) return 2
+        if (room == 3) return 12
+        return 12
+    }
+
+    function materialLight(room: number): number {
+        if (room == 0) return 6
+        if (room == 1) return 15
+        if (room == 2) return 7
+        if (room == 3) return 11
+        return 11
+    }
+
+    function clip(t: Image, leftEdge: boolean, rightEdge: boolean, frontEdge: boolean) {
+        // A few transparent corner pixels let the original room floor show
+        // through. The paving therefore steps into the walking lane instead
+        // of reading as a straight-edged machine panel.
+        if (leftEdge) {
+            t.setPixel(0, 0, 0)
+            t.setPixel(0, 1, 0)
+            t.setPixel(1, 0, 0)
+        }
+        if (rightEdge) {
+            t.setPixel(15, 0, 0)
+            t.setPixel(15, 1, 0)
+            t.setPixel(14, 0, 0)
+        }
+        if (frontEdge) {
+            t.setPixel(0, 15, 0)
+            t.setPixel(1, 15, 0)
+            t.setPixel(15, 15, 0)
+            t.setPixel(14, 15, 0)
+        }
+    }
+
+    function makeSurfaceTile(room: number, key: number): Image {
+        let t = image.create(tile, tile)
+        let baseColor = materialBase(room)
+        let shade = materialShade(room)
+        let grout = materialGrout(room)
+        let light = materialLight(room)
+        t.fill(baseColor)
+
+        if (key == quietA || key == quietB) return t
+
+        if (key == hearth || key == soot || key == hearthEdge) {
+            // One refractory square per tile, with fine grout and heat wear.
+            // It reads as paved hearth flooring rather than three brick bands.
+            t.fill(key == hearthEdge ? 6 : 4)
+            t.drawRect(0, 0, 16, 16, key == hearthEdge ? 5 : 2)
+            t.drawLine(2, 2, 13, 2, key == hearthEdge ? 15 : 6)
+            if (key == soot) {
+                t.fillCircle(5, 4, 3, 1)
+                t.fillCircle(10, 6, 2, 1)
+                t.setPixel(13, 4, 1)
+                t.setPixel(3, 11, 2)
+            } else if (key == hearthEdge) {
+                t.setPixel(4, 8, 5)
+                t.setPixel(12, 11, 5)
+            } else {
+                t.setPixel(3, 8, 6)
+                t.setPixel(12, 5, 2)
+            }
+            return t
+        }
+
+        // Each image is one top-down paving slab. Material variation is in the
+        // grout and small marks, never horizontal courses that imply a wall.
+        t.drawRect(0, 0, 16, 16, grout)
+        t.drawLine(2, 2, 13, 2, light)
+        if (room == 0) {
+            t.setPixel(key % 2 ? 5 : 11, 8, 4)
+            t.setPixel(key % 2 ? 12 : 4, 12, shade)
+        } else if (room == 1) {
+            t.drawLine(7, 5, 7, 10, light)
+            t.setPixel(key % 2 ? 4 : 11, 12, 15)
+        } else if (room == 2) {
+            t.drawLine(4, 11, 10, 8, 7)
+            t.setPixel(12, 5, 2)
+        } else if (room == 3) {
+            t.fillCircle(4, 5, 1, 11)
+            t.fillCircle(11, 11, 1, 11)
+        } else {
+            t.drawLine(5, 5, 10, 5, 12)
+            t.setPixel(3, 11, 11)
+        }
+
+        if (key == frontJoint) t.drawLine(7, 4, 7, 12, shade)
+        clip(t, key == backLeft || key == sideLeft || key == frontLeft,
+            key == backRight || key == sideRight || key == frontRight,
+            key == front || key == frontJoint || key == frontLeft || key == frontRight)
+        return t
+    }
+
+    function surfaceBank(room: number): Image[] {
+        if (surfaceBanks[room] != undefined) return surfaceBanks[room]
+        let bank: Image[] = []
+        for (let key = 0; key <= hearthEdge; key++) bank.push(makeSurfaceTile(room, key))
+        surfaceBanks[room] = bank
+        return bank
+    }
+
+    // Exposed for a later native tilemap path. The renderer below deliberately
+    // stamps this bank into the background now, before props are composed.
+    export function tileBank(room: number): Image[] {
+        return surfaceBank(room)
+    }
+
+    export function surfaceLayoutKey(station: number, localCol: number, localRow: number): number {
+        let key = surfaceLayout[localRow * baseColumns + localCol]
+        // Station 3 is the workshop spout. Its visible feet-level patch is a
+        // hearth floor: soot at the rear, refractory body, stone apron.
+        if (station == 3) {
+            if (localRow == 5 && localCol >= 1 && localCol <= 5) return soot
+            if (localRow >= 4 && localRow <= 6 && localCol >= 1 && localCol <= 5) return hearth
+            if (localRow >= 4 && (localCol == 0 || localCol == 6)) return hearthEdge
+            if (localRow == 7) return hearthEdge
+        }
+        return key
+    }
+
+    function extendedLeftKey(localCol: number, localRow: number): number {
+        // Left-edge apparatus silhouettes overhang their collision footprint.
+        // The extra decorative paving grows toward the walker in two steps.
+        if (localCol == -2) return localRow == 7 ? frontLeft : sideLeft
+        return localRow == 7 ? front : localRow == 6 ? bodyB : bodyA
+    }
+
     // These values are tile coordinates. Keeping the machine base on tile
     // boundaries makes the same shape suitable for native collision and art.
     export function left(station: number): number {
@@ -1318,6 +1504,29 @@ namespace escapeFloor {
         }
     }
 
+    // Called while the room background is being composed, before apparatus
+    // props. Native tiles remain transparent because their layer would sit on
+    // top of those props; this image-stamped paving has the intended depth.
+    export function drawSurfaces(p: Image, room: number) {
+        let bank = surfaceBank(room)
+        for (let local = 0; local < 6; local++) {
+            let station = room * 6 + local
+            let leftExtension = escapeFlow.x(station) < 160 ? 2 : 0
+            let originX = (left(station) - leftExtension) * tile
+            let originY = top(station) * tile
+            // Rows 0–4 intentionally remain the original room floor. Only the
+            // apparatus feet receive paving, from y + 24 through y + 64.
+            for (let row = 5; row < baseRows; row++) for (let col = -leftExtension; col < baseColumns; col++) {
+                // The rear extension starts one tile later, making the apron
+                // widen as it comes toward the player.
+                if (col == -2 && row == 5) continue
+                let key = col < 0 ? extendedLeftKey(col, row) : surfaceLayoutKey(station, col, row)
+                if (station == 3 && col < 0) key = hearthEdge
+                p.drawTransparentImage(bank[key], originX + (col + leftExtension) * tile, originY + row * tile)
+            }
+        }
+    }
+
     function markPad(p: Image, x: number, y: number, fill: number, edge: number) {
         p.fillRect(x - 7, y - 7, 15, 15, fill)
         p.drawRect(x - 8, y - 8, 17, 17, edge)
@@ -1325,20 +1534,12 @@ namespace escapeFloor {
         p.drawLine(x, y - 4, x, y + 4, edge)
     }
 
-    // Draw after the apparatus silhouettes: the base outline, striped tray, and
-    // control pad remain visible without painting over the machinery itself.
+    // Draw after the apparatus silhouettes. Surface art belongs behind the
+    // props; this late pass is reserved for the familiar pad and output tray.
     export function drawPads(p: Image, room: number, focusStation: number, activeStation: number) {
         for (let local = 0; local < 6; local++) {
             let station = room * 6 + local
-            let x = left(station) * tile
-            let y = top(station) * tile
-            let w = columns(station) * tile
-            let h = rows(station) * tile
             let edge = station == activeStation ? 15 : station == focusStation ? 10 : 6
-            // This perimeter is the exact boundary of the solid tile footprint.
-            p.drawRect(x, y, w, h, edge)
-            p.drawRect(x + 3, y + 3, w - 6, h - 6, 2)
-            for (let px = x + 16; px < x + w - 8; px += 16) p.drawLine(px, y + h - 7, px + 6, y + h - 7, edge)
             let padFill = station == activeStation ? 15 : station == focusStation ? 10 : 6
             markPad(p, standX(station), standY(station), padFill, edge)
             // Only producer stations visibly advertise an output tray. Other
@@ -2050,6 +2251,7 @@ namespace escapeArt {
     export function world(room: number, solved: number[], introduced: number[], focusBeat: number, activeBeat: number, controls: number[], response: number, reactionFrame: number, pitch: number, firstClear: number, reactionBeat: number, reactionControl: number, idleFrame: number, settledControls: number[] = [], itemStates: number[] = []): Image {
         let p = image.create(640, 480)
         floor(p, room)
+        escapeFloor.drawSurfaces(p, room)
         let focus = escapeFlow.stationForBeat(focusBeat)
         let active = activeBeat < 0 ? -1 : escapeFlow.stationForBeat(activeBeat)
         let reacting = reactionBeat < 0 || reactionFrame < 0 ? -1 : escapeFlow.stationForBeat(reactionBeat)
@@ -2067,11 +2269,6 @@ namespace escapeArt {
             let done = stationDone(s, solved)
             let available = escapeFlow.available(s, solved, introduced, focusBeat)
             oval(p, x + 4, y + 43, 53, 11, 6)
-            if (s == focus) {
-                oval(p, x, y + 47, 62, 12, 5)
-                oval(p, x, y + 46, 57, 8, 10)
-                oval(p, x, y + 46, 48, 5, 9)
-            }
             let portraitMask = solved[7] + 2 * solved[8] + 4 * solved[9] + 8 * solved[10]
             let objectControl = s == reacting ? reactionControl : settledControl(b, controls, settledControls, solved)
             let requiredItem = escapeCargo.requiredForBeat(b)
@@ -2097,8 +2294,8 @@ namespace escapeArt {
                 words(p, name, left, y + 55, 15, 1)
             }
         }
-        // Floor owns the collision geometry and draws the matching visible
-        // machine footprint, operating pad, and output tray on this room.
+        // Surface tiles were composed below the apparatus. Only the operating
+        // pads and output trays are drawn in this foreground pass.
         escapeFloor.drawPads(p, room, focus, active)
         p.fillRect(0, 0, 640, 42, 12)
         words(p, roomTitles[room], 18, 9, 15, 2)

@@ -1,9 +1,7 @@
-# Preserve the frozen package bytes recorded in RELEASE_MANIFEST.json
-README.md -text
-main.ts -text
+# Preserve deterministic publication bytes recorded in RELEASE_MANIFEST.json
+*.md -text
+*.ts -text
 pxt.json -text
-PACKAGE_STATUS.md -text
-SOURCE_NOTICES.md -text
 RELEASE_MANIFEST.json -text
 LICENSES/** -text
 assets/** -text

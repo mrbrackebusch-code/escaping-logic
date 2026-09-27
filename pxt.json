@@ -1,13 +1,19 @@
 {
   "name": "logic-escape-room",
-  "description": "Escaping Logic: a MakeCode Arcade tutorial about conditional decisions.",
-  "version": "0.4.1",
+  "description": "Escaping Logic: a MakeCode Arcade conditional-logic escape room.",
+  "version": "0.5.0",
   "dependencies": {
     "device": "*"
   },
   "files": [
     "main.ts",
-    "README.md"
+    "README.md",
+    "docs/tutorials/escaping-logic-setup.md",
+    "docs/tutorials/escaping-logic-room-a-workshop.md",
+    "docs/tutorials/escaping-logic-room-b-light-gallery.md",
+    "docs/tutorials/escaping-logic-room-c-garden-room.md",
+    "docs/tutorials/escaping-logic-room-d-bridge-room.md",
+    "docs/tutorials/escaping-logic-room-e-last-door.md"
   ],
   "preferredEditor": "blocksprj",
   "supportedTargets": [

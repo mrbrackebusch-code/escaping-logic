@@ -2,7 +2,7 @@
 
 ## Project-authored material
 
-Escaping Logic's room descriptions, TypeScript world implementation, original code-native pixel art, lesson media, and the remaining tutorial wording are this project's authored material. The package contains no imported prototype, third-party artwork, audio, or MakeCode Share payload.
+Escaping Logic's room descriptions, TypeScript world implementation, original code-native pixel art, lesson media, Recipe delivery copy, and remaining tutorial wording are project-authored material. The package contains no imported prototype, third-party artwork, audio, or MakeCode Share payload.
 
 ## MakeCode Arcade CS Intro adaptations
 

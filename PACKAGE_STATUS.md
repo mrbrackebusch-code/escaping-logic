@@ -1,5 +1,7 @@
 # Escaping Logic review candidate
 
-This is a public MakeCode Arcade tutorial package prepared for remote owner review. It has not been represented as independently learner-tested, classroom-ready, accessible, or student-distribution-ready. Those claims require separate evidence.
+This reproducible package provides one-time setup and five in-context room Recipes. Engineering verification is recorded separately for each release. It does not establish human classroom acceptance or learning outcomes.
 
-The intended tutorial URL after publication is https://arcade.makecode.com/?nocdn=1&skipgithubcache=1#tutorial:https://github.com/mrbrackebusch-code/escaping-logic/README.
+One-time setup: https://arcade.makecode.com/?nocdn=1&skipgithubcache=1#tutorial:https://github.com/mrbrackebusch-code/escaping-logic/docs/tutorials/escaping-logic-setup
+
+Room Recipes are opened using the links inside the existing project's tutorial. Reopen that project when returning; setup creates a new project.

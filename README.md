@@ -4,7 +4,7 @@
 
 ## Welcome to the escape rooms
 
-These five connected escape rooms react only to rules you write. The room prefix in a dropdown, from `(A)` through `(E)`, tells you where that mechanism belongs. Walk with the arrow keys. Press **A** at a tray to pick up its one visible part, at the matching machine pad to fit it, or at a machine to run its installed rule. Hold **B** while standing on a marked machine pad to open its machine view: **left/right** change a setting, **up/down** choose a multipart stage, and **A** runs the rule. Release **B** to walk right away. Carry one part at a time; trying to put it down elsewhere sends it back to its tray. In MakeCode Arcade, **Z** or **Space** is **A**, and **X** is **B**. Use the simulator's fullscreen button when testing so you can see the room clearly. A solved mechanism stays in the room, so you can return and test a changed rule locally. Your progress is saved as you go; follow the next gold light to see what needs your attention.
+These five connected escape rooms react only to rules you write. The room prefix in a dropdown, from `(A)` through `(E)`, tells you where that mechanism belongs. Walk with the arrow keys. Use **A** at a tray to pick up its visible part, at a matching pad to fit it, and at a mechanism to run its written rule. Installing the crank with **A** immediately runs your generator rule; power comes only if that code tests `CrankFitted` and makes `(A) GeneratorSpin` happen. A alone does not open setting menus. For an actual setting choice, stand on that mechanism’s marked pad, hold **B**, use **left/right** to choose from its visible labeled options, press **A** to perform that mechanism’s action, then release **B** to walk. Multipart mechanisms advance to the next unfinished or currently relevant stage after each interaction; **up/down** do not select parts. Carry one part at a time; trying to put it down elsewhere sends it back to its tray. Use the simulator's fullscreen button when testing so you can see the room clearly. A solved mechanism stays in the room, so you can return and test a changed rule locally. Your progress is saved as you go; follow the next gold light to see what needs your attention.
 
 Each construction begins with ``||escapeLab(noclick):when [mechanism] is operated||``. The event supplies the moment; your native ``||logic(noclick):if then else||`` decides the response. The room does not supply a missing decision. A dim object is a future possibility, and the lit object is the one whose next reaction matters now.
 
@@ -394,6 +394,28 @@ enum EscapeAction {
 
 // The room route and coordinates are shared by the engine and world artwork.
 namespace escapeFlow {
+    // Only genuine puzzle choices need held B. Simple actions use A directly.
+    export function needsAdjustment(b: number): boolean {
+        return b >= 0 && b != 1 && b != 2 && b != 3 && b != 4 && b != 6 && b != 29 && b != 34 && b != 35
+    }
+    export function directSetting(b: number): number {
+        if (b == 34) return 4
+        if (b == 35) return 2
+        if (b == 29) return 0
+        return 1
+    }
+    export function adjustmentName(b: number): string {
+        if (b >= 7 && b <= 10) return "CHOOSE A PLATE"
+        if (b == 11 || b == 12) return "CHOOSE LIGHTS"
+        if (b == 26 || b == 27) return "SET PRESSURE"
+        const names = ["SWING THE MAGNET", "", "", "", "", "CHOOSE A STEP", "", "", "", "", "", "", "", "MATCH A STONE", "FOCUS THE LENS", "SET TEMPERATURE", "CHOOSE A SAMPLE", "SET THE DROPS", "BALANCE WEIGHTS", "CHOOSE A WIRE", "CHOOSE A LEAF", "HEAT THE VESSEL", "SET PEDAL SPEED", "QUIET THE NOISE", "CHOOSE A SIGNAL", "CHOOSE A ROUTE", "", "", "TILT THE BRIDGE", "", "CHOOSE A SENSOR", "CHOOSE A SHUTTER", "ALIGN STAR RINGS", "CHOOSE A ROCK"]
+        return names[b] || ""
+    }
+    export function actionName(b: number): string {
+        if (b >= 7 && b <= 10) return "PRESS PLATE"
+        const names = ["SWING", "TRY GENERATOR", "OPEN CASE", "SPRAY WATER", "RAISE HOLDS", "STEP", "LIGHT SCREEN", "", "", "", "", "MIX LIGHTS", "OPEN MURAL", "SEAT STONE", "FOCUS", "WARM BATH", "PULSE MAGNET", "ADD DROPS", "WEIGH", "CONNECT WIRE", "CLIP LEAF", "WARM VESSEL", "PEDAL", "PLAY SIGNAL", "PRINT", "SEND CAPSULE", "STABILIZE", "RELEASE LIFT", "TILT", "CHECK BRIDGE", "AIM SENSOR", "OPEN SHUTTER", "CONNECT STARS", "STEP", "JOIN SYSTEMS", "PULL LEVER"]
+        return names[b] || "INTERACT"
+    }
     export const firstBeats = [0,1,2,3,4,5,6,7,11,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,30,31,32,33,34,35]
     export const lastBeats = [0,1,2,3,4,5,6,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,29,30,31,32,33,34,35]
     export const stationNames = [
@@ -1024,8 +1046,8 @@ namespace escapeObjects {
         // Pixel-rounded body with a small upper highlight and lower shade instead of a flat card.
         p.fillRect(x + 3, y, w - 6, h, c); p.fillRect(x, y + 3, w, h - 6, c)
         p.fillRect(x + 1, y + 1, w - 2, h - 2, c)
-        if (w > 8) p.drawLine(x + 4, y + 1, x + w - 5, y + 1, 15)
-        if (h > 8) p.drawLine(x + 3, y + h - 2, x + w - 4, y + h - 2, 6)
+        if (w > 8) p.drawLine(x + 4, y + 1, x + w - 5, y + 1, 9)
+        if (h > 8) p.drawLine(x + 3, y + h - 2, x + w - 4, y + h - 2, 12)
     }
     function shadow(p: Image, cx: number, y: number, rx: number = 45) {
         oval(p, cx + 2, y + 1, rx, 6, 12)
@@ -1176,7 +1198,7 @@ namespace escapeObjects {
 
         // Workshop gantry. The magnet position is the actual two-state fixture: far or touching the crank.
         p.fillRect(17, 13, 6, 63, 6); p.fillRect(97, 13, 6, 63, 6); p.fillRect(16, 10, 88, 7, 14)
-        p.fillRect(20, 11, 80, 2, 15); p.fillRect(22, 17, 3, 56, 5); p.fillRect(95, 17, 3, 56, 5)
+        p.fillRect(20, 11, 80, 2, 15); p.fillRect(22, 17, 3, 56, 14); p.fillRect(95, 17, 3, 56, 14)
         bolt(p, 20, 14); bolt(p, 100, 14)
         let mx = touching ? 49 : 80
         let sway = response < 0 && !parked ? (idle < 4 || idle >= 12 ? -1 : 1) : 0
@@ -1204,7 +1226,7 @@ namespace escapeObjects {
     function generator(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean, fitted: boolean) {
         shadow(p, 70, 101, 58)
         // Cast base and copper coil housing.
-        rounded(p, 16, 61, 78, 31, 1); p.fillRect(20, 62, 70, 26, 14); p.fillRect(24, 66, 62, 18, 2)
+        rounded(p, 16, 61, 78, 31, 1); p.fillRect(20, 62, 70, 26, 5); p.fillRect(24, 66, 62, 18, 4)
         p.fillRect(28, 68, 23, 14, 12); p.fillRect(31, 70, 17, 2, 15)
         for (let x = 57; x <= 78; x += 7) { p.fillRect(x, 67, 4, 16, 4); p.drawLine(x + 1, 68, x + 1, 81, 10) }
         p.fillRect(22, 86, 68, 5, 6); bolt(p, 24, 88); bolt(p, 87, 88)
@@ -1272,7 +1294,7 @@ namespace escapeObjects {
         let leftX = 15 - retract + shake, rightX = 69 + retract - shake
         p.drawRect(leftX, 13, 53, 67, 9); p.fillRect(leftX + 3, 17, 2, 58, 15); p.fillRect(leftX + 7, 18, 35, 2, 11)
         p.drawRect(rightX, 13, 53, 67, 9); p.fillRect(rightX + 48, 17, 2, 58, 15); p.fillRect(rightX + 10, 18, 34, 2, 11)
-        p.fillRect(66 - retract, 15, 3, 62, 14); p.fillRect(68 + retract, 15, 3, 62, 14)
+        p.fillRect(66 - retract, 15, 3, 62, 8); p.fillRect(68 + retract, 15, 3, 62, 8)
         if (response >= 0 && response != EscapeAction.CaseRetract) { p.fillCircle(66, 19 + t, 2, 3); p.fillCircle(72, 20 + t, 2, 3) }
     }
 
@@ -1285,7 +1307,7 @@ namespace escapeObjects {
             p.fillRect(x, y, 17, 6, 6); p.fillRect(x + 1, y + 1, 13, 2, 14); p.setPixel(x + 15, y + 4, 2)
         }
         // Fire bowl and grate.
-        p.fillRect(25, 41, 71, 31, 14); oval(p, 60, 41, 36, 10, 6); oval(p, 60, 42, 31, 7, 1); p.fillRect(31, 46, 59, 24, 1)
+        p.fillRect(25, 41, 71, 31, 4); oval(p, 60, 41, 36, 10, 5); oval(p, 60, 42, 31, 7, 1); p.fillRect(31, 46, 59, 24, 1)
         p.drawLine(35, 67, 83, 48, 14); p.drawLine(40, 48, 86, 67, 5); p.drawLine(39, 65, 82, 47, 4)
 
         let tipped = control == 1
@@ -1322,8 +1344,8 @@ namespace escapeObjects {
     function climbingWall(p: Image, control: number, response: number, t: number, ok: boolean) {
         shadow(p, 72, 102, 55)
         // Thick wall slab, cap and side returns give it depth instead of reading as a flat card.
-        p.fillRect(22, 11, 90, 84, 1); p.fillRect(27, 14, 80, 78, 2); p.fillRect(30, 17, 74, 72, 6)
-        p.fillRect(26, 12, 82, 5, 14); p.fillRect(104, 18, 5, 72, 5); p.fillRect(30, 86, 74, 5, 5)
+        p.fillRect(22, 11, 90, 84, 1); p.fillRect(27, 14, 80, 78, 12); p.fillRect(30, 17, 74, 72, 14)
+        p.fillRect(26, 12, 82, 5, 5); p.fillRect(104, 18, 5, 72, 5); p.fillRect(30, 86, 74, 5, 5)
         for (let y = 25; y < 84; y += 15) { p.drawLine(33, y, 101, y + (y % 2), 14); p.setPixel(39 + y % 11, y - 2, 5) }
         for (let x = 36; x < 100; x += 20) p.drawLine(x, 20, x - 4, 86, 5)
 
@@ -1360,8 +1382,8 @@ namespace escapeObjects {
         // Deep gap with masonry lips and perspective rails.
         p.fillRect(6, 27, 132, 64, 1); p.fillRect(9, 31, 126, 56, 12)
         for (let x = 10; x < 137; x += 14) p.drawLine(x, 32, x - 8, 86, 2)
-        p.fillRect(5, 24, 134, 7, 14); p.fillRect(7, 26, 130, 2, 5)
-        p.fillRect(5, 88, 134, 8, 14); p.fillRect(7, 89, 130, 2, 5)
+        p.fillRect(5, 24, 134, 7, 8); p.fillRect(7, 26, 130, 2, 11)
+        p.fillRect(5, 88, 134, 8, 8); p.fillRect(7, 89, 130, 2, 11)
 
         let values = [8, 7, 6]
         let selected = control % 3
@@ -1393,10 +1415,10 @@ namespace escapeObjects {
     function shadowLantern(p: Image, control: number, response: number, t: number, ok: boolean) {
         shadow(p, 73, 102, 58)
         // Screen plinth and porcelain frame.
-        p.fillRect(38, 14, 57, 82, 1); p.fillRect(42, 17, 49, 76, 14)
+        p.fillRect(38, 14, 57, 82, 1); p.fillRect(42, 17, 49, 76, 13)
         p.fillRect(45, 20, 43, 61, 12); p.drawRect(46, 21, 41, 59, 9)
         p.fillRect(49, 24, 3, 53, 15); p.fillRect(84, 25, 2, 51, 11)
-        p.fillRect(39, 82, 55, 8, 6); p.fillRect(43, 83, 47, 3, 15)
+        p.fillRect(39, 82, 55, 8, 2); p.fillRect(43, 83, 47, 3, 15)
         bolt(p, 43, 91); bolt(p, 90, 91)
 
         // Lantern body, iris and brass focusing wheel.
@@ -1442,8 +1464,8 @@ namespace escapeObjects {
     function portraits(p: Image, control: number, response: number, t: number, ok: boolean, part: number, portraitMask: number, fitted: boolean, sourceState: number) {
         shadow(p, 72, 102, 63)
         // Marble-backed gallery rail with brass top/bottom guides.
-        p.fillRect(5, 15, 134, 70, 1); p.fillRect(8, 18, 128, 64, 12)
-        p.fillRect(10, 20, 124, 5, 14); p.fillRect(10, 75, 124, 6, 14)
+        p.fillRect(5, 15, 134, 70, 1); p.fillRect(8, 18, 128, 64, 13)
+        p.fillRect(10, 20, 124, 5, 5); p.fillRect(10, 75, 124, 6, 5)
         p.drawLine(12, 23, 132, 23, 15); p.drawLine(12, 77, 132, 77, 6)
         bolt(p, 12, 20); bolt(p, 132, 20); bolt(p, 12, 79); bolt(p, 132, 79)
 
@@ -1491,7 +1513,7 @@ namespace escapeObjects {
     function mural(p: Image, control: number, response: number, t: number, ok: boolean, part: number, fitted: boolean) {
         shadow(p, 72, 102, 59)
         // Deep gallery frame and translucent mosaic field.
-        p.fillRect(17, 12, 110, 78, 1); p.fillRect(21, 16, 102, 70, 5); p.fillRect(25, 20, 94, 62, 13)
+        p.fillRect(17, 12, 110, 78, 1); p.fillRect(21, 16, 102, 70, 2); p.fillRect(25, 20, 94, 62, 13)
         p.drawRect(27, 22, 90, 58, 15)
         for (let x = 29; x < 116; x += 12) { p.drawLine(x, 24, 112 - Math.idiv(x, 4), 78, x % 3 == 0 ? 8 : 7); p.setPixel(x, 28 + x % 19, 15) }
 
@@ -1535,8 +1557,8 @@ namespace escapeObjects {
     // socket releases the separate lens stone output on its source tray.
     function sockets(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 71, 102, 58)
-        rounded(p, 15, 19, 112, 70, 1); rounded(p, 19, 23, 104, 62, 14)
-        p.fillRect(23, 27, 96, 50, 2); p.drawRect(24, 28, 94, 48, 9)
+        rounded(p, 15, 19, 112, 70, 1); rounded(p, 19, 23, 104, 62, 5)
+        p.fillRect(23, 27, 96, 50, 12); p.drawRect(24, 28, 94, 48, 9)
         let socketColors = [8,8,5]
         let stoneColors = [3,8,5]
         for (let i = 0; i < 3; i++) {
@@ -1569,7 +1591,7 @@ namespace escapeObjects {
         p.fillCircle(28, 31, 14, 1); p.fillCircle(28, 31, 11, 14); p.fillCircle(28, 31, 8, fitted ? 13 : 6)
         if (fitted) { p.fillCircle(28, 31, 6, 13); p.fillCircle(25, 28, 2, 15); p.drawCircle(28, 31, 9, 6) }
         else { p.drawCircle(28, 31, 7, 3); p.drawLine(23, 26, 33, 36, 3) }
-        p.fillRect(38, 22, 68, 24, 1); p.fillRect(40, 24, 64, 20, 14); p.fillRect(45, 27, 54, 14, 12)
+        p.fillRect(38, 22, 68, 24, 1); p.fillRect(40, 24, 64, 20, 13); p.fillRect(45, 27, 54, 14, 2)
         p.fillRect(47, 29, 45, 4, 15); p.fillRect(96, 26, 14, 16, 5); p.fillCircle(108, 34, 13, 1); p.fillCircle(108, 34, 9, response == EscapeAction.TelescopeFocus || response < 0 && ok ? 10 : 9)
         p.fillCircle(105, 31, 3, 15)
         // Focusing carriage: zoom 2 versus 3 has a physically different extension.
@@ -1596,8 +1618,8 @@ namespace escapeObjects {
     // physical weight; blue leaves frost and red overheats it. The released weight matches cargo 3.
     function thermalBath(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 72, 102, 61)
-        rounded(p, 12, 32, 120, 60, 1); rounded(p, 16, 35, 112, 54, 14)
-        p.fillRect(20, 39, 104, 40, 2); p.drawRect(21, 40, 102, 38, 9)
+        rounded(p, 12, 32, 120, 60, 1); rounded(p, 16, 35, 112, 54, 8)
+        p.fillRect(20, 39, 104, 40, 12); p.drawRect(21, 40, 102, 38, 9)
         let degrees = [19,20,40,41][control % 4]
         let selected = control == 0 ? 0 : control == 3 ? 2 : 1
         let stateColor = response == EscapeAction.ThermalBlue ? 8 : response == EscapeAction.ThermalRed ? 3 : response == EscapeAction.ThermalAmber ? 10 : degrees < 20 ? 8 : degrees > 40 ? 3 : 10
@@ -1639,7 +1661,7 @@ namespace escapeObjects {
     function filings(p: Image, control: number, response: number, t: number, ok: boolean, fitted: boolean) {
         shadow(p, 72, 101, 58)
         // Stone laboratory bench with a recessed filings tray.
-        rounded(p, 16, 68, 112, 26, 6); p.fillRect(21, 73, 102, 15, 7); p.drawLine(23, 75, 120, 75, 15)
+        rounded(p, 16, 68, 112, 26, 14); p.fillRect(21, 73, 102, 15, 5); p.drawLine(23, 75, 120, 75, 15)
         glass(p, 28, 45, 82, 31); p.fillRect(33, 68, 72, 5, 5)
         // Electromagnet yoke and visible copper winding.
         p.fillRect(49, 12, 46, 11, 14); p.fillRect(54, 17, 9, 31, 14); p.fillRect(81, 17, 9, 31, 14)
@@ -1682,7 +1704,7 @@ namespace escapeObjects {
     function titration(p: Image, control: number, response: number, t: number, ok: boolean, fitted: boolean) {
         shadow(p, 72, 101, 58)
         // Stand, clamp and burette/dropper cradle.
-        p.fillRect(17, 16, 7, 73, 14); p.fillRect(14, 84, 40, 8, 6); p.drawLine(21, 20, 21, 84, 15)
+        p.fillRect(17, 16, 7, 73, 13); p.fillRect(14, 84, 40, 8, 12); p.drawLine(21, 20, 21, 84, 15)
         p.fillRect(21, 24, 66, 6, 6); bolt(p, 24, 27); p.fillRect(77, 21, 12, 13, 14)
         if (fitted) {
             p.fillRect(78, 30, 9, 31, 15); p.fillRect(80, 34, 5, 20, 9); p.fillRect(76, 19, 13, 7, 3)
@@ -1714,7 +1736,7 @@ namespace escapeObjects {
         let weight = [7,5,3,5][control % 4]
         shadow(p, 72, 101, 58)
         // Brass laboratory balance with a central knife edge and dial.
-        p.fillRect(68, 42, 9, 45, 14); p.fillRect(54, 86, 38, 8, 6); p.fillCircle(72, 43, 10, 5); p.fillCircle(72, 43, 6, 1); p.fillCircle(72, 43, 2, 10)
+        p.fillRect(68, 42, 9, 45, 8); p.fillRect(54, 86, 38, 8, 12); p.fillCircle(72, 43, 10, 5); p.fillCircle(72, 43, 6, 1); p.fillCircle(72, 43, 2, 10)
         let tilt = response == EscapeAction.ScaleLeft ? 8 : response == EscapeAction.ScaleRight ? -8 : response == EscapeAction.ScaleLevel ? 0 : weight > 5 ? 8 : weight < 5 ? -8 : 0
         p.drawLine(24, 45 + tilt, 120, 45 - tilt, 14); p.drawLine(25, 42 + tilt, 119, 42 - tilt, 15)
         p.fillCircle(72, 44, 5, 6)
@@ -1739,7 +1761,7 @@ namespace escapeObjects {
     // Successful installation releases the coil connector used by the sample station.
     function wires(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 72, 101, 60)
-        rounded(p, 14, 20, 116, 70, 14); p.fillRect(20, 26, 104, 57, 1); p.drawLine(22, 29, 121, 29, 6)
+        rounded(p, 14, 20, 116, 70, 13); p.fillRect(20, 26, 104, 57, 1); p.drawLine(22, 29, 121, 29, 6)
         let colors = [7,13,3,15]
         for (let i = 0; i < 4; i++) {
             let y = 38 + i * 11, c = colors[i], selected = i == control % 4
@@ -1769,7 +1791,7 @@ namespace escapeObjects {
     function plant(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 71, 101, 55)
         // Ceramic planter and trellis.
-        oval(p, 67, 87, 30, 9, 14); p.fillRect(38, 69, 59, 18, 2); oval(p, 67, 69, 29, 8, 6); p.drawLine(67, 70, 67, 24, 7)
+        oval(p, 67, 87, 30, 9, 5); p.fillRect(38, 69, 59, 18, 4); oval(p, 67, 69, 29, 8, 6); p.drawLine(67, 70, 67, 24, 7)
         p.drawLine(49, 26, 49, 68, 6); p.drawLine(85, 26, 85, 68, 6); p.drawLine(49, 29, 85, 29, 6); p.drawLine(49, 47, 85, 47, 6)
         let points = control == 0 ? 3 : 4
         // Central target leaf is deliberately larger so the point count can be read physically.
@@ -1810,7 +1832,7 @@ namespace escapeObjects {
             for (let i = 0; i < 4; i++) { let x = 49 + i * 15; let wobble = (i+t)%3; p.fillCircle(x,80-fh+5-wobble,5, flame == 3 ? 3 : 4); p.fillRect(x-4,80-fh+5-wobble,9,fh-4+wobble, flame == 3 ? 3 : 4); p.fillCircle(x,77,3,10); p.fillRect(x-2,77,5,4,10) }
         }
         // Rounded copper/brass vessel with glass inspection port.
-        oval(p, 72, 76, 39, 17, 14); p.fillRect(33, 45, 78, 31, 14); p.drawLine(39, 49, 104, 49, 15); p.drawLine(38, 73, 106, 73, 6)
+        oval(p, 72, 76, 39, 17, 14); p.fillRect(33, 45, 78, 31, 4); p.drawLine(39, 49, 104, 49, 15); p.drawLine(38, 73, 106, 73, 6)
         oval(p, 72, 45, 39, 15, 5); oval(p, 72, 47, 32, 10, 1)
         p.fillRect(57, 22, 30, 20, 14); oval(p, 72, 22, 15, 5, 6); p.fillRect(68, 13, 8, 10, 6); p.fillCircle(72, 11, 5, 10)
         // Inspection window.
@@ -1854,7 +1876,7 @@ namespace escapeObjects {
         p.drawLine(56, 49, 68, 45, 4); p.drawLine(56, 68, 68, 71, 4)
 
         // Receiver cabinet: analogue RPM gauge above a signal scope.
-        rounded(p, 76, 17, 57, 68, 14); p.fillRect(80, 21, 49, 60, 2)
+        rounded(p, 76, 17, 57, 68, 13); p.fillRect(80, 21, 49, 60, 2)
         p.fillRect(84, 25, 40, 22, 1); p.drawRect(84, 25, 40, 22, 6)
         p.print("RPM", 87, 28, 15, image.font5); p.print("" + rpm, 103, 36, rpm >= 80 ? 10 : rpm >= 40 ? 9 : 3, image.font5)
         // Four detents remain physically distinct even where threshold outcomes are adjacent.
@@ -1886,7 +1908,7 @@ namespace escapeObjects {
     // Without the installed Signal Module all three interference sources remain physically active.
     function horns(p: Image, control: number, response: number, t: number, ok: boolean, fitted: boolean) {
         shadow(p, 72, 101, 59)
-        rounded(p, 13, 18, 118, 73, 14); p.fillRect(18, 23, 108, 62, 2)
+        rounded(p, 13, 18, 118, 73, 5); p.fillRect(18, 23, 108, 62, 4)
         // Installed signal module matches cargo 8; empty bay is impossible to mistake for QUIET.
         p.fillRect(21, 27, 29, 20, 1); p.drawRect(21, 27, 29, 20, 6)
         if (fitted) {
@@ -1928,7 +1950,7 @@ namespace escapeObjects {
     // A valid feed produces the physical Message Strip carried to the pneumatic tube.
     function printer(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 72, 101, 58)
-        rounded(p, 18, 25, 108, 63, 14); p.fillRect(23, 30, 98, 53, 2)
+        rounded(p, 18, 25, 108, 63, 8); p.fillRect(23, 30, 98, 53, 12)
         // Two actual input jacks and a five-detent rotary selector.
         p.fillRect(28, 35, 26, 24, 1); p.drawRect(28, 35, 26, 24, 6)
         p.fillCircle(36, 46, 5, control == 1 || control == 3 ? 10 : 6); p.fillCircle(47, 46, 5, control == 2 || control == 3 ? 11 : 6)
@@ -1955,7 +1977,7 @@ namespace escapeObjects {
     function tubes(p: Image, control: number, response: number, t: number, ok: boolean, fitted: boolean) {
         shadow(p, 72, 101, 59)
         // Three real route pipes: drain drops down, A rises, B runs low.
-        p.fillRect(16, 87, 112, 8, 1); p.fillRect(20, 84, 104, 5, 14)
+        p.fillRect(16, 87, 112, 8, 1); p.fillRect(20, 84, 104, 5, 8)
         p.fillRect(25, 22, 8, 60, 9); p.fillRect(28, 22, 3, 60, 15)
         p.drawLine(31, 26, 96, 26, 9); p.drawLine(31, 29, 96, 29, 15)
         p.drawLine(31, 64, 96, 64, 9); p.drawLine(31, 67, 96, 67, 15)
@@ -1991,7 +2013,7 @@ namespace escapeObjects {
     function pressure(p: Image, control: number, response: number, t: number, ok: boolean, part: number) {
         let value = part == 0 ? [47,48,50,51][control % 4] : [20,30,20,30][control % 4]
         shadow(p, 72, 101, 59)
-        rounded(p, 13, 18, 118, 73, 14); p.fillRect(18, 23, 108, 62, 2)
+        rounded(p, 13, 18, 118, 73, 5); p.fillRect(18, 23, 108, 62, 4)
         // Large gauge with numeric readout and four physical regulator detents.
         p.fillCircle(48, 52, 27, 1); p.fillCircle(48, 52, 24, 15); p.fillCircle(48, 52, 20, 12); p.drawCircle(48, 52, 22, 6)
         for (let i = 0; i < 5; i++) p.fillRect(34 + i * 7, 31 + (i%2)*2, 2, 5, 6)
@@ -2028,7 +2050,7 @@ namespace escapeObjects {
         let feedback = part == 1
         shadow(p, 72, 101, 61)
         // Suspension towers and cables establish a real bridge rather than a single line.
-        p.fillRect(15, 27, 7, 65, 6); p.fillRect(122, 27, 7, 65, 6); p.fillRect(17, 28, 3, 58, 14); p.fillRect(124, 28, 3, 58, 14)
+        p.fillRect(15, 27, 7, 65, 5); p.fillRect(122, 27, 7, 65, 5); p.fillRect(17, 28, 3, 58, 4); p.fillRect(124, 28, 3, 58, 4)
         p.fillRect(11, 89, 18, 7, 1); p.fillRect(115, 89, 18, 7, 1)
         p.drawLine(20, 31, 72, 19, 9); p.drawLine(72, 19, 126, 31, 9); p.fillCircle(72, 19, 5, 14)
         // Deck obeys actual pitch. Positive pitch raises left / lowers right exactly as before.
@@ -2070,7 +2092,7 @@ namespace escapeObjects {
     // A successful numbered reading releases the physical Sensor Card for the shutter bank.
     function sensors(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 72, 101, 59)
-        rounded(p, 15, 18, 114, 72, 14); p.fillRect(20, 23, 104, 62, 2)
+        rounded(p, 15, 18, 114, 72, 13); p.fillRect(20, 23, 104, 62, 2)
         // Three remote mast channels with individual lamp housings and cable runs.
         p.fillRect(22, 28, 8, 50, 6); p.fillRect(25, 31, 3, 43, 14)
         for (let i = 0; i < 3; i++) {
@@ -2104,7 +2126,7 @@ namespace escapeObjects {
     // The Sensor Card is a real prerequisite and is shown in a dedicated reader socket.
     function shutters(p: Image, control: number, response: number, t: number, ok: boolean, fitted: boolean) {
         shadow(p, 72, 101, 60)
-        rounded(p, 10, 13, 124, 81, 14); p.fillRect(15, 18, 114, 71, 1)
+        rounded(p, 10, 13, 124, 81, 5); p.fillRect(15, 18, 114, 71, 2)
         // Sensor-card reader.
         p.fillRect(15, 20, 27, 20, 2); p.drawRect(15, 20, 27, 20, 6)
         if (fitted) { p.fillRect(19, 23, 19, 14, 14); p.drawRect(19, 23, 19, 14, 15); p.fillCircle(28, 29, 4, 8); p.fillRect(22, 35, 12, 2, 10) }
@@ -2135,7 +2157,7 @@ namespace escapeObjects {
     // Successful ignition releases the Pattern Plate used by the rock comparison station.
     function constellation(p: Image, control: number, response: number, t: number, ok: boolean, sourceState: number) {
         shadow(p, 72, 101, 56)
-        rounded(p, 15, 12, 114, 82, 14); p.fillRect(20, 17, 104, 72, 1)
+        rounded(p, 15, 12, 114, 82, 13); p.fillRect(20, 17, 104, 72, 12)
         p.fillRect(24, 21, 96, 58, 12); p.drawRect(24, 21, 96, 58, 6)
         let miss = control % 5
         for (let i = 0; i < 3; i++) {
@@ -2171,7 +2193,7 @@ namespace escapeObjects {
         shadow(p, 71, 102, 61)
         p.fillRect(7, 31, 130, 58, 12); p.drawLine(8, 37, 136, 50, 14); p.drawLine(10, 76, 132, 62, 14)
         // Pattern-plate reader at the top of the path.
-        p.fillRect(45, 6, 54, 22, 1); p.drawRect(45, 6, 54, 22, 6)
+        p.fillRect(45, 6, 54, 22, 5); p.drawRect(45, 6, 54, 22, 6)
         if (fitted) { p.fillRect(50, 10, 44, 14, 6); p.fillCircle(61, 17, 4, 8); p.fillCircle(84, 17, 4, 3); p.drawLine(68, 17, 77, 17, 10) }
         else { p.drawRect(52, 11, 40, 12, 6); p.drawLine(55, 21, 89, 12, 6) }
         let sameColor = control == 1 || control == 3 || control == 4
@@ -2205,7 +2227,7 @@ namespace escapeObjects {
     // Locking all three buses releases the physical Interlock Key.
     function interlocks(p: Image, control: number, response: number, t: number, ok: boolean, idle: number, parked: boolean, sourceState: number) {
         shadow(p, 72, 101, 58)
-        rounded(p, 12, 15, 120, 78, 14); p.fillRect(17, 20, 110, 67, 2)
+        rounded(p, 12, 15, 120, 78, 8); p.fillRect(17, 20, 110, 67, 12)
         // Three named readiness buses feed the gear train.
         let names = ["PWR","PRS","SIG"]
         for (let i = 0; i < 3; i++) {
@@ -2277,7 +2299,7 @@ namespace escapeObjects {
     function exitDoor(p: Image, control: number, response: number, t: number, ok: boolean, fitted: boolean) {
         shadow(p, 72, 102, 61)
         // Monumental vault door with three core-light channels.
-        p.fillRect(12, 9, 88, 87, 1); p.fillRect(17, 14, 78, 82, 14); p.fillRect(22, 19, 68, 73, 12); p.fillRect(27, 24, 58, 63, 2)
+        p.fillRect(12, 9, 88, 87, 1); p.fillRect(17, 14, 78, 82, 5); p.fillRect(22, 19, 68, 73, 12); p.fillRect(27, 24, 58, 63, 2)
         p.drawRect(27, 24, 58, 63, 6); p.drawLine(31, 29, 81, 29, 15)
         for (let y = 36; y < 82; y += 14) { p.drawLine(31, y, 81, y, 14); bolt(p, 32, y); bolt(p, 80, y) }
         // Three core lights are the actual final meter. Fixture 0 removes one; fixture 1 alarms; fixture 2 is quiet.
@@ -2311,14 +2333,14 @@ namespace escapeObjects {
 
 // Physical room composition. Objects, paths and floor are readable from above.
 namespace escapeArt {
-    const shortNames = ["Swing magnet", "Turn generator", "Open water case", "Tip water spout", "Raise wall holds", "Cross numbered steps", "Light shadow screen", "Move portraits", "Mix mural lights", "Seat colored stones", "Focus telescope", "Warm the bath", "Pulse magnet", "Open dropper", "Balance weights", "Connect wires", "Prune plant", "Warm repaired vessel", "Pedal receiver", "Quiet the noise", "Print the strip", "Send the capsule", "Prepare pressure lift", "Level the bridge", "Aim sensors", "Open shutters", "Align star rings", "Cross patterned rocks", "Join the systems", "Pull exit lever"]
+    const shortNames = ["Swing magnet", "Power generator", "Open water case", "Tip water spout", "Raise wall holds", "Cross numbered steps", "Light shadow screen", "Move portraits", "Mix mural lights", "Seat colored stones", "Focus telescope", "Warm the bath", "Pulse magnet", "Open dropper", "Balance weights", "Connect wires", "Prune plant", "Warm repaired vessel", "Pedal receiver", "Quiet the noise", "Print the strip", "Send the capsule", "Prepare pressure lift", "Level the bridge", "Aim sensors", "Open shutters", "Align star rings", "Cross patterned rocks", "Join the systems", "Pull exit lever"]
     const roomTitles = ["THE WORKSHOP", "THE LIGHT GALLERY", "THE GARDEN ROOM", "THE BRIDGE ROOM", "THE LAST DOOR"]
     const linksA = [0,1,2,3,4,9,10,11,7,15,16,14,18,19,20,22,24,26,25,27,28]
     const linksB = [1,2,3,4,5,10,6,7,8,12,17,13,19,20,21,23,25,27,28,28,29]
-    const darkMap = [0,1,12,2,6,6,12,14,12,6,6,14,12,12,12,6]
+    const darkMap = [0,1,2,2,5,6,12,8,12,6,5,8,12,2,12,6]
 
     export function installPalette() {
-        image.setPalette(hex`00000018182e4b3045bd4b53ed8756d8ac69706a757fc09a398b9bd4e5cff7d87966cddd283b547c66a83f6582f7f2dd`)
+        image.setPalette(hex`00000017243d5b3949de5564f39755d9ac696c748472c68a208fa4d8e6ecf5d86676e0d22438539876bd4d7391fcf3d6`)
     }
 
     function oval(p: Image, cx: number, cy: number, rx: number, ry: number, color: number) {
@@ -2365,11 +2387,11 @@ namespace escapeArt {
     }
 
     function roomFloor(room: number): number {
-        if (room == 0) return 9      // pale workshop limestone
+        if (room == 0) return 5      // warm workshop sandstone
         if (room == 1) return 15     // luminous gallery ceramic
-        if (room == 2) return 9      // warm garden stone
+        if (room == 2) return 7      // green garden stone
         if (room == 3) return 14     // bridge steel-blue deck
-        return 12                    // last-door slate
+        return 13                    // violet last-door slate
     }
 
     function roomSeam(room: number): number {
@@ -2634,83 +2656,53 @@ namespace escapeArt {
         if (activeBeat >= 0) {
             let s = escapeFlow.stationForBeat(activeBeat)
             let part = escapeFlow.lastBeats[s] > escapeFlow.firstBeats[s] ? "  PART " + (activeBeat - escapeFlow.firstBeats[s] + 1) + "/" + (escapeFlow.lastBeats[s] - escapeFlow.firstBeats[s] + 1) : ""
-            words(p, escapeLab.readout(activeBeat) + part, 14, 447, 15, 2)
-            words(p, escapeFlow.lastBeats[s] > escapeFlow.firstBeats[s] ? "ARROWS WALK   A OPERATE   HOLD B: TUNE / SELECT PART" : "ARROWS WALK   A OPERATE   HOLD B: TUNE", 14, 469, 10, 1)
+            let hint = escapeLab.interactionHint(activeBeat)
+            words(p, hint, 14, 447, hint.indexOf("HOLD B") == 0 ? 10 : 15, hint.length > 49 ? 1 : 2)
+            words(p, escapeLab.readout(activeBeat) + part, 14, 469, 9, 1)
         } else {
             let target = focus < 0 ? "Walk to the open doorway" : "Next: " + shortNames[focus]
             words(p, target, 14, 447, 15, 2)
-            words(p, "ARROWS WALK   A INTERACT   GOLD LIGHT GUIDES YOU", 14, 469, 10, 1)
+            words(p, focusBeat >= 0 ? (escapeFlow.needsAdjustment(focusBeat) ? "AT ITS PAD, HOLD B: " + escapeFlow.adjustmentName(focusBeat) : "AT ITS PAD, PRESS A: " + escapeFlow.actionName(focusBeat)) : "ARROWS WALK   A: OPEN DOOR", 14, 469, 10, 1)
         }
         return p
     }
 
-    // Held B opens this transient machine view. It deliberately contains no
-    // mode toggle: the engine returns to the room as soon as B is released.
+    // Every genuine choice uses the same visible left/right selector. Parts
+    // advance from the route automatically; no hidden up/down navigation.
     export function operating(station: number, beat: number, fixture: number, solved: number[], settledControls: number[], itemStates: number[], response: number, reactionFrame: number, pitch: number, idleFrame: number): Image {
         let p = image.create(640, 480)
-        let room = Math.idiv(station, 6)
-        let accent = roomAccent(room)
-        p.fill(12)
-        // Large recessed workbench frame; the actual 144x112 prop remains the single machine illustration.
-        p.fillRect(12, 10, 616, 460, 1)
-        p.fillRect(17, 15, 606, 450, 2)
-        p.fillRect(22, 20, 596, 440, 12)
-        p.drawLine(24, 21, 616, 21, accent)
-        p.fillRect(24, 24, 592, 42, 14)
-        p.drawLine(24, 65, 615, 65, 6)
-        words(p, "OPERATING", 36, 29, 10, 1)
-        words(p, shortNames[station], 36, 44, 15, 2)
-        panel(p, 430, 30, 168, 25, 3, 1, 4)
-        words(p, "RELEASE B TO WALK", 445, 39, 15, 1)
-
-        let settled = solved[beat] && settledControls[beat] != undefined ? settledControls[beat] : fixture
-        let control = reactionFrame >= 0 ? fixture : settled
+        let room = Math.idiv(station, 6), accent = roomAccent(room)
+        p.fill(1)
+        panel(p, 14, 14, 612, 451, 12, 6, accent)
+        words(p, escapeFlow.adjustmentName(beat), 34, 31, 15, 2)
+        panel(p, 466, 28, 138, 29, 3, 1, 4)
+        words(p, "HOLDING B", 481, 37, 15, 1)
+        words(p, escapeLab.readout(beat), 36, 76, 10, 1)
         let requiredItem = escapeCargo.requiredForBeat(beat)
         let fitted = requiredItem >= 0 && itemStates[requiredItem] == 2
         let portraitMask = solved[7] + 2 * solved[8] + 4 * solved[9] + 8 * solved[10]
-        let object = escapeObjects.prop(station, visibleControl(beat, control, solved), reactionFrame >= 0 ? response : -1, reactionFrame, solved[beat] == 1, station == 7 ? beat - 7 : beat - escapeFlow.firstBeats[station], pitch, portraitMask, idleFrame, fitted, sourceState(station, itemStates), requiredItem >= 0)
-
-        // Machine stage: floor shadow plus a crisp 3x copy of the exact room prop.
-        p.fillRect(36, 91, 432, 318, 2)
-        p.fillRect(41, 96, 422, 308, 1)
-        p.fillRect(45, 100, 414, 300, 12)
-        oval(p, 252, 390, 170, 12, 1)
-        scaleImage(p, object, 35, 75, 3)
-        p.drawLine(45, 399, 458, 399, accent)
-        words(p, "SELECTED: " + (escapeLab.readout(beat) || ("SETTING " + (fixture + 1))), 44, 76, 15, 1)
-
-        // Physical input console: selected, settled and fixture state occupy distinct recessed bays.
-        panel(p, 482, 91, 122, 310, 14, 1, accent)
-        words(p, "INPUT", 498, 107, 10, 1)
-        p.fillRect(494, 128, 98, 72, 12)
-        p.drawRect(494, 128, 98, 72, 6)
-        words(p, "SELECTED", 504, 141, 10, 1)
-        words(p, "#" + (fixture + 1), 504, 160, 15, 2)
-        if (solved[beat]) {
-            p.fillRect(494, 210, 98, 57, 12)
-            p.drawRect(494, 210, 98, 57, 6)
-            words(p, "SETTLED", 504, 222, 10, 1)
-            words(p, "#" + (settled + 1), 504, 240, 7, 2)
+        let object = escapeObjects.prop(station, visibleControl(beat, fixture, solved), reactionFrame >= 0 ? response : -1, reactionFrame, solved[beat] == 1, station == 7 ? beat - 7 : beat - escapeFlow.firstBeats[station], pitch, portraitMask, idleFrame, fitted, sourceState(station, itemStates), requiredItem >= 0)
+        scaleImage(p, object, 176, 94, 2)
+        if (requiredItem >= 0 && !fitted) words(p, "NEEDS " + escapeCargo.names[requiredItem], 36, 310, 3, 1)
+        let count = escapeLab.choiceCount()
+        let cardWidth = Math.idiv(542, count)
+        words(p, "<", 28, 354, 10, 2)
+        words(p, ">", 598, 354, 10, 2)
+        for (let i = 0; i < count; i++) {
+            let x = 49 + i * cardWidth
+            let selected = i == fixture
+            panel(p, x, 336, cardWidth - 5, 52, selected ? 8 : 1, selected ? 10 : 6, selected ? 15 : 6)
+            let label = escapeLab.choiceLabel(i)
+            let chars = Math.max(8, Math.idiv(cardWidth - 17, 6))
+            let split = Math.min(label.length, chars)
+            if (label.length > chars) while (split > 0 && label.charAt(split) != " ") split--
+            if (split <= 0) split = chars
+            words(p, label.substr(0, split), x + 7, 348, 15, 1)
+            if (split < label.length) words(p, label.substr(label.charAt(split) == " " ? split + 1 : split), x + 7, 365, 15, 1)
         }
-        p.fillRect(494, 278, 98, 109, 12)
-        p.drawRect(494, 278, 98, 109, 6)
-        words(p, "FIXTURE", 504, 290, 10, 1)
-        if (requiredItem >= 0) {
-            words(p, fitted ? "FITTED" : "NEEDS PART", 500, 309, fitted ? 7 : 3, 1)
-            words(p, escapeCargo.names[requiredItem], 500, 326, 15, 1)
-            let item = escapeCargo.drawItem(requiredItem, idleFrame)
-            scaleImage(p, item, 515, 340, 2)
-        } else {
-            words(p, "BUILT IN", 504, 312, 7, 1)
-            p.fillCircle(544, 350, 15, 6)
-            p.fillCircle(544, 350, 10, accent)
-            p.fillCircle(544, 350, 4, 15)
-        }
-
-        p.fillRect(30, 416, 580, 39, 6)
-        p.drawLine(31, 417, 608, 417, 15)
-        words(p, "LEFT / RIGHT CHANGE INPUT     UP / DOWN SELECT PART     A OPERATE", 43, 428, 15, 1)
-        words(p, "RELEASE B TO WALK", 231, 444, 10, 1)
+        words(p, "LEFT / RIGHT: CHOOSE", 202, 397, 10, 2)
+        words(p, "A: " + escapeFlow.actionName(beat), 206, 427, 15, 2)
+        words(p, "RELEASE B TO WALK", 264, 450, 9, 1)
         return p
     }
 
@@ -3038,13 +3030,26 @@ namespace escapeLab {
         return nearPad(true)
     }
 
+    function selectStationBeat(s: number) {
+        // A failed release consumes preparation. Offer the preparation action
+        // again even though its earlier success remains in the room history.
+        if (s == 22 && !pressureReady) { beat = 26; fixture = controls[beat]; return }
+        // Keep applying signed bridge adjustments while B is held. Releasing
+        // B returns to the separate level-check rule without a part menu.
+        if (s == 23 && operating) { beat = 28; fixture = controls[beat]; return }
+        let itinerary = escapeFlow.focusBeat(room, solved, introduced)
+        if (itinerary >= firstBeats[s] && itinerary <= lastBeats[s]) beat = itinerary
+        else {
+            if (beat < firstBeats[s] || beat > lastBeats[s]) beat = firstBeats[s]
+            for (let i = firstBeats[s]; i <= lastBeats[s]; i++) if (!solved[i]) { beat = i; break }
+        }
+        fixture = controls[beat]
+    }
+
     function enterStation(s: number) {
         if (station == s) return
         station = s
-        let itinerary = escapeFlow.focusBeat(room, solved, introduced)
-        beat = itinerary >= firstBeats[s] && itinerary <= lastBeats[s] ? itinerary : firstBeats[s]
-        if (beat == firstBeats[s]) for (let i = firstBeats[s]; i <= lastBeats[s]; i++) if (!solved[i]) { beat = i; break }
-        fixture = controls[beat]
+        selectStationBeat(s)
         credible = true
         focused = true
         draw()
@@ -3303,6 +3308,19 @@ namespace escapeLab {
     }
 
     export function focusStation(): number { return station }
+    export function choiceCount(): number { return fixtureCount(beat) }
+    export function choiceLabel(index: number): string { return inputLabel(beat, index) }
+    export function interactionHint(b: number): string {
+        let carried = carriedItem()
+        if (carried >= 0) return "A: FIT " + escapeCargo.names[carried]
+        if (!handlers[b]) return "ADD THIS MACHINE'S RULE IN THE TUTORIAL"
+        if (b == 1) return solved[1] ? "POWER ON - NEXT: A AT THE WATER CASE" : itemStates[0] == 2 ? "A: TRY YOUR GENERATOR RULE" : "A: TRY IT   THEN FIND AND FIT THE CRANK"
+        if (b == 2) return solved[2] ? "TAKE WATER FROM THE TRAY WITH A" : solved[1] ? "POWER ON - PRESS A TO OPEN THE CASE" : "A: TRY THE CASE - IT NEEDS GENERATOR POWER"
+        if (b == 3 && itemStates[1] != 2) return "A: TRY IT   FIT THE WATER CANISTER HERE"
+        if (b == 29 && pitch != 0) return "HOLD B: TILT THE BRIDGE TO ZERO"
+        if (escapeFlow.needsAdjustment(b)) return "HOLD B: " + escapeFlow.adjustmentName(b)
+        return "PRESS A: " + escapeFlow.actionName(b)
+    }
     export function readout(b: number): string {
         if (!focused || b != beat) return ""
         if (b == 14) return "ZOOM " + meterValue(EscapeMeter.Zoom) + (solved[13] ? "" : " - LENS EMPTY")
@@ -3436,6 +3454,20 @@ namespace escapeLab {
         draw()
     }
 
+    function attemptCurrentMachine() {
+        if (!focused) return
+        if (!escapeFlow.needsAdjustment(beat)) {
+            fixture = escapeFlow.directSetting(beat)
+            controls[beat] = fixture
+        }
+        busy = true
+        let handler = handlers[beat]
+        if (handler) { inAttempt = true; handler(); inAttempt = false }
+        else player.sayText("Add this machine's rule in the tutorial", 1600, false)
+        busy = false
+        draw()
+    }
+
     controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         if (ending > 0) return
         if (busy || reactionFrame >= 0 || tossFrames > 0) return
@@ -3460,6 +3492,12 @@ namespace escapeLab {
             if (pad == escapeCargo.targetStation(carried)) {
                 itemStates[carried] = 2
                 save()
+                // Fitting the crank is the physical event. Only learner code
+                // may respond with GeneratorSpin and actually establish power.
+                if (carried == 0) {
+                    enterStation(pad)
+                    attemptCurrentMachine()
+                }
             } else tossHome(carried)
             updateCargoSprites()
             draw()
@@ -3473,12 +3511,7 @@ namespace escapeLab {
         if (player.x <= 52 && player.y >= 205 && player.y <= 275 && room > 0) { leaveStation(); room--; escapeFloor.install(room); player.setPosition(600, 240); save(); draw(); return }
         updateNearbyStation()
         if (!focused) return
-        busy = true
-        let operatedBeat = beat
-        let handler = handlers[operatedBeat]
-        if (handler) { inAttempt = true; handler(); inAttempt = false }
-        busy = false
-        draw()
+        attemptCurrentMachine()
     })
 
     controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -3490,7 +3523,8 @@ namespace escapeLab {
         }
         updateNearbyStation()
         bPressedAt = control.millis()
-        if (focused) {
+        if (focused && station == 23 && carriedItem() < 0) { beat = 28; fixture = controls[beat] }
+        if (focused && carriedItem() < 0 && escapeFlow.needsAdjustment(beat)) {
             operating = true
             controller.moveSprite(player, 0, 0)
             player.vx = 0
@@ -3507,6 +3541,7 @@ namespace escapeLab {
         bPressedAt = -1
         if (operating) {
             operating = false
+            if (focused) selectStationBeat(station)
             controller.moveSprite(player, 150, 150)
             explorer.setFlag(SpriteFlag.Invisible, false)
             if (scurryFrames > 0) flame.setFlag(SpriteFlag.Invisible, false)
@@ -3547,13 +3582,11 @@ namespace escapeLab {
         cancelReset()
     })
     controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-        if (operating && reactionFrame >= 0) return
-        if (operating && beat > firstBeats[station]) { beat--; fixture = controls[beat]; draw(); return }
+        if (operating) return
         cancelReset()
     })
     controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-        if (operating && reactionFrame >= 0) return
-        if (operating && beat < lastBeats[station]) { beat++; fixture = controls[beat]; draw(); return }
+        if (operating) return
         cancelReset()
     })
 
@@ -3599,7 +3632,17 @@ namespace escapeLab {
         phase++
         if (reactionFrame >= 0) {
             reactionFrame++
-            if (reactionFrame > 12) { reactionFrame = -1; response = -1; reactionBeat = -1; producingItem = -1 }
+            if (reactionFrame > 12) {
+                reactionFrame = -1; response = -1; reactionBeat = -1; producingItem = -1
+                if (focused) {
+                    selectStationBeat(station)
+                    if (operating && !escapeFlow.needsAdjustment(beat)) {
+                        operating = false
+                        controller.moveSprite(player, 150, 150)
+                        explorer.setFlag(SpriteFlag.Invisible, false)
+                    }
+                }
+            }
         }
         if (scurryFrames > 0) {
             flame.setImage(flameFrames[phase % 3])

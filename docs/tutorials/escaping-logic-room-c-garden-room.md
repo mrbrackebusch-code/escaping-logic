@@ -12,7 +12,7 @@ The sample needs a live magnet, but its coil has no allowed wire yet. In ``||esc
 
 ### What the mechanism does
 
-![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/17-sample-connected-v2-physical-v6-01-17-sample.gif)
+![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/17-sample-connected-v2-physical-v7-01-17-sample.gif)
 
 #### ~ tutorialhint
 
@@ -25,19 +25,19 @@ escapeLab.onAttempt(EscapeBeat.Sample, function () {
 
 ## 18. Install an allowed wire
 
-At the coil, purple, red, and black are allowed. Join the three `value of (C) WireColor =` comparisons with ``||logic(noclick):or||`` in ``||escapeLab(noclick):when [(C) wire sorter] is operated||``. Make `(C) WireInstall` when one comparison passes and `(C) WireEject` otherwise. **Or** accepts at least one usable condition; choose an allowed wire. A coil connector appears on the wire-sorter tray. Carry it to the magnet-sample pad, fit it, then return to the sample and operate its rule to raise the first Room C exit catch.
+At the coil, purple, red, and black are allowed. Join the three `value of (C) WireColor =` comparisons with ``||logic(noclick):or||`` in ``||escapeLab(noclick):when [(C) wire sorter] is operated||``. Make `(C) WireInstall` when one comparison passes and `(C) WireEject` otherwise. **Or** accepts at least one usable condition. At the wire-sorter pad, hold **B** and use **left/right** to choose purple, red, or black; press **A** to install it, then release **B**. A coil connector appears on the tray. Carry it to the magnet-sample pad, fit it, then return to the sample and operate its rule to raise the first Room C exit catch.
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/18-wires-18-wires-or-menu.svg)
+![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/menu/18-wires-18-wires-or-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/18-wires-18-wires-assembled.svg)
+![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/assembled/18-wires-18-wires-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/18-wires-connected-v2-physical-v6-01-18-wires.gif)
+![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/18-wires-connected-v2-physical-v7-01-18-wires.gif)
 
 #### ~ tutorialhint
 
@@ -54,7 +54,7 @@ The vessel needs a repair patch before it can seal, so it can only leak now. In 
 
 ### What the mechanism does
 
-![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/19-vessel-connected-v2-physical-v6-01-19-vessel.gif)
+![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/19-vessel-connected-v2-physical-v7-01-19-vessel.gif)
 
 #### ~ tutorialhint
 
@@ -68,11 +68,11 @@ escapeLab.onAttempt(EscapeBeat.Vessel, function () {
 
 ## 20. Free the repair lever
 
-In ``||escapeLab(noclick):when [(C) pruning lever] is operated||``, test ``||escapeLab(noclick):value of [(C) LeafPoints]|| > 3``. Make `(C) LeafClip` happen for true and `(C) LeafKeep` otherwise. Choose a four-point leaf: a repair patch appears on the pruning-lever tray. Carry it to the heat-vessel pad and fit it. Then use the vessel's machine view to heat it and operate your three-way rule; the sealed hot vessel reveals the second exit catch.
+In ``||escapeLab(noclick):when [(C) pruning lever] is operated||``, test ``||escapeLab(noclick):value of [(C) LeafPoints]|| > 3``. Make `(C) LeafClip` happen for true and `(C) LeafKeep` otherwise. At the pruning-lever pad, hold **B** and use **left/right** to select the labeled four-point leaf; press **A** to cut it. A repair patch appears on the tray; release **B** to walk. Carry it to the heat-vessel pad and fit it. At the vessel control, hold **B** and use **left/right** to choose the visible labeled heat setting; press **A** to heat it and release **B**. Then press **A** at the vessel to run your three-way rule; the sealed hot vessel reveals the second exit catch.
 
 ### What the mechanism does
 
-![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/20-pruner-connected-v2-physical-v6-01-20-pruner.gif)
+![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/20-pruner-connected-v2-physical-v7-01-20-pruner.gif)
 
 #### ~ tutorialhint
 
@@ -85,11 +85,11 @@ escapeLab.onAttempt(EscapeBeat.Pruner, function () {
 
 ## 21. Test the titration target
 
-The dropper cannot provide its target amount until the balance releases it. Still build the result rule in ``||escapeLab(noclick):when [(C) titration] is operated||``: if `(C) Drops < 7`, make `(C) TitrationClear`; else if `(C) Drops ≤ 9`, make `(C) TitrationBloom`; otherwise make `(C) TitrationOverflow`. Its low result lights the balance. The target bloom will be your payoff after the dropper can select `7` or `9`.
+The dropper cannot provide its target amount until the balance releases it. Still build the result rule in ``||escapeLab(noclick):when [(C) titration] is operated||``: if `(C) Drops < 7`, make `(C) TitrationClear`; else if `(C) Drops ≤ 9`, make `(C) TitrationBloom`; otherwise make `(C) TitrationOverflow`. Its low result lights the balance. After fitting the dropper, hold **B** at its setting pad and use **left/right** to choose labeled `7` or `9`; press **A** to set the amount. Then press **A** at titration to run your rule. The target bloom raises the third catch.
 
 ### What the mechanism does
 
-![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/21-titration-connected-v2-physical-v6-01-21-titration.gif)
+![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/21-titration-connected-v2-physical-v7-01-21-titration.gif)
 
 #### ~ tutorialhint
 
@@ -103,11 +103,11 @@ escapeLab.onAttempt(EscapeBeat.Titration, function () {
 
 ## 22. Balance the dropper
 
-In ``||escapeLab(noclick):when [(C) balance scale] is operated||``, test `value of (C) LeftWeight = value of (C) RightWeight` and make `(C) ScaleLevel`. Add an else-if for left greater than right that makes `(C) ScaleLeft`; make `(C) ScaleRight` in the final else. Choose equal weights first: a measured dropper appears on the balance tray. Carry it to the titration pad and fit it. Return to titration, choose `7` or `9`, and operate your rule to see the bloom raise the third catch.
+In ``||escapeLab(noclick):when [(C) balance scale] is operated||``, test `value of (C) LeftWeight = value of (C) RightWeight` and make `(C) ScaleLevel`. Add an else-if for left greater than right that makes `(C) ScaleLeft`; make `(C) ScaleRight` in the final else. At the balance pad, hold **B** and use **left/right** to choose the labeled equal-weight pair; press **A** to balance it. A measured dropper appears on the tray; release **B** to walk. Carry it to the titration pad and fit it. Return to titration, hold **B** at the dropper setting pad and use **left/right** to choose `7` or `9`; press **A** to set the amount, then release **B**. Press **A** at titration to run your rule and raise the third catch.
 
 ### What the mechanism does
 
-![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/22-balance-connected-v2-physical-v6-01-22-balance.gif)
+![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/22-balance-connected-v2-physical-v7-01-22-balance.gif)
 
 #### ~ tutorialhint
 

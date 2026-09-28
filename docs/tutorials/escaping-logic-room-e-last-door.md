@@ -12,7 +12,7 @@ The shutter bank needs a sensor card. Build ``||escapeLab(noclick):when [(E) shu
 
 ### What the mechanism does
 
-![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/31-shutters-connected-v2-physical-v6-01-31-shutters.gif)
+![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/31-shutters-connected-v2-physical-v7-01-31-shutters.gif)
 
 #### ~ tutorialhint
 
@@ -30,11 +30,11 @@ escapeLab.onAttempt(EscapeBeat.Shutters, function () {
 
 ## 32. Map the remote sensors
 
-In ``||escapeLab(noclick):when [(E) sensor map] is operated||``, use an else-if chain on `value of (E) SensorNumber`: `1` makes `(E) SensorLamp1`, `2` makes `(E) SensorLamp2`, `3` makes `(E) SensorLamp3`, and the final else makes `(E) SensorDark`. Choose the sensor shown by the shutter wiring: a sensor card appears on the map tray. Carry it to the shutter-bank pad and fit it, then return to the bank and operate its rule to open a route.
+In ``||escapeLab(noclick):when [(E) sensor map] is operated||``, use an else-if chain on `value of (E) SensorNumber`: `1` makes `(E) SensorLamp1`, `2` makes `(E) SensorLamp2`, `3` makes `(E) SensorLamp3`, and the final else makes `(E) SensorDark`. Hold **B** at the map pad and use **left/right** to select the sensor number shown by the shutter wiring; press **A** to map it. A sensor card appears on the tray; release **B** to walk. Carry it to the shutter-bank pad and fit it. Return to the bank, hold **B**, and use **left/right** to select `WINDOW A` or `WINDOW B`; press **A** to run your shutter rule, then release **B**. Either window can open the route.
 
 ### What the mechanism does
 
-![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/32-sensors-connected-v2-physical-v6-01-32-sensors.gif)
+![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/32-sensors-connected-v2-physical-v7-01-32-sensors.gif)
 
 #### ~ tutorialhint
 
@@ -57,7 +57,7 @@ The rock path is dark until it has a pattern plate. Build ``||escapeLab(noclick)
 
 ### What the mechanism does
 
-![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/33-rock-path-connected-v2-physical-v6-01-33-rock-path.gif)
+![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/33-rock-path-connected-v2-physical-v7-01-33-rock-path.gif)
 
 #### ~ tutorialhint
 
@@ -74,11 +74,11 @@ escapeLab.onAttempt(EscapeBeat.RockPath, function () {
 
 ## 34. Light the constellation
 
-In ``||escapeLab(noclick):when [(E) constellation] is operated||``, join `is (E) FrontMatch`, `is (E) MiddleMatch`, and `is (E) BackMatch` with **and**. Make `(E) StarIgnite` only when all three pass; otherwise make `(E) StarFizzle`. Align the three visible layers: a pattern plate appears on the constellation tray. Carry it to the rock-path pad and fit it, then return to the path and choose same color with a different pattern to cross the bridge.
+In ``||escapeLab(noclick):when [(E) constellation] is operated||``, join `is (E) FrontMatch`, `is (E) MiddleMatch`, and `is (E) BackMatch` with **and**. Make `(E) StarIgnite` only when all three pass; otherwise make `(E) StarFizzle`. At the constellation pad, hold **B** and use **left/right** to select the single visible `ALL MATCH` option; press **A** once to run your rule, then release **B**. This one choice sets all three match facts for this beat. A pattern plate appears on the tray when your rule makes `(E) StarIgnite`. Carry it to the rock-path pad and fit it, then return to the rock-path pad, hold **B**, and use **left/right** to choose the same color with a different pattern; press **A** to cross, then release **B**.
 
 ### What the mechanism does
 
-![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/34-constellation-connected-v2-physical-v6-01-34-constellation.gif)
+![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/34-constellation-connected-v2-physical-v7-01-34-constellation.gif)
 
 #### ~ tutorialhint
 
@@ -95,11 +95,11 @@ escapeLab.onAttempt(EscapeBeat.Constellation, function () {
 
 ## 35. Synchronize the restored systems
 
-The synchronizer receives the power, pressure, and signal you restored in earlier rooms. In ``||escapeLab(noclick):when [(E) synchronizer] is operated||``, join `is (E) PowerReady`, `is (E) PressureSystemReady`, `is (E) SignalReady`, and `not is (E) AlarmOn` with **and**. Make `(E) SyncLock` when all four requirements pass and `(E) SyncReject` otherwise. With the shutter route and rock bridge complete, an interlock key appears on the synchronizer tray. Carry it to the final-lever pad and fit it.
+The synchronizer receives the power, pressure, and signal you restored in earlier rooms. In ``||escapeLab(noclick):when [(E) synchronizer] is operated||``, join `is (E) PowerReady`, `is (E) PressureSystemReady`, `is (E) SignalReady`, and `not is (E) AlarmOn` with **and**. Make `(E) SyncLock` when all four requirements pass and `(E) SyncReject` otherwise. With the shutter route and rock bridge complete, press **A** at the synchronizer to run your rule; do not hold **B**. When the rule makes `(E) SyncLock`, an interlock key appears on the tray. Pick it up, carry it to the final-lever pad, and press **A** to fit it.
 
 ### What the mechanism does
 
-![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/35-synchronize-connected-v2-physical-v6-01-35-synchronize.gif)
+![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/35-synchronize-connected-v2-physical-v7-01-35-synchronize.gif)
 
 #### ~ tutorialhint
 
@@ -116,11 +116,11 @@ escapeLab.onAttempt(EscapeBeat.Synchronize, function () {
 
 ## 36. Pull the final lever
 
-In ``||escapeLab(noclick):when [(E) final lever] is operated||``, test `value of (E) CoreLights = 3` **and** `not is (E) AlarmOn`. Make `(E) LeverPull` when it passes and `(E) LeverReject` otherwise. After you fit the interlock key, operate this rule. At the first ending, press **B** to start the full replay. It clears room and mechanism checkpoints while retaining first-clear history; a second escape receives its distinct ending.
+In ``||escapeLab(noclick):when [(E) final lever] is operated||``, test `value of (E) CoreLights = 3` **and** `not is (E) AlarmOn`. Make `(E) LeverPull` when it passes and `(E) LeverReject` otherwise. After you fit the interlock key, press **A** at the final lever to run this rule; do not hold **B**. At the first ending, press **B** to start the full replay. It clears room and mechanism checkpoints while retaining first-clear history; a second escape receives its distinct ending.
 
 ### What the mechanism does
 
-![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/36-final-lever-connected-v2-physical-v6-01-36-final-lever.gif)
+![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/195095bc6924706a/media/gameplay/36-final-lever-connected-v2-physical-v7-01-36-final-lever.gif)
 
 #### ~ tutorialhint
 

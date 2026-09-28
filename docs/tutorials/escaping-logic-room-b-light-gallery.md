@@ -12,11 +12,11 @@ The shadow screen needs an illumination of `60`, but the beam is still weak. In 
 
 ### Build this rule
 
-![Build this rule for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/07-shadow-07-shadow-assembled.svg)
+![Build this rule for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/07-shadow-07-shadow-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/07-shadow-connected-v2-physical-v6-01-07-shadow.gif)
+![What the mechanism does for Shadow](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/07-shadow-connected-v2-physical-v6-01-07-shadow.gif)
 
 #### ~ tutorialhint
 
@@ -33,7 +33,7 @@ The telescope needs zoom `3`, though its lens has not yet seated. In ``||escapeL
 
 ### What the mechanism does
 
-![What the mechanism does for Telescope](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/08-telescope-connected-v2-physical-v6-01-08-telescope.gif)
+![What the mechanism does for Telescope](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/08-telescope-connected-v2-physical-v6-01-08-telescope.gif)
 
 #### ~ tutorialhint
 
@@ -50,7 +50,7 @@ Compare ``||escapeLab(noclick):value of [(B) StoneColor]||`` with ``||escapeLab(
 
 ### What the mechanism does
 
-![What the mechanism does for Stones](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/09-stones-connected-v2-physical-v6-01-09-stones.gif)
+![What the mechanism does for Stones](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/09-stones-connected-v2-physical-v6-01-09-stones.gif)
 
 #### ~ tutorialhint
 
@@ -67,15 +67,15 @@ The mural needs yellow and blue light, but its color-filter slot is empty. In ``
 
 ### Find the native Blocks
 
-![Find the native Blocks for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/menu/10-mural-mix-10-mural-logic-menu.svg)
+![Find the native Blocks for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/10-mural-mix-10-mural-logic-menu.svg)
 
 ### Build this rule
 
-![Build this rule for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/10-mural-mix-10-mural-mix-assembled.svg)
+![Build this rule for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/10-mural-mix-10-mural-mix-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/10-mural-mix-connected-v2-physical-v6-01-10-mural-mix.gif)
+![What the mechanism does for MuralMix](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/10-mural-mix-connected-v2-physical-v6-01-10-mural-mix.gif)
 
 #### ~ tutorialhint
 
@@ -92,11 +92,11 @@ Build the mural's second rule before its light sources are ready. In ``||escapeL
 
 ### Build this rule
 
-![Build this rule for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg)
+![Build this rule for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/11-mural-reveal-11-mural-reveal-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/11-mural-reveal-connected-v2-physical-v6-01-11-mural-reveal.gif)
+![What the mechanism does for MuralReveal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/11-mural-reveal-connected-v2-physical-v6-01-11-mural-reveal.gif)
 
 #### ~ tutorialhint
 
@@ -113,7 +113,7 @@ At the first footprint pressure plate, `1` means left and `2` means right. In ``
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait1](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/12-portrait1-connected-v2-physical-v6-01-12-portrait1.gif)
+![What the mechanism does for Portrait1](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/12-portrait1-connected-v2-physical-v6-01-12-portrait1.gif)
 
 #### ~ tutorialhint
 
@@ -130,15 +130,15 @@ The bath has cold, warm, and overheated responses. Use the **+** on ``||logic(no
 
 ### Find the native Blocks
 
-![Find the native Blocks for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/menu/13-thermal-13-thermal-elseif-menu.svg)
+![Find the native Blocks for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/13-thermal-13-thermal-elseif-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/13-thermal-13-thermal-assembled.svg)
+![Build this rule for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/13-thermal-13-thermal-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/13-thermal-connected-v2-physical-v6-01-13-thermal.gif)
+![What the mechanism does for Thermal](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/13-thermal-connected-v2-physical-v6-01-13-thermal.gif)
 
 #### ~ tutorialhint
 
@@ -156,7 +156,7 @@ Make a separate ``||escapeLab(noclick):when [(B) second portrait] is operated||`
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait2](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/14-portrait2-connected-v2-physical-v6-01-14-portrait2.gif)
+![What the mechanism does for Portrait2](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/14-portrait2-connected-v2-physical-v6-01-14-portrait2.gif)
 
 #### ~ tutorialhint
 
@@ -173,7 +173,7 @@ Repeat the portrait rule in a ``||escapeLab(noclick):when [(B) third portrait] i
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait3](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/15-portrait3-connected-v2-physical-v6-01-15-portrait3.gif)
+![What the mechanism does for Portrait3](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/15-portrait3-connected-v2-physical-v6-01-15-portrait3.gif)
 
 #### ~ tutorialhint
 
@@ -190,7 +190,7 @@ Add the final matching stack in ``||escapeLab(noclick):when [(B) fourth portrait
 
 ### What the mechanism does
 
-![What the mechanism does for Portrait4](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/16-portrait4-connected-v2-physical-v6-01-16-portrait4.gif)
+![What the mechanism does for Portrait4](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/16-portrait4-connected-v2-physical-v6-01-16-portrait4.gif)
 
 #### ~ tutorialhint
 

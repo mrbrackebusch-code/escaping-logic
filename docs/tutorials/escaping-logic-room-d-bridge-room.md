@@ -12,7 +12,7 @@ The selector needs a message strip, so the empty tube drains at first. In ``||es
 
 ### What the mechanism does
 
-![What the mechanism does for Tube](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/23-tube-connected-v2-physical-v6-01-23-tube.gif)
+![What the mechanism does for Tube](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/23-tube-connected-v2-physical-v6-01-23-tube.gif)
 
 #### ~ tutorialhint
 
@@ -29,7 +29,7 @@ The printer works through clear radio or a connected cable, neither of which is 
 
 ### What the mechanism does
 
-![What the mechanism does for Printer](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/24-printer-connected-v2-physical-v6-01-24-printer.gif)
+![What the mechanism does for Printer](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/24-printer-connected-v2-physical-v6-01-24-printer.gif)
 
 #### ~ tutorialhint
 
@@ -46,7 +46,7 @@ In ``||escapeLab(noclick):when [(D) noise mixer] is operated||``, join `not is (
 
 ### What the mechanism does
 
-![What the mechanism does for Interference](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/25-interference-connected-v2-physical-v6-01-25-interference.gif)
+![What the mechanism does for Interference](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/25-interference-connected-v2-physical-v6-01-25-interference.gif)
 
 #### ~ tutorialhint
 
@@ -63,7 +63,7 @@ Use a three-way ``||escapeLab(noclick):when [(D) pedal receiver] is operated||``
 
 ### What the mechanism does
 
-![What the mechanism does for Receiver](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/26-receiver-connected-v2-physical-v6-01-26-receiver.gif)
+![What the mechanism does for Receiver](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/26-receiver-connected-v2-physical-v6-01-26-receiver.gif)
 
 #### ~ tutorialhint
 
@@ -81,15 +81,15 @@ Make a native ``||variables(noclick):Variables||`` variable named ``||variables(
 
 ### Find the native Blocks
 
-![Find the native Blocks for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg)
+![Find the native Blocks for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/27-pressure-stable-27-pressure-and-pitch-variables-menu.svg)
 
 ### Build this rule
 
-![Build this rule for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg)
+![Build this rule for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/27-pressure-stable-27-pressure-stable-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/27-pressure-stable-connected-v2-physical-v6-01-27-pressure-stable.gif)
+![What the mechanism does for PressureStable](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/27-pressure-stable-connected-v2-physical-v6-01-27-pressure-stable.gif)
 
 #### ~ tutorialhint
 
@@ -113,7 +113,7 @@ In ``||escapeLab(noclick):when [(D) pressure release] is operated||``, join your
 
 ### What the mechanism does
 
-![What the mechanism does for PressureRelease](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/28-pressure-release-connected-v2-physical-v6-01-28-pressure-release.gif)
+![What the mechanism does for PressureRelease](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/28-pressure-release-connected-v2-physical-v6-01-28-pressure-release.gif)
 
 #### ~ tutorialhint
 
@@ -133,11 +133,11 @@ Make a native ``||variables(noclick):Variables||`` variable named ``||variables(
 
 ### Build this rule
 
-![Build this rule for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg)
+![Build this rule for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/29-pitch-adjust-29-pitch-adjust-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/29-pitch-adjust-connected-v2-physical-v6-01-29-pitch-adjust.gif)
+![What the mechanism does for PitchAdjust](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/29-pitch-adjust-connected-v2-physical-v6-01-29-pitch-adjust.gif)
 
 #### ~ tutorialhint
 
@@ -158,7 +158,7 @@ In ``||escapeLab(noclick):when [(D) pitch display] is operated||``, test your `a
 
 ### What the mechanism does
 
-![What the mechanism does for PitchFeedback](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/30-pitch-feedback-connected-v2-physical-v6-01-30-pitch-feedback.gif)
+![What the mechanism does for PitchFeedback](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/30-pitch-feedback-connected-v2-physical-v6-01-30-pitch-feedback.gif)
 
 #### ~ tutorialhint
 

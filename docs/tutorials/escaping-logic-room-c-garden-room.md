@@ -12,7 +12,7 @@ The sample needs a live magnet, but its coil has no allowed wire yet. In ``||esc
 
 ### What the mechanism does
 
-![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/17-sample-connected-v2-physical-v6-01-17-sample.gif)
+![What the mechanism does for Sample](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/17-sample-connected-v2-physical-v6-01-17-sample.gif)
 
 #### ~ tutorialhint
 
@@ -29,15 +29,15 @@ At the coil, purple, red, and black are allowed. Join the three `value of (C) Wi
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/menu/18-wires-18-wires-or-menu.svg)
+![Find the native Blocks for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/18-wires-18-wires-or-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/18-wires-18-wires-assembled.svg)
+![Build this rule for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/18-wires-18-wires-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/18-wires-connected-v2-physical-v6-01-18-wires.gif)
+![What the mechanism does for Wires](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/18-wires-connected-v2-physical-v6-01-18-wires.gif)
 
 #### ~ tutorialhint
 
@@ -54,7 +54,7 @@ The vessel needs a repair patch before it can seal, so it can only leak now. In 
 
 ### What the mechanism does
 
-![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/19-vessel-connected-v2-physical-v6-01-19-vessel.gif)
+![What the mechanism does for Vessel](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/19-vessel-connected-v2-physical-v6-01-19-vessel.gif)
 
 #### ~ tutorialhint
 
@@ -72,7 +72,7 @@ In ``||escapeLab(noclick):when [(C) pruning lever] is operated||``, test ``||esc
 
 ### What the mechanism does
 
-![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/20-pruner-connected-v2-physical-v6-01-20-pruner.gif)
+![What the mechanism does for Pruner](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/20-pruner-connected-v2-physical-v6-01-20-pruner.gif)
 
 #### ~ tutorialhint
 
@@ -89,7 +89,7 @@ The dropper cannot provide its target amount until the balance releases it. Stil
 
 ### What the mechanism does
 
-![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/21-titration-connected-v2-physical-v6-01-21-titration.gif)
+![What the mechanism does for Titration](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/21-titration-connected-v2-physical-v6-01-21-titration.gif)
 
 #### ~ tutorialhint
 
@@ -107,7 +107,7 @@ In ``||escapeLab(noclick):when [(C) balance scale] is operated||``, test `value 
 
 ### What the mechanism does
 
-![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/22-balance-connected-v2-physical-v6-01-22-balance.gif)
+![What the mechanism does for Balance](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/22-balance-connected-v2-physical-v6-01-22-balance.gif)
 
 #### ~ tutorialhint
 

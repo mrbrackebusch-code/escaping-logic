@@ -12,15 +12,15 @@ The fixed fire spout blocks the wall route. First build ``||escapeLab(noclick):w
 
 ### Find the native Blocks
 
-![Find the native Blocks for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/menu/01-fire-01-fire-menu.svg)
+![Find the native Blocks for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/01-fire-01-fire-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/01-fire-01-fire-assembled.svg)
+![Build this rule for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/01-fire-01-fire-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/01-fire-connected-v2-physical-v6-01-01-fire.gif)
+![What the mechanism does for Fire](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/01-fire-connected-v2-physical-v6-01-01-fire.gif)
 
 #### ~ tutorialhint
 
@@ -37,11 +37,11 @@ The case button cannot release its fixed reservoir until power arrives. In ``||e
 
 ### Build this rule
 
-![Build this rule for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/02-case-02-case-assembled.svg)
+![Build this rule for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/02-case-02-case-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/02-case-connected-v2-physical-v6-01-02-case.gif)
+![What the mechanism does for Case](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/02-case-connected-v2-physical-v6-01-02-case.gif)
 
 #### ~ tutorialhint
 
@@ -58,11 +58,11 @@ The generator's handle turns only with a crank fitted to its rail. In ``||escape
 
 ### Build this rule
 
-![Build this rule for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/03-generator-03-generator-assembled.svg)
+![Build this rule for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/03-generator-03-generator-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/03-generator-connected-v2-physical-v6-01-03-generator.gif)
+![What the mechanism does for Generator](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/03-generator-connected-v2-physical-v6-01-03-generator.gif)
 
 #### ~ tutorialhint
 
@@ -79,11 +79,11 @@ The magnet is mounted on a rail; it is not something to collect. In ``||escapeLa
 
 ### Build this rule
 
-![Build this rule for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/04-crank-04-crank-assembled.svg)
+![Build this rule for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/04-crank-04-crank-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/04-crank-connected-v2-physical-v6-01-04-crank.gif)
+![What the mechanism does for Crank](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/04-crank-connected-v2-physical-v6-01-04-crank.gif)
 
 #### ~ tutorialhint
 
@@ -100,15 +100,15 @@ With the fire channel clear, the wall lever recovers the fixed holds. In ``||esc
 
 ### Find the native Blocks
 
-![Find the native Blocks for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/menu/05-wall-05-wall-comparisons-menu.svg)
+![Find the native Blocks for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/menu/05-wall-05-wall-comparisons-menu.svg)
 
 ### Build this rule
 
-![Build this rule for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/05-wall-05-wall-assembled.svg)
+![Build this rule for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/05-wall-05-wall-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/05-wall-connected-v2-physical-v6-01-05-wall.gif)
+![What the mechanism does for Wall](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/05-wall-connected-v2-physical-v6-01-05-wall.gif)
 
 #### ~ tutorialhint
 
@@ -125,11 +125,11 @@ The three marked stones show `8`, `7`, and `6`; any value with `+ 3 ≤ 10` is s
 
 ### Build this rule
 
-![Build this rule for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/assembled/06-footprints-06-footprints-assembled.svg)
+![Build this rule for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/assembled/06-footprints-06-footprints-assembled.svg)
 
 ### What the mechanism does
 
-![What the mechanism does for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/06-footprints-connected-v2-physical-v6-01-06-footprints.gif)
+![What the mechanism does for Footprints](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/06-footprints-connected-v2-physical-v6-01-06-footprints.gif)
 
 #### ~ tutorialhint
 

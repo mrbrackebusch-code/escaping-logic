@@ -12,7 +12,7 @@ The shutter bank needs a sensor card. Build ``||escapeLab(noclick):when [(E) shu
 
 ### What the mechanism does
 
-![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/31-shutters-connected-v2-physical-v6-01-31-shutters.gif)
+![What the mechanism does for Shutters](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/31-shutters-connected-v2-physical-v6-01-31-shutters.gif)
 
 #### ~ tutorialhint
 
@@ -34,7 +34,7 @@ In ``||escapeLab(noclick):when [(E) sensor map] is operated||``, use an else-if 
 
 ### What the mechanism does
 
-![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/32-sensors-connected-v2-physical-v6-01-32-sensors.gif)
+![What the mechanism does for Sensors](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/32-sensors-connected-v2-physical-v6-01-32-sensors.gif)
 
 #### ~ tutorialhint
 
@@ -57,7 +57,7 @@ The rock path is dark until it has a pattern plate. Build ``||escapeLab(noclick)
 
 ### What the mechanism does
 
-![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/33-rock-path-connected-v2-physical-v6-01-33-rock-path.gif)
+![What the mechanism does for RockPath](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/33-rock-path-connected-v2-physical-v6-01-33-rock-path.gif)
 
 #### ~ tutorialhint
 
@@ -78,7 +78,7 @@ In ``||escapeLab(noclick):when [(E) constellation] is operated||``, join `is (E)
 
 ### What the mechanism does
 
-![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/34-constellation-connected-v2-physical-v6-01-34-constellation.gif)
+![What the mechanism does for Constellation](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/34-constellation-connected-v2-physical-v6-01-34-constellation.gif)
 
 #### ~ tutorialhint
 
@@ -99,7 +99,7 @@ The synchronizer receives the power, pressure, and signal you restored in earlie
 
 ### What the mechanism does
 
-![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/35-synchronize-connected-v2-physical-v6-01-35-synchronize.gif)
+![What the mechanism does for Synchronize](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/35-synchronize-connected-v2-physical-v6-01-35-synchronize.gif)
 
 #### ~ tutorialhint
 
@@ -120,7 +120,7 @@ In ``||escapeLab(noclick):when [(E) final lever] is operated||``, test `value of
 
 ### What the mechanism does
 
-![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/5da2db9300536c5c/media/gameplay/36-final-lever-connected-v2-physical-v6-01-36-final-lever.gif)
+![What the mechanism does for FinalLever](https://raw.githubusercontent.com/mrbrackebusch-code/escaping-logic/main/assets/f873e84e6ab7e9a4/media/gameplay/36-final-lever-connected-v2-physical-v6-01-36-final-lever.gif)
 
 #### ~ tutorialhint
 
